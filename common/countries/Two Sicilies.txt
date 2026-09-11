@@ -1,6 +1,6 @@
 ck2_converter_generated = yes
 graphical_culture = westerngfx
-color = { 154 153 157 }
+color = { 85 230 136 }
 revolutionary_colors = { 15 6 16 }
 historical_idea_groups = {
 	maritime_ideas
@@ -47,6 +47,7 @@ monarch_names = {
 	"Seburg #0" = -1
 	"Simon #0" = 0
 	"William #1" = 10
+	"Anchovey #1" = -5
 }
 leader_names = {
 	"Asmondo"
