@@ -36,6 +36,7 @@ monarch_names = {
 	"al-Hakim #1" = 10
 	"al-Mustansir #1" = 10
 	"az-Zahir #1" = 10
+	"Cleopatra #1" = -5
 }
 leader_names = {
 	"Ali"

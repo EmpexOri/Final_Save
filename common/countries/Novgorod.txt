@@ -45,6 +45,7 @@ monarch_names = {
 	"Volodomyr #1" = 10
 	"Vsevolod #1" = 10
 	"Yemelyan #0" = 0
+	"Shin #1" = -5
 }
 leader_names = {
 	"Barashev"
