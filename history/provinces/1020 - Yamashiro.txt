@@ -8,6 +8,7 @@ trade_goods = silk
 base_tax = 6
 base_production = 7
 base_manpower = 2
+fort_15th = yes
 add_core = TSU
 add_core = JAP
 add_core = MRI
