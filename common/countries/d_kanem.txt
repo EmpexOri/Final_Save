@@ -1,0 +1,21 @@
+ck2_converter_generated = yes
+graphical_culture = africangfx
+color = { 120 185 120 }
+monarch_names = {
+	"Abu Bakr #2" = 10
+	"Aritso #1" = 10
+	"Arki #1" = 10
+	"Ayoma #1" = 10
+	"Bulu #1" = 10
+	"Fune #1" = 10
+	"Ghana #1" = 10
+	"Gir #0" = -1
+	"Hadurah #0" = -1
+	"Katuri #1" = 10
+	"Masnsen #0" = 0
+	"Oki #0" = 0
+	"Semeah #0" = -1
+	"Shu #1" = 10
+	"Taszellayt #0" = -1
+	"Tor #1" = 10
+}

@@ -1,0 +1,9 @@
+ck2_converter_generated = yes
+graphical_culture = westerngfx
+color = { 100 100 100 }
+monarch_names = {
+	"Aritsune #1" = 10
+	"Masatada #1" = 10
+	"Norisue #1" = 10
+	"Shigeyasu #1" = 10
+}

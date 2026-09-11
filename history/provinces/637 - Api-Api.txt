@@ -1,0 +1,16 @@
+owner = BEI
+controller = BEI
+capital = "Api-Api"
+is_city = yes
+culture = filipino
+religion = vajrayana
+trade_goods = spices
+base_tax = 1
+base_production = 1
+base_manpower = 1
+add_core = BEI
+add_core = SUL
+discovered_by = chinese
+discovered_by = indian
+discovered_by = muslim
+discovered_by = ottoman

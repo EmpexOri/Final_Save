@@ -1,0 +1,15 @@
+owner = AVA
+controller = AVA
+capital = "Mong Yang"
+is_city = yes
+culture = kachin
+religion = vajrayana
+trade_goods = copper
+base_tax = 1
+base_production = 1
+base_manpower = 1
+add_core = AVA
+add_core = WPG
+add_permanent_claim = MYA
+discovered_by = chinese
+discovered_by = indian

@@ -1,0 +1,14 @@
+owner = Z0I
+controller = Z0I
+capital = "Tondo"
+is_city = yes
+culture = filipino
+religion = vajrayana
+trade_goods = spices
+base_tax = 1
+base_production = 1
+base_manpower = 2
+add_core = SUL
+add_core = Z0I
+add_permanent_claim = TDO
+discovered_by = chinese

@@ -1,0 +1,42 @@
+government = monarchy
+add_government_reform = mandala_reform
+government_rank = 1
+technology_group = indian
+religion = buddhism
+primary_culture = bengali
+capital = 563
+set_country_flag = ZZZ_generated_converter_nation
+1444.11.11= {
+	monarch = {
+		name = "Amrapali"
+		dynasty = "Pala"
+		adm = 4
+		dip = 4
+		mil = 4
+		birth_date = 1394.12.7
+		female = yes
+		religion = buddhism
+		culture = bengali
+	}
+	add_ruler_personality = drunkard_personality
+	add_ruler_personality = intricate_web_weaver_personality
+	heir = {
+		name = "Vidhyadhara"
+		monarch_name = "Vidhyadhara"
+		dynasty = "Velanati Choda"
+		adm = 4
+		dip = 4
+		mil = 6
+		birth_date = 1423.6.10
+		death_date = 1488.6.10
+		claim = 89
+		religion = buddhism
+		culture = bengali
+	}
+	add_heir_personality = embezzler_personality
+	add_heir_personality = fertile_personality
+}
+1444.11.11= {
+	add_prestige = 76
+	add_treasury = 61
+}

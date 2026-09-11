@@ -1,0 +1,15 @@
+owner = MUG
+controller = MUG
+capital = "Rutog"
+is_city = yes
+culture = zhangzhung
+religion = sunni
+trade_goods = wool
+base_tax = 3
+base_production = 3
+base_manpower = 2
+add_core = GUG
+add_core = MUG
+discovered_by = chinese
+discovered_by = indian
+discovered_by = nomad_group

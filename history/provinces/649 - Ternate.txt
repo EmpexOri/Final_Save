@@ -1,0 +1,13 @@
+owner = MAS
+controller = MAS
+capital = "Ternate"
+is_city = yes
+culture = moluccan
+religion = hinduism
+trade_goods = cloves
+base_tax = 1
+base_production = 1
+base_manpower = 1
+add_core = MAS
+add_core = TER
+discovered_by = chinese

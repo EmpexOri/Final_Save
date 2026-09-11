@@ -1,0 +1,13 @@
+owner = MAS
+controller = MAS
+capital = "Maguindanao"
+is_city = yes
+culture = filipino
+religion = buddhism
+trade_goods = spices
+base_tax = 1
+base_production = 1
+base_manpower = 3
+add_core = MAS
+add_core = SUL
+discovered_by = chinese

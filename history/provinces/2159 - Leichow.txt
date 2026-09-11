@@ -1,0 +1,14 @@
+owner = CHN
+controller = CHN
+capital = "Leichow"
+is_city = yes
+culture = dynamic-chihan-culture-num4
+religion = converted_dynamic_faith_140
+trade_goods = sugar
+base_tax = 3
+base_production = 4
+base_manpower = 2
+add_core = CHN
+discovered_by = chinese
+discovered_by = indian
+discovered_by = nomad_group

@@ -1,0 +1,16 @@
+owner = GLH
+controller = GLH
+capital = "Kasimov"
+is_city = yes
+culture = mordvin
+religion = orthodox
+trade_goods = livestock
+base_tax = 1
+base_production = 1
+base_manpower = 1
+add_core = GLH
+add_core = MDV
+discovered_by = GOL
+discovered_by = eastern
+discovered_by = nomad_group
+discovered_by = western

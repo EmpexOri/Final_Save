@@ -1,0 +1,16 @@
+owner = GLH
+controller = GLH
+capital = "Cherdyn"
+is_city = yes
+culture = uralic
+religion = lollard
+trade_goods = salt
+base_tax = 1
+base_production = 1
+base_manpower = 2
+extra_cost = 8
+center_of_trade = 1
+add_core = GLH
+add_core = PRM
+discovered_by = eastern
+discovered_by = nomad_group

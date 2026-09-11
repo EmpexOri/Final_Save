@@ -1,0 +1,15 @@
+owner = Z5C
+controller = Z5C
+capital = "Monkhkhairkhan"
+is_city = yes
+culture = khazak
+religion = tengri_pagan
+trade_goods = livestock
+base_tax = 1
+base_production = 1
+base_manpower = 1
+add_core = KZH
+add_core = Z5C
+add_permanent_claim = KHA
+discovered_by = chinese
+discovered_by = nomad_group

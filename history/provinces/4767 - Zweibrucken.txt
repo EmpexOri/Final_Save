@@ -1,0 +1,17 @@
+owner = PAL
+controller = PAL
+capital = "Zweibrücken"
+is_city = yes
+culture = hessian
+religion = catholic
+trade_goods = cloth
+hre = yes
+base_tax = 1
+base_production = 1
+base_manpower = 2
+add_core = PAL
+add_permanent_claim = LOR
+discovered_by = eastern
+discovered_by = muslim
+discovered_by = ottoman
+discovered_by = western

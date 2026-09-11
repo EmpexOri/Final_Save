@@ -1,0 +1,13 @@
+owner = SMI
+controller = SMI
+capital = "Vardø"
+is_city = yes
+culture = dynamic-sapmi-swedish-culture-num1
+religion = catholic
+trade_goods = fish
+base_tax = 2
+base_production = 1
+base_manpower = 1
+add_core = SMI
+discovered_by = eastern
+discovered_by = western

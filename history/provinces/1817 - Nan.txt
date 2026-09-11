@@ -1,0 +1,14 @@
+owner = LXA
+controller = LXA
+capital = "Nan"
+is_city = yes
+culture = central_thai
+religion = hinduism
+trade_goods = ivory
+base_tax = 2
+base_production = 2
+base_manpower = 1
+add_core = AYU
+add_core = LXA
+discovered_by = chinese
+discovered_by = indian

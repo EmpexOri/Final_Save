@@ -1,0 +1,23 @@
+owner = TSU
+controller = TSU
+capital = "Hakata"
+is_city = yes
+culture = kyushuan
+religion = shinto
+trade_goods = chinaware
+base_tax = 8
+base_production = 10
+base_manpower = 5
+extra_cost = 16
+center_of_trade = 2
+add_core = JAP
+add_core = OTM
+add_core = TSU
+discovered_by = KHA
+discovered_by = MCH
+discovered_by = OIR
+discovered_by = QNG
+discovered_by = chinese
+latent_trade_goods = {
+	coal
+}

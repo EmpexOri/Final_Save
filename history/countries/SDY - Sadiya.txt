@@ -1,0 +1,55 @@
+government = monarchy
+add_government_reform = mandala_reform
+government_rank = 1
+technology_group = indian
+religion = buddhism
+primary_culture = assamese
+capital = 4404
+1444.11.11= {
+	monarch = {
+		name = "Susthitavarman II"
+		dynasty = "Maitra"
+		adm = 2
+		dip = 3
+		mil = 3
+		birth_date = 1386.10.3
+		religion = buddhism
+		culture = assamese
+	}
+	add_ruler_personality = drunkard_personality
+	add_ruler_personality = intricate_web_weaver_personality
+	queen = {
+		name = "Dungkar"
+		dynasty = "Orsini"
+		adm = 4
+		dip = 3
+		mil = 6
+		country_of_origin = SDY
+		birth_date = 1386.4.4
+		death_date = 1446.4.4
+		female = yes
+		religion = jain
+		culture = nepali
+	}
+	add_queen_personality = benevolent_personality
+	add_queen_personality = kind_hearted_personality
+	heir = {
+		name = "Vijaya"
+		monarch_name = "Vijaya"
+		dynasty = "Maitra"
+		adm = 5
+		dip = 5
+		mil = 5
+		birth_date = 1406.3.23
+		death_date = 1471.3.23
+		claim = 89
+		religion = buddhism
+		culture = assamese
+	}
+	add_heir_personality = drunkard_personality
+	add_heir_personality = righteous_personality
+}
+1444.11.11= {
+	add_prestige = 58
+	add_treasury = 37
+}

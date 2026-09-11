@@ -1,0 +1,18 @@
+ck2_converter_generated = yes
+graphical_culture = asiangfx
+color = { 148 94 40 }
+monarch_names = {
+	"Baishinkhor Dogshin #0" = 0
+	"Batu #0" = 0
+	"Chigu #0" = 0
+	"Dagun #0" = 0
+	"Erge #0" = 0
+	"Harghasun #0" = 0
+	"Inalchi #0" = 0
+	"Jeguredei #0" = 0
+	"Khojin #0" = -1
+	"Lioju #0" = 0
+	"Saru #2" = 10
+	"Uzur #1" = 10
+	"Wujin #0" = 0
+}

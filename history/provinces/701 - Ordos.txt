@@ -1,0 +1,18 @@
+owner = Z0C
+controller = Z0C
+capital = "Ordos"
+is_city = yes
+culture = chihan
+religion = converted_dynamic_faith_140
+trade_goods = livestock
+base_tax = 4
+base_production = 3
+base_manpower = 4
+add_core = YAN
+add_core = Z0C
+add_permanent_claim = CHN
+discovered_by = chinese
+discovered_by = nomad_group
+latent_trade_goods = {
+	coal
+}

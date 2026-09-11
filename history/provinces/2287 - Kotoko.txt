@@ -1,0 +1,12 @@
+owner = Z0B
+controller = Z0B
+capital = "Kotoko"
+is_city = yes
+culture = kanuri
+religion = sunni
+trade_goods = grain
+base_tax = 1
+base_production = 2
+base_manpower = 1
+add_core = Z0B
+discovered_by = sub_saharan

@@ -1,0 +1,79 @@
+ck2_converter_generated = yes
+graphical_culture = asiangfx
+color = { 123 122 20 }
+historical_idea_groups = {
+	trade_ideas
+	maritime_ideas
+	defensive_ideas
+	spy_ideas
+	religious_ideas
+	offensive_ideas
+	economic_ideas
+	quality_ideas
+}
+historical_units = {
+	asian_arquebusier
+	asian_charge_cavalry
+	asian_mass_infantry
+	asian_musketeer
+	east_asian_spearmen
+	eastern_bow
+	reformed_asian_cavalry
+	reformed_asian_musketeer
+}
+monarch_names = {
+	"Atma #0" = 0
+	"Binuyac #0" = -1
+	"Bualan #1" = 10
+	"Chéngen #0" = 0
+	"Huna #1" = 10
+	"Jayabhupati #0" = 0
+	"Lakan #0" = 0
+	"Lunti #0" = 0
+	"Malambing #1" = -1
+	"Mampey #1" = -1
+	"Manyju #0" = -1
+	"Nirwan #0" = 0
+	"Nonti #0" = -1
+	"Pitakes #1" = 10
+	"Purnama #1" = -1
+	"Raya #0" = -1
+	"Tirta #0" = -1
+	"Tombiruo #0" = -1
+	"Wisuddha #0" = -1
+}
+leader_names = {
+	"Agung"
+	"Batara"
+	"Bima"
+	"Elok"
+	"Karna"
+	"Rimba"
+	"Saleh"
+	"Satria"
+	"Sentosa"
+	"Yuda"
+}
+ship_names = {
+	"Balanguingle"
+	"Bangalao"
+	"Bucutua"
+	"Cabingaan"
+	"Cap"
+	"Capual"
+	"Dammail"
+	"Julu"
+	"Kalingalan"
+	"Kulassein"
+	"Lapac"
+	"Laparan"
+	"Lungus"
+	"Marunggas"
+	"Panducan"
+	"Pangutaran"
+	"Pata"
+	"Siasi"
+	"Simsa"
+	"Suluan"
+	"Tapul"
+}

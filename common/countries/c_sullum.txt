@@ -1,0 +1,17 @@
+ck2_converter_generated = yes
+graphical_culture = muslimgfx
+color = { 104 223 138 }
+monarch_names = {
+	"Abd al-Aziz #1" = 10
+	"Abd al-Jalil #0" = 0
+	"Bahir #1" = 10
+	"Khumarawayh #1" = 10
+	"Malik #0" = 0
+	"Murad #1" = 10
+	"Nizam #1" = 10
+	"Sacmis #0" = -1
+	"Sadiq #0" = 0
+	"Shokouh #0" = -1
+	"Sulayman #0" = 0
+	"al-Majid #1" = 10
+}

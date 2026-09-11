@@ -1,0 +1,15 @@
+owner = OGD
+controller = OGD
+capital = "Wardheer"
+is_city = yes
+culture = somali
+religion = coptic
+trade_goods = slaves
+base_tax = 3
+base_production = 1
+base_manpower = 1
+add_core = OGD
+discovered_by = east_african
+discovered_by = indian
+discovered_by = muslim
+discovered_by = ottoman

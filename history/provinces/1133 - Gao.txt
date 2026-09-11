@@ -1,0 +1,15 @@
+owner = SON
+controller = SON
+capital = "Gao"
+is_city = yes
+culture = dynamic-mali-bozo-culture-num1
+religion = sunni
+trade_goods = cloth
+fort_15th = yes
+base_tax = 2
+base_production = 4
+base_manpower = 2
+extra_cost = 8
+center_of_trade = 1
+add_core = SON
+discovered_by = sub_saharan

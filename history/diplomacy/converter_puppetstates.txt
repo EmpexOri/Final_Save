@@ -1,0 +1,32 @@
+vassal=
+{
+	first="KIE"
+	second="Z20"
+	start_date="1444.11.11"
+	end_date="1836.1.1"
+}
+
+vassal=
+{
+	first="SWE"
+	second="Z35"
+	start_date="1444.11.11"
+	end_date="1836.1.1"
+}
+
+vassal=
+{
+	first="TDO"
+	second="Z0I"
+	start_date="1444.11.11"
+	end_date="1836.1.1"
+}
+
+vassal=
+{
+	first="Z05"
+	second="Z3U"
+	start_date="1444.11.11"
+	end_date="1836.1.1"
+}
+

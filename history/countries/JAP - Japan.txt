@@ -1,0 +1,8 @@
+government = monarchy
+add_government_reform = shogunate
+government_rank = 3
+technology_group = chinese
+religion = shinto
+primary_culture = togoku
+capital = 1028
+

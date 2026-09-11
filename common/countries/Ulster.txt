@@ -1,0 +1,76 @@
+ck2_converter_generated = yes
+graphical_culture = westerngfx
+color = { 234 214 165 }
+revolutionary_colors = { 8 5 8 }
+historical_idea_groups = {
+	maritime_ideas
+	aristocracy_ideas
+	trade_ideas
+	diplomatic_ideas
+	economic_ideas
+	spy_ideas
+	innovativeness_ideas
+	administrative_ideas
+}
+historical_units = {
+	anglofrench_line
+	british_hussar
+	british_redcoat
+	british_square
+	gaelic_free_shooter
+	gaelic_galloglaigh
+	gaelic_mercenary
+	irish_charge
+	mixed_order_infantry
+	napoleonic_lancers
+	napoleonic_square
+	open_order_cavalry
+	western_medieval_infantry
+	western_medieval_knights
+}
+monarch_names = {
+	"Alice #0" = -1
+	"Bhátair #0" = 0
+	"Catríona #1" = -1
+	"Cerball #2" = 10
+	"Conchenn #0" = -1
+	"Crístina #1" = -1
+	"Drost #0" = 0
+	"Flaithgus #0" = 0
+	"Fothad #0" = 0
+	"Fáeldobur #0" = 0
+	"Lóchéne #1" = 10
+	"Murethach #0" = 0
+	"Máel-Bresail #1" = 10
+	"Nárbflaith #1" = -1
+	"Onchú #0" = 0
+	"Sadb #0" = -1
+	"Temnén #0" = 0
+	"Íte #0" = -1
+}
+leader_names = {
+	"Barry"
+	"Boyle"
+	"Darcy"
+	"FitzGerald"
+	"FitzThomas"
+	"MacCarthy"
+	"Magginis"
+	"McDonnald"
+	"O'Brien"
+	"O'Neill"
+	"Sarsfield"
+	"Talbot"
+}
+ship_names = {
+	"Clare"
+	"Cork"
+	"Deas Mhuman"
+	"Kerry"
+	"Lar Mumhan"
+	"Limerick"
+	"Tipperary"
+	"Tuad Mhuman"
+	"Urh Mumhan"
+	"Waterford"
+}

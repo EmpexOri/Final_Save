@@ -1,0 +1,24 @@
+ck2_converter_generated = yes
+graphical_culture = africangfx
+color = { 161 35 45 }
+monarch_names = {
+	"Amburo #0" = -1
+	"Asadaguta #0" = -1
+	"Asaga #0" = 0
+	"Berta #0" = -1
+	"Desta #0" = 0
+	"Hamid #1" = 10
+	"Iskinder #0" = 0
+	"Keren #0" = -1
+	"Mahadevi #0" = -1
+	"Mamo #0" = 0
+	"Mariam #1" = -1
+	"Melaku #1" = 10
+	"Merille #0" = 0
+	"Obayamma #0" = -1
+	"Sagal #1" = -1
+	"Semere #1" = 10
+	"Talha #1" = 10
+	"Yohannas #0" = 0
+	"Zula #1" = 10
+}

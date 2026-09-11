@@ -1,0 +1,12 @@
+owner = KNG
+controller = KNG
+capital = "Amanvi"
+is_city = yes
+culture = mali
+religion = sunni
+trade_goods = coffee
+base_tax = 2
+base_production = 1
+base_manpower = 1
+add_core = KNG
+discovered_by = sub_saharan

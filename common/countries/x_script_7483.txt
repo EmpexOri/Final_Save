@@ -1,0 +1,21 @@
+ck2_converter_generated = yes
+graphical_culture = indiangfx
+color = { 121 215 73 }
+monarch_names = {
+	"Ane #0" = -1
+	"Azerm #0" = 0
+	"Bahadir #0" = 0
+	"Dattadevi #0" = -1
+	"Devavati #0" = -1
+	"Durlabha #0" = -1
+	"Ganapativarman #0" = 0
+	"Ipupu #1" = -1
+	"Minzhí #0" = -1
+	"Namgyal #0" = 0
+	"Norcan #0" = -1
+	"Ratnavati #0" = -1
+	"Sthitavarman #0" = 0
+	"Subetei #0" = 0
+	"Vijnayavati #0" = -1
+	"Yajiyavati #0" = -1
+}

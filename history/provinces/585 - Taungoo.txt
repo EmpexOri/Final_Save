@@ -1,0 +1,16 @@
+owner = PEG
+controller = PEG
+capital = "Toungoo"
+is_city = yes
+culture = burmese
+religion = buddhism
+trade_goods = chinaware
+base_tax = 1
+base_production = 4
+base_manpower = 1
+add_core = PEG
+add_core = TAU
+add_core = Z3Y
+add_permanent_claim = AVA
+discovered_by = chinese
+discovered_by = indian

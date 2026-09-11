@@ -1,0 +1,14 @@
+owner = SMI
+controller = SMI
+capital = "Umeå"
+is_city = yes
+culture = dynamic-sapmi-swedish-culture-num1
+religion = catholic
+trade_goods = fur
+fort_15th = yes
+base_tax = 3
+base_production = 2
+base_manpower = 1
+add_core = SMI
+discovered_by = eastern
+discovered_by = western

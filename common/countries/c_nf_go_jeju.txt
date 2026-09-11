@@ -1,0 +1,6 @@
+ck2_converter_generated = yes
+graphical_culture = westerngfx
+color = { 100 100 100 }
+monarch_names = {
+	"Il #1" = 10
+}

@@ -1,0 +1,17 @@
+ck2_converter_generated = yes
+graphical_culture = asiangfx
+color = { 100 100 100 }
+monarch_names = {
+	"Caca #0" = -1
+	"Cala #0" = 0
+	"Cïcïhei #0" = -1
+	"Fontomo #0" = -1
+	"Inænggi #0" = -1
+	"Mangda #0" = 0
+	"Tušïnge #0" = 0
+	"Tíngyù #0" = 0
+	"Yòng #1" = 10
+	"Azhou #0" = -1
+	"Šišihuan #0" = 0
+	"Šunian #0" = 0
+}

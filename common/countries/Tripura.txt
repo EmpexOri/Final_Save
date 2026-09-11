@@ -1,0 +1,100 @@
+ck2_converter_generated = yes
+graphical_culture = indiangfx
+color = { 211 95 73 }
+revolutionary_colors = { 5 0 8 }
+historical_idea_groups = {
+	defensive_ideas
+	religious_ideas
+	offensive_ideas
+	diplomatic_ideas
+	administrative_ideas
+	expansion_ideas
+	spy_ideas
+	aristocracy_ideas
+}
+historical_units = {
+	indian_archers
+	indian_arquebusier
+	indian_footsoldier
+	indian_rifle
+	sikh_hit_and_run
+	tipu_sultan_rocket
+}
+monarch_names = {
+	"Ananadeva #1" = 10
+	"Bhavadeva #1" = 10
+	"Devakhadga #1" = 10
+	"Dharmamahadevi #0" = -1
+	"Ekari #0" = -1
+	"Govindachandra #1" = 10
+	"Inzali #0" = -1
+	"Jatakhadga #1" = 10
+	"Jatavarman #1" = 10
+	"Kalyanachandra #1" = 10
+	"Kantideva #1" = 10
+	"Khadgodyama #1" = 10
+	"Khame Mi #0" = -1
+	"Ladahachandra #1" = 10
+	"Loiumba #1" = 10
+	"Lokhanata #1" = 10
+	"Marlar #1" = -1
+	"Pyit #0" = 0
+	"Pyusawhti #0" = 0
+	"Rajarabhata #1" = 10
+	"Singgi #0" = -1
+	"Srichandra #1" = 10
+	"Srimanta #1" = 10
+	"Thura #1" = 10
+	"Traillokyachandra #1" = 10
+	"Yathekyaung #0" = 0
+	"Yazathingyan #1" = 10
+	"Zarni #2" = 10
+}
+leader_names = {
+	"Bicharpatipha"
+	"Chandra"
+	"Deka"
+	"Detsungpha"
+	"Ladapha"
+	"Mahamanipha"
+	"Makardhwaj"
+	"Manipha"
+	"Narayan"
+	"Udayaditya"
+	"Vikramadityapha"
+}
+ship_names = {
+	"Brahmaputra"
+	"Chingri Mach"
+	"Darrang"
+	"Devi"
+	"Dibang"
+	"Durga Ma"
+	"Ganga"
+	"Hilsa Mach"
+	"Ilish Mach"
+	"Kali Ma"
+	"Kali Meghana"
+	"Kali Nauk"
+	"Kamrup"
+	"Lakimpur"
+	"Lal Nauk"
+	"Loki Devi"
+	"Luhit"
+	"Machli"
+	"Manasa Devi"
+	"Manjuli"
+	"Meghna"
+	"Nil Nauk"
+	"Nil Sagor"
+	"Parvati Devi"
+	"Rui Mach"
+	"Sagorer Bahini"
+	"Saraswoti"
+	"Shakti"
+	"Shaktir Nauk"
+	"Shasti Ma"
+	"Sibsagar"
+	"Trishool"
+	"Uma Devi"
+}

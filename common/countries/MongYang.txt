@@ -1,0 +1,140 @@
+ck2_converter_generated = yes
+graphical_culture = asiangfx
+color = { 41 82 175 }
+revolutionary_colors = { 13 0 13 }
+historical_idea_groups = {
+	defensive_ideas
+	offensive_ideas
+	trade_ideas
+	diplomatic_ideas
+	religious_ideas
+	economic_ideas
+	administrative_ideas
+	spy_ideas
+}
+historical_units = {
+	asian_arquebusier
+	asian_charge_cavalry
+	asian_mass_infantry
+	asian_musketeer
+	east_asian_spearmen
+	eastern_bow
+	reformed_asian_cavalry
+	reformed_asian_musketeer
+}
+monarch_names = {
+	"Balavarman #0" = 0
+	"Huáiyì #1" = 10
+	"Huìhuì #0" = -1
+	"Inzali #0" = -1
+	"Jayamala #0" = 0
+	"Jingxian #1" = 10
+	"Jìngtóng #1" = 10
+	"Jìngxuán #0" = 0
+	"Jújú #0" = -1
+	"Kolab #0" = -1
+	"Kyawswa #0" = 0
+	"Le #0" = 0
+	"Lhé #0" = -1
+	"Lin #0" = 0
+	"Senge #0" = 0
+	"Shouyue #1" = 10
+	"Shòuhui #1" = 10
+	"Shidé #1" = 10
+	"Tsuktsen #0" = 0
+	"Tíngyù #0" = 0
+	"Tíngzhi #1" = 10
+	"Wan #0" = -1
+	"Xiangér #0" = -1
+	"Xiantóng #1" = 10
+	"Xíngshí #0" = 0
+	"Xizhuang #0" = 0
+	"Yuánfang #0" = 0
+	"Yuángui #0" = 0
+	"Yuánliàng #0" = 0
+	"Yuányù #0" = 0
+	"Yánqìng #0" = 0
+	"Yánzuò #0" = 0
+	"Yìfang #0" = 0
+	"Zhenyàn #0" = -1
+	"Zhongyì #1" = 10
+	"Zihuá #0" = 0
+	"Ayí #0" = -1
+}
+leader_names = {
+	"Ava"
+	"Banyin"
+	"Bawnin"
+	"Bawzaing"
+	"Bhamo"
+	"Hopon"
+	"Kale"
+	"Kokang"
+	"Kyaingchaing"
+	"Kyaingkan"
+	"Kyaingtong"
+	"Kyaukku"
+	"Kyithi Bansan"
+	"Kyon"
+	"Lwee"
+	"Lwelong"
+	"Lwemaw"
+	"Lègya"
+	"Maingpyin"
+	"Maingseik"
+	"Maington"
+	"Manglon"
+	"Maukme"
+	"Maw"
+	"Mobye"
+	"Mogaung"
+	"Mohnyin"
+	"Momeik"
+	"Mong Pan"
+	"Monghsu"
+	"Mongleam"
+	"Monglin"
+	"Mongnawng"
+	"Mongtorm"
+	"Monè"
+	"Mönglong"
+	"Möngyawng"
+	"Nanke"
+	"Nankok"
+	"Nankon"
+	"Nantok"
+	"Nyaungshwe"
+	"Panglawng"
+	"Pangmi"
+	"Pindara"
+	"Poila"
+	"Sakoi"
+	"Samka"
+	"Tawngpeng"
+	"Thamaingkan"
+	"Thaton"
+	"Thaungdut"
+	"Theinni"
+	"Thibaw"
+	"Thigyit"
+	"Wynn Tho"
+	"Yatsauk"
+	"Yengan"
+}
+ship_names = {
+	"Hsim"
+	"Inle"
+	"Kengtong"
+	"Lui"
+	"Myitnge"
+	"Nam"
+	"Pilu"
+	"Saluen"
+	"Salween"
+	"Shweli"
+	"Tachileik"
+	"Taunggyi"
+	"Teng"
+	"Thanlwin"
+}
+special_unit_culture = south_east_asian_special

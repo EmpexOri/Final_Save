@@ -1,0 +1,16 @@
+owner = Z72
+controller = Z72
+capital = "Sennar"
+is_city = yes
+culture = nubian
+religion = sunni
+trade_goods = livestock
+base_tax = 2
+base_production = 1
+base_manpower = 1
+add_core = NUB
+add_core = Z72
+add_permanent_claim = NBI
+discovered_by = east_african
+discovered_by = muslim
+discovered_by = ottoman

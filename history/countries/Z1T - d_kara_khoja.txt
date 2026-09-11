@@ -1,0 +1,56 @@
+government = tribal
+add_government_reform = steppe_horde
+government_rank = 1
+technology_group = nomad_group
+religion = tengri_pagan
+primary_culture = mongol
+capital = 4207
+set_country_flag = ZZZ_generated_converter_nation
+1444.11.11= {
+	monarch = {
+		name = "Chabi"
+		dynasty = "Chabi"
+		adm = 3
+		dip = 2
+		mil = 2
+		birth_date = 1399.1.1
+		female = yes
+		religion = tengri_pagan
+		culture = mongol
+	}
+	add_ruler_personality = drunkard_personality
+	add_ruler_personality = silver_tongue_personality
+	queen = {
+		name = "Akhutai"
+		dynasty = "Orsini"
+		adm = 2
+		dip = 2
+		mil = 4
+		country_of_origin = Z1T
+		birth_date = 1390.3.5
+		death_date = 1450.3.5
+		religion = tengri_pagan
+		culture = mongol
+	}
+	add_queen_personality = secretive_personality
+	add_queen_personality = silver_tongue_personality
+	heir = {
+		name = "Khabul"
+		monarch_name = "Khabul"
+		dynasty = "Chabi"
+		adm = 5
+		dip = 5
+		mil = 4
+		birth_date = 1426.7.30
+		death_date = 1491.7.30
+		claim = 89
+		religion = tengri_pagan
+		culture = mongol
+	}
+	add_heir_personality = loose_lips_personality
+	add_heir_personality = righteous_personality
+}
+1444.11.11= {
+	add_prestige = 69
+	add_treasury = 47
+}

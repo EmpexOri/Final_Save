@@ -1,0 +1,15 @@
+owner = CHK
+controller = CHK
+capital = "Luang Namtha"
+is_city = yes
+culture = lao
+religion = converted_dynamic_faith_140
+trade_goods = copper
+fort_15th = yes
+base_tax = 2
+base_production = 2
+base_manpower = 1
+add_core = CHK
+add_core = LUA
+discovered_by = chinese
+discovered_by = indian

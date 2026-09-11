@@ -1,0 +1,13 @@
+owner = Z2L
+controller = Z2L
+capital = "Torshavn"
+is_city = yes
+culture = icelandic
+religion = catholic
+trade_goods = fish
+base_tax = 1
+base_production = 1
+base_manpower = 2
+add_core = Z2L
+add_permanent_claim = NOR
+discovered_by = western

@@ -1,0 +1,57 @@
+government = monarchy
+add_government_reform = mandala_reform
+government_rank = 1
+technology_group = indian
+religion = buddhism
+primary_culture = bengali
+capital = 2044
+fixed_capital = 2044
+set_country_flag = ZZZ_generated_converter_nation
+1444.11.11= {
+	monarch = {
+		name = "Hemant Sen"
+		dynasty = "Bangaon"
+		adm = 3
+		dip = 3
+		mil = 3
+		birth_date = 1398.5.21
+		religion = buddhism
+		culture = bengali
+	}
+	add_ruler_personality = infertile_personality
+	add_ruler_personality = strict_personality
+	queen = {
+		name = "Himadrija"
+		dynasty = "Orsini"
+		adm = 1
+		dip = 2
+		mil = 3
+		country_of_origin = Z4O
+		birth_date = 1410.5.3
+		death_date = 1470.5.3
+		female = yes
+		religion = jain
+		culture = bengali
+	}
+	add_queen_personality = infertile_personality
+	add_queen_personality = intricate_web_weaver_personality
+	heir = {
+		name = "Shukladhwaj"
+		monarch_name = "Shukladhwaj"
+		dynasty = "Bangaon"
+		adm = 5
+		dip = 4
+		mil = 4
+		birth_date = 1434.2.14
+		death_date = 1499.2.14
+		claim = 89
+		religion = buddhism
+		culture = bengali
+	}
+	add_heir_personality = calm_personality
+	add_heir_personality = just_personality
+}
+1444.11.11= {
+	add_prestige = 58
+	add_treasury = 46
+}

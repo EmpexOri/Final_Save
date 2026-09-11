@@ -1,0 +1,12 @@
+owner = Z1R
+controller = Z1R
+capital = "Wandala"
+is_city = yes
+culture = kanuri
+religion = sunni
+trade_goods = tropical_wood
+base_tax = 2
+base_production = 1
+base_manpower = 1
+add_core = Z1R
+discovered_by = sub_saharan

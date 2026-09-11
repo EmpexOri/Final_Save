@@ -1,0 +1,58 @@
+#NaNaxi Tributaries
+
+dependency = {
+	subject_type = "tributary_state"
+	first = CHN
+	second = UTS
+	start_date = 1444.1.1
+	end_date = 1644.4.22
+}
+
+dependency = {
+	subject_type = "tributary_state"
+	first = CHN
+	second = Z03
+	start_date = 1444.1.1
+	end_date = 1644.4.22
+}
+
+dependency = {
+	subject_type = "tributary_state"
+	first = CHN
+	second = Z09
+	start_date = 1444.1.1
+	end_date = 1644.4.22
+}
+
+dependency = {
+	subject_type = "tributary_state"
+	first = CHN
+	second = Z0C
+	start_date = 1444.1.1
+	end_date = 1644.4.22
+}
+
+dependency = {
+	subject_type = "tributary_state"
+	first = CHN
+	second = Z06
+	start_date = 1444.1.1
+	end_date = 1644.4.22
+}
+
+dependency = {
+	subject_type = "tributary_state"
+	first = CHN
+	second = CHK
+	start_date = 1444.1.1
+	end_date = 1644.4.22
+}
+
+
+dependency = {
+	subject_type = "tributary_state"
+	first = CHN
+	second = KHM
+	start_date = 1444.1.1
+	end_date = 1644.4.22
+}

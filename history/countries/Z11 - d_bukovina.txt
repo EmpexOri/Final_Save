@@ -1,0 +1,57 @@
+government = monarchy
+add_government_reform = feudalism_reform
+government_rank = 1
+technology_group = eastern
+religion = catholic
+primary_culture = hungarian
+capital = 4529
+add_accepted_culture = dynamic-russian_culture-culture-num1
+set_country_flag = ZZZ_generated_converter_nation
+1444.11.11= {
+	monarch = {
+		name = "Béla"
+		dynasty = "Mielzynski"
+		adm = 2
+		dip = 5
+		mil = 4
+		birth_date = 1398.10.10
+		religion = catholic
+		culture = hungarian
+	}
+	add_ruler_personality = drunkard_personality
+	add_ruler_personality = intricate_web_weaver_personality
+	queen = {
+		name = "Kunigunde"
+		dynasty = "Árpád-Miedzyrzecz"
+		adm = 2
+		dip = 3
+		mil = 3
+		country_of_origin = Z11
+		birth_date = 1398.8.25
+		death_date = 1458.8.25
+		female = yes
+		religion = catholic
+		culture = franconian
+	}
+	add_queen_personality = tactical_genius_personality
+	add_queen_personality = zealot_personality
+	heir = {
+		name = "Lõrinc"
+		monarch_name = "Lõrinc"
+		dynasty = "Árpád-Rzepin"
+		adm = 4
+		dip = 6
+		mil = 4
+		birth_date = 1386.6.25
+		death_date = 1451.6.25
+		claim = 89
+		religion = catholic
+		culture = dynamic-hungarian-slovak-culture-num1
+	}
+	add_heir_personality = drunkard_personality
+	add_heir_personality = strict_personality
+}
+1444.11.11= {
+	add_prestige = 72
+	add_treasury = 53
+}

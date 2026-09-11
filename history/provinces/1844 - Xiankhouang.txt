@@ -1,0 +1,15 @@
+owner = CHN
+controller = CHN
+capital = "Muang Khoun"
+is_city = yes
+culture = vietnamese
+religion = converted_dynamic_faith_140
+trade_goods = grain
+fort_15th = yes
+base_tax = 2
+base_production = 3
+base_manpower = 3
+add_core = CHN
+add_core = DAI
+discovered_by = chinese
+discovered_by = indian

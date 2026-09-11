@@ -1,0 +1,20 @@
+owner = TTS
+controller = TTS
+capital = "Cagliari"
+is_city = yes
+culture = sardinian
+religion = catholic
+trade_goods = copper
+fort_15th = yes
+base_tax = 2
+base_production = 2
+base_manpower = 3
+add_core = SAR
+add_core = TTS
+discovered_by = eastern
+discovered_by = muslim
+discovered_by = ottoman
+discovered_by = western
+latent_trade_goods = {
+	coal
+}

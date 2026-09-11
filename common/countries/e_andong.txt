@@ -1,0 +1,15 @@
+ck2_converter_generated = yes
+graphical_culture = asiangfx
+color = { 50 50 50 }
+monarch_names = {
+	"Asu #0" = 0
+	"Chanai #0" = 0
+	"Chormakhan #0" = 0
+	"Dokez #0" = -1
+	"Holuikhan #0" = -1
+	"Orqina #0" = -1
+	"Sorkhaghatani #0" = -1
+	"Temüge #0" = 0
+	"Äsuka #0" = 0
+	"Ajiang #0" = -1
+}

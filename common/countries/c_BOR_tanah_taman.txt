@@ -1,0 +1,21 @@
+ck2_converter_generated = yes
+graphical_culture = indiangfx
+color = { 0 161 126 }
+monarch_names = {
+	"Adin #2" = 10
+	"Biat #1" = 10
+	"Bojik #1" = -1
+	"Bumbulo #1" = 10
+	"Godu #0" = -1
+	"Gulimbala #0" = 0
+	"Jelium #0" = -1
+	"Khame Mi #1" = -1
+	"Kyawswa #0" = 0
+	"Lin #1" = 10
+	"Narayanavarman #0" = 0
+	"Phway #0" = -1
+	"Ta-Lat #0" = -1
+	"Tabo #0" = 0
+	"Tungganaga #1" = 10
+	"Zarni #1" = 10
+}

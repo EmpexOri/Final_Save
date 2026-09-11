@@ -1,0 +1,14 @@
+owner = GLH
+controller = GLH
+capital = "Kurgan"
+is_city = yes
+culture = nogaybak
+religion = jain
+trade_goods = fur
+fort_15th = yes
+base_tax = 1
+base_production = 1
+base_manpower = 1
+add_core = GLH
+add_core = NOG
+discovered_by = nomad_group

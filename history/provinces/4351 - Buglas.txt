@@ -1,0 +1,14 @@
+owner = MAS
+controller = MAS
+capital = "Silay"
+is_city = yes
+culture = filipino
+religion = hinduism
+trade_goods = sugar
+fort_15th = yes
+base_tax = 1
+base_production = 1
+base_manpower = 2
+add_core = MAS
+add_core = SUL
+discovered_by = chinese

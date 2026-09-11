@@ -1,0 +1,22 @@
+owner = DAN
+controller = DAN
+capital = "København"
+is_city = yes
+culture = danish
+religion = lollard
+trade_goods = fish
+fort_15th = yes
+base_tax = 2
+base_production = 5
+base_manpower = 1
+extra_cost = 20
+center_of_trade = 2
+add_core = DAN
+discovered_by = eastern
+discovered_by = muslim
+discovered_by = ottoman
+discovered_by = western
+add_permanent_province_modifier = {
+	name = sound_toll
+	duration = -1
+}

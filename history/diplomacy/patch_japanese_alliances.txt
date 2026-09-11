@@ -1,0 +1,267 @@
+vassal = { #So
+	first = TSU
+	second = SOO
+	start_date = 1444.11.11
+	end_date = 1573.7.1
+}
+
+dependency = { #Nivkh
+	subject_type = "tributary_state"
+	first = TSU
+	second = NVK
+	start_date = 1444.11.11
+	end_date = 1573.7.1
+}
+
+dependency = { #Kwantung
+	subject_type = "tributary_state"
+	first = TSU
+	second = Z1C
+	start_date = 1444.11.11
+	end_date = 1573.7.1
+}
+
+vassal = { #Ainu
+	first = TSU
+	second = ANU
+	start_date = 1444.11.11
+	end_date = 1573.7.1
+}
+
+vassal = { #Tokachi
+	first = TSU
+	second = NHX
+	start_date = 1444.11.11
+	end_date = 1573.7.1
+}
+
+vassal = { #Kitabatake
+	first = TSU
+	second = KTB
+	start_date = 1444.11.11
+	end_date = 1569.10.3 #Annexed
+}
+
+vassal = {
+	first = TSU
+	second = AMA
+	start_date = 1444.11.11
+	end_date = 1566.11.28 #Annexed
+}
+
+vassal = {
+	first = TSU
+	second = ASA
+	start_date = 1471.7.1
+	end_date = 1573.7.1 #Annexed
+}
+
+vassal = {
+	first = TSU
+	second = CSK
+	start_date = 1549.5.9
+	end_date = 1573.7.3
+}
+
+vassal = {
+	first = TSU
+	second = DTE
+	start_date = 1444.11.11
+	end_date = 1573.7.3
+}
+
+vassal = {
+	first = TSU
+	second = RFR
+	start_date = 1444.11.11
+	end_date = 1573.7.3
+}
+
+vassal = {
+	first = TSU
+	second = HJO
+	start_date = 1493.1.1
+	end_date = 1573.7.3
+}
+
+vassal = {
+	first = TSU
+	second = HSK
+	start_date = 1444.11.11
+	end_date = 1573.7.3
+}
+
+vassal = {
+	first = TSU
+	second = HTK
+	start_date = 1444.11.11
+	end_date = 1573.7.3
+}
+
+vassal = {
+	first = TSU
+	second = IMG
+	start_date = 1444.11.11
+	end_date = 1568.12.1 #Annexed
+}
+
+vassal = {
+	first = TSU
+	second = MRI
+	start_date = 1525.1.1
+	end_date = 1573.7.3
+}
+
+vassal = {
+	first = TSU
+	second = ODA
+	start_date = 1444.11.11
+	end_date = 1573.7.3
+}
+
+vassal = {
+	first = TSU
+	second = OTM
+	start_date = 1444.11.11
+	end_date = 1573.7.3
+}
+
+vassal = {
+	first = TSU
+	second = OUC
+	start_date = 1444.11.11
+	end_date = 1573.7.3
+}
+
+vassal = {
+	first = TSU
+	second = SBA
+	start_date = 1444.11.11
+	end_date = 1573.7.3
+}
+
+vassal = {
+	first = TSU
+	second = SMZ
+	start_date = 1444.11.11
+	end_date = 1573.7.3
+}
+
+vassal = {
+	first = TSU
+	second = TKD
+	start_date = 1444.11.11
+	end_date = 1573.7.3
+}
+
+vassal = {
+	first = TSU
+	second = TKG
+	start_date = 1444.11.11
+	end_date = 1573.7.3
+}
+
+vassal = {
+	first = TSU
+	second = UES
+	start_date = 1444.11.11
+	end_date = 1573.7.3
+}
+
+vassal = {
+	first = TSU
+	second = YMN
+	start_date = 1444.11.11
+	end_date = 1573.7.3
+}
+
+vassal = {
+	first = TSU
+	second = AKM
+	start_date = 1468.1.1
+	end_date = 1573.7.3
+}
+
+vassal = {
+	first = TSU
+	second = AKT
+	start_date = 1444.11.11
+	end_date = 1573.7.3
+}
+
+vassal = {
+	first = TSU
+	second = CBA
+	start_date = 1444.11.11
+	end_date = 1573.7.3
+}
+
+vassal = {
+	first = TSU
+	second = ISK
+	start_date = 1444.11.11
+	end_date = 1573.7.3
+}
+
+vassal = {
+	first = TSU
+	second = ITO
+	start_date = 1444.11.11
+	end_date = 1573.7.3
+}
+
+vassal = {
+	first = TSU
+	second = KKC
+	start_date = 1444.11.11
+	end_date = 1554.1.1 #Annexed
+}
+
+vassal = {
+	first = TSU
+	second = KNO
+	start_date = 1444.11.11
+	end_date = 1573.7.3
+}
+
+vassal = {
+	first = TSU
+	second = OGS
+	start_date = 1444.11.11
+	end_date = 1573.7.3
+}
+
+vassal = {
+	first = TSU
+	second = SHN
+	start_date = 1444.11.11
+	end_date = 1573.7.3
+}
+
+vassal = {
+	first = TSU
+	second = STK
+	start_date = 1444.11.11
+	end_date = 1573.7.3
+}
+
+vassal = {
+	first = TSU
+	second = TKI
+	start_date = 1444.11.11
+	end_date = 1567.10.1 #Annexed
+}
+
+vassal = {
+	first = TSU
+	second = UTN
+	start_date = 1444.11.11
+	end_date = 1573.7.3
+}
+
+vassal = {
+	first = TSU
+	second = TTI
+	start_date = 1444.11.11
+	end_date = 1573.7.3
+}

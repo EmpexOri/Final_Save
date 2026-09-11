@@ -1,0 +1,57 @@
+government = monarchy
+add_government_reform = feudalism_reform
+government_rank = 1
+technology_group = eastern
+religion = catholic
+primary_culture = croatian
+capital = 130
+add_accepted_culture = venetian
+set_country_flag = ZZZ_generated_converter_nation
+1444.11.11= {
+	monarch = {
+		name = "Petar"
+		dynasty = "Weimar-Pazin"
+		adm = 3
+		dip = 4
+		mil = 4
+		birth_date = 1414.12.1
+		religion = catholic
+		culture = croatian
+	}
+	add_ruler_personality = embezzler_personality
+	add_ruler_personality = greedy_personality
+	queen = {
+		name = "Mare"
+		dynasty = "od Zadar"
+		adm = 4
+		dip = 3
+		mil = 5
+		country_of_origin = Z1O
+		birth_date = 1409.10.25
+		death_date = 1469.10.25
+		female = yes
+		religion = catholic
+		culture = croatian
+	}
+	add_queen_personality = craven_personality
+	add_queen_personality = kind_hearted_personality
+	heir = {
+		name = "Petar"
+		monarch_name = "Petar II"
+		dynasty = "Weimar-Pazin"
+		adm = 5
+		dip = 5
+		mil = 6
+		birth_date = 1432.2.21
+		death_date = 1497.2.21
+		claim = 89
+		religion = catholic
+		culture = croatian
+	}
+	add_heir_personality = careful_personality
+	add_heir_personality = scholar_personality
+}
+1444.11.11= {
+	add_prestige = 75
+	add_treasury = 64
+}

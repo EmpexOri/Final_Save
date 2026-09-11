@@ -1,0 +1,15 @@
+owner = PEG
+controller = PEG
+capital = "Lamphun"
+is_city = yes
+culture = mon
+religion = mahayana
+trade_goods = grain
+fort_15th = yes
+base_tax = 2
+base_production = 1
+base_manpower = 1
+add_core = PEG
+add_core = Z1K
+discovered_by = chinese
+discovered_by = indian

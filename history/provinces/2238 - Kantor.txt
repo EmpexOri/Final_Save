@@ -1,0 +1,13 @@
+owner = KBU
+controller = KBU
+capital = "Sutuco"
+is_city = yes
+culture = mali
+religion = sunni
+trade_goods = ivory
+base_tax = 2
+base_production = 1
+base_manpower = 1
+add_core = KBU
+add_permanent_claim = MAL
+discovered_by = sub_saharan

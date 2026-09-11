@@ -1,0 +1,16 @@
+owner = CHN
+controller = CHN
+capital = "Wulin"
+is_city = yes
+culture = xiang
+religion = converted_dynamic_faith_140
+trade_goods = cotton
+fort_15th = yes
+base_tax = 6
+base_production = 4
+base_manpower = 6
+extra_cost = 8
+add_core = CHC
+add_core = CHN
+discovered_by = chinese
+discovered_by = nomad_group

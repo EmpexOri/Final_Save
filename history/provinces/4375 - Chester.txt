@@ -1,0 +1,20 @@
+owner = WLS
+controller = WLS
+capital = "Chester"
+is_city = yes
+culture = northumbrian
+religion = catholic
+trade_goods = salt
+base_tax = 3
+base_production = 3
+base_manpower = 2
+add_core = NOL
+add_core = WLS
+add_permanent_claim = ENG
+discovered_by = eastern
+discovered_by = muslim
+discovered_by = ottoman
+discovered_by = western
+latent_trade_goods = {
+	coal
+}

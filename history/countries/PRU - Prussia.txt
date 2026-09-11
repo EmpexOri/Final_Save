@@ -1,0 +1,56 @@
+government = monarchy
+add_government_reform = feudalism_reform
+government_rank = 1
+technology_group = western
+religion = catholic
+primary_culture = polish
+capital = 1841
+add_accepted_culture = pruthenian
+1444.11.11= {
+	monarch = {
+		name = "Grzegorz"
+		dynasty = "Liubic-Królewiec"
+		adm = 5
+		dip = 3
+		mil = 6
+		birth_date = 1383.9.18
+		religion = catholic
+		culture = polish
+	}
+	add_ruler_personality = malevolent_personality
+	add_ruler_personality = obsessive_perfectionist_personality
+	queen = {
+		name = "Gizella"
+		dynasty = "Vajlok"
+		adm = 4
+		dip = 4
+		mil = 4
+		country_of_origin = PRU
+		birth_date = 1374.2.13
+		death_date = 1434.2.13
+		female = yes
+		religion = catholic
+		culture = hungarian
+	}
+	add_queen_personality = drunkard_personality
+	add_queen_personality = zealot_personality
+	heir = {
+		name = "Jerzy"
+		monarch_name = "Jerzy"
+		dynasty = "Liubic-Królewiec"
+		adm = 3
+		dip = 3
+		mil = 4
+		birth_date = 1406.1.18
+		death_date = 1471.1.18
+		claim = 89
+		religion = catholic
+		culture = polish
+	}
+	add_heir_personality = free_thinker_personality
+	add_heir_personality = sinner_personality
+}
+1444.11.11= {
+	add_prestige = 98
+	add_treasury = 0
+}

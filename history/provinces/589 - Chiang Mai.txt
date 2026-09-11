@@ -1,0 +1,18 @@
+owner = PEG
+controller = PEG
+capital = "Chiang Mai"
+is_city = yes
+culture = mon
+religion = mahayana
+trade_goods = ivory
+base_tax = 2
+base_production = 1
+base_manpower = 1
+add_core = PEG
+add_core = Z1K
+discovered_by = chinese
+discovered_by = indian
+add_permanent_province_modifier = {
+	name = emerald_buddha
+	duration = -1
+}

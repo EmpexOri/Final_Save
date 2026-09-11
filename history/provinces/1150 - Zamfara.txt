@@ -1,0 +1,14 @@
+owner = SON
+controller = SON
+capital = "Dutsi"
+is_city = yes
+culture = hausa
+religion = sunni
+trade_goods = grain
+fort_15th = yes
+base_tax = 2
+base_production = 1
+base_manpower = 1
+add_core = SON
+add_permanent_claim = HAU
+discovered_by = sub_saharan

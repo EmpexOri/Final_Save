@@ -1,0 +1,15 @@
+owner = KHM
+controller = KHM
+capital = "Battambang"
+is_city = yes
+culture = central_thai
+religion = converted_dynamic_faith_140
+trade_goods = ivory
+fort_15th = yes
+base_tax = 2
+base_production = 3
+base_manpower = 1
+add_core = AYU
+add_core = KHM
+discovered_by = chinese
+discovered_by = indian

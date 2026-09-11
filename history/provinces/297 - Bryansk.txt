@@ -1,0 +1,16 @@
+owner = Z1U
+controller = Z1U
+capital = "Bryansk"
+is_city = yes
+culture = ryazanian
+religion = orthodox
+trade_goods = grain
+base_tax = 3
+base_production = 2
+base_manpower = 1
+add_core = RYA
+add_core = Z1U
+add_permanent_claim = KIE
+discovered_by = eastern
+discovered_by = nomad_group
+discovered_by = western

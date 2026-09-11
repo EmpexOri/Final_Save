@@ -1,0 +1,15 @@
+owner = CHN
+controller = CHN
+capital = "Taozhou"
+is_city = yes
+culture = xibei
+religion = converted_dynamic_faith_140
+trade_goods = chinaware
+fort_15th = yes
+base_tax = 4
+base_production = 3
+base_manpower = 3
+add_core = CHN
+add_core = CSH
+discovered_by = chinese
+discovered_by = nomad_group

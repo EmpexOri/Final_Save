@@ -1,0 +1,92 @@
+ck2_converter_generated = yes
+graphical_culture = easterngfx
+color = { 34 131 193 }
+revolutionary_colors = { 0 15 16 }
+historical_idea_groups = {
+	economic_ideas
+	defensive_ideas
+	diplomatic_ideas
+	offensive_ideas
+	trade_ideas
+	innovativeness_ideas
+	religious_ideas
+	spy_ideas
+}
+historical_units = {
+	bardiche_infantry
+	eastern_carabinier
+	eastern_knights
+	eastern_militia
+	eastern_skirmisher
+	eastern_uhlan
+	germanized_pike
+	hungarian_hussar
+	polish_hussar
+	polish_musketeer
+	polish_tercio
+	polish_winged_hussar
+	slavic_stradioti
+}
+monarch_names = {
+	"Alicja #0" = -1
+	"Boldizsár #0" = 0
+	"Béla #1" = 10
+	"Dobromila #0" = -1
+	"Frigyes #1" = 10
+	"Gergely #1" = 10
+	"Géza #2" = 10
+	"Igor #0" = 0
+	"Kálmán #1" = 10
+	"Lada #0" = -1
+	"László #1" = 10
+	"Mihály #1" = 10
+	"Mojmír #1" = 10
+	"Predslav #1" = 10
+	"Saul #0" = 0
+	"Sophia #0" = -1
+	"Svatopluk #1" = 10
+	"Svetimír #1" = 10
+	"Taksony #1" = 10
+	"Vászoly #1" = 10
+	"Wiltrud #0" = -1
+	"Zoltán #2" = 10
+	"Zsigmond #1" = 10
+	"Zvonimír #0" = 0
+	"Árpád #1" = 10
+}
+leader_names = {
+	"Balaša"
+	"Beckovský"
+	"Bel"
+	"Benyovszky"
+	"Bosniak"
+	"Elefánthy"
+	"Hatnanský"
+	"Jesenský"
+	"Kollar"
+	"Podmanický"
+	"Pongrac"
+	"Pongrácz"
+	"Stibor"
+	"Veseléni"
+	"Wesselényi"
+}
+ship_names = {
+	"Bebrava"
+	"Belá"
+	"Blava"
+	"Bodrog"
+	"Bodva"
+	"Cierna voda"
+	"Dunajec"
+	"Hornád"
+	"Ipel"
+	"Latorica"
+	"Morava"
+	"Ondava"
+	"Poprad"
+	"Rimava"
+	"Slaná"
+	"Torysa"
+	"Žitava"
+}

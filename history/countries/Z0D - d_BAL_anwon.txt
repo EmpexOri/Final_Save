@@ -1,0 +1,36 @@
+government = monarchy
+add_government_reform = plutocratic_reform
+government_rank = 1
+technology_group = nomad_group
+religion = tengri_pagan
+primary_culture = dynamic-mongol-culture-num2
+capital = 4655
+set_country_flag = ZZZ_generated_converter_nation
+1444.11.11= {
+	monarch = {
+		name = "(Regency Council)"
+		adm = 3
+		dip = 4
+		mil = 3
+		birth_date = 1.1.1
+		regent = yes
+		religion = tengri_pagan
+		culture = dynamic-mongol-culture-num2
+	}
+	heir = {
+		name = "Khorilartai"
+		dynasty = "Bogorchu"
+		adm = 5
+		dip = 6
+		mil = 5
+		birth_date = 1430.8.22
+		death_date = 1495.8.22
+		claim = 89
+		religion = tengri_pagan
+		culture = dynamic-mongol-culture-num2
+	}
+}
+1444.11.11= {
+	add_prestige = 53
+	add_treasury = 28
+}

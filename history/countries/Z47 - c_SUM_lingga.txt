@@ -1,0 +1,13 @@
+government = monarchy
+add_government_reform = mandala_reform
+government_rank = 1
+technology_group = chinese
+religion = vajrayana
+primary_culture = sumatran
+capital = 659
+fixed_capital = 659
+set_country_flag = ZZZ_generated_converter_nation
+1444.11.11= {
+	add_prestige = 57
+	add_treasury = 46
+}

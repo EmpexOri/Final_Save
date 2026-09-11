@@ -1,0 +1,17 @@
+owner = Z2D
+controller = Z2D
+capital = "Kharan"
+is_city = yes
+culture = nogaybak
+religion = sunni
+trade_goods = livestock
+fort_15th = yes
+base_tax = 2
+base_production = 2
+base_manpower = 1
+add_core = NOG
+add_core = Z2D
+discovered_by = indian
+discovered_by = muslim
+discovered_by = nomad_group
+discovered_by = ottoman

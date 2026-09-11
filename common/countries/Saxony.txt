@@ -1,0 +1,110 @@
+ck2_converter_generated = yes
+graphical_culture = westerngfx
+color = { 155 147 180 }
+revolutionary_colors = { 0 9 0 }
+historical_idea_groups = {
+	diplomatic_ideas
+	defensive_ideas
+	innovativeness_ideas
+	offensive_ideas
+	economic_ideas
+	trade_ideas
+	quality_ideas
+	administrative_ideas
+}
+historical_units = {
+	austrian_grenzer
+	austrian_hussar
+	austrian_jaeger
+	austrian_tercio
+	austrian_white_coat
+	dutch_maurician
+	mixed_order_infantry
+	napoleonic_lancers
+	napoleonic_square
+	open_order_cavalry
+	prussian_uhlan
+	swiss_landsknechten
+	western_medieval_infantry
+	western_medieval_knights
+	western_men_at_arms
+}
+monarch_names = {
+	"Berard #0" = 0
+	"Bernhard #2" = 10
+	"Claus #1" = 10
+	"Erp #1" = 10
+	"Ewald #0" = 0
+	"Giselmar #1" = 10
+	"Heinrich #1" = 10
+	"Helene #1" = -1
+	"Hermann #1" = 10
+	"Jadwiga #0" = -1
+	"Liutgard #0" = -1
+	"Ludwig #0" = 0
+	"Luidolf #1" = 10
+	"Merten #0" = 0
+	"Ordulf #1" = 10
+	"Otto #2" = 10
+	"Peter #0" = 0
+	"Rodelinda #0" = -1
+	"Rudigar #1" = 10
+	"Steffen #1" = 10
+	"Theoderic #1" = 10
+	"Vela #0" = 0
+	"Warin #1" = 10
+	"Werner #1" = 10
+	"Órlaith #0" = -1
+}
+leader_names = {
+	"Arnim"
+	"Bieber"
+	"Bretfeld"
+	"Deitz"
+	"Dietze"
+	"Fischer"
+	"Gödel"
+	"Hamann"
+	"Harzer"
+	"Hergesell"
+	"Kirbach"
+	"Kranke"
+	"Kuhn"
+	"Oelssner"
+	"Oertel"
+	"Pilz"
+	"Rabs"
+	"Rank"
+	"Schönfeld"
+	"Sehm"
+	"Taut"
+	"Teichmann"
+	"Tellig"
+	"Uebigau"
+	"Uhlich"
+	"Winkler"
+	"von Rath"
+}
+ship_names = {
+	"Bernhard I"
+	"Billing"
+	"Brun"
+	"Edberg"
+	"Heinrich I"
+	"Heinrich II"
+	"Liedolf"
+	"Lothar"
+	"Manus"
+	"Ordulf"
+	"Otto I"
+	"Wichman"
+	"Widukind"
+}
+army_names = {
+	"Armee von $PROVINCE$"
+	"Kurfürstliche Garde"
+}
+fleet_names = {
+	"Kurfürstliche Flotte"
+}
+preferred_religion = protestant

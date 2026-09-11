@@ -1,0 +1,16 @@
+owner = MSA
+controller = MSA
+capital = "Lombok"
+is_city = yes
+culture = javanese
+religion = vajrayana
+trade_goods = unknown
+base_tax = 1
+base_production = 1
+base_manpower = 1
+add_core = MAJ
+add_core = MSA
+discovered_by = chinese
+native_size = 50
+native_ferocity = 7
+native_hostileness = 7

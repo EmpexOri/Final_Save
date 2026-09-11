@@ -1,0 +1,15 @@
+owner = MZB
+controller = MZB
+capital = "Bejaia"
+is_city = yes
+culture = algerian
+religion = ibadi
+trade_goods = iron
+base_tax = 2
+base_production = 3
+base_manpower = 3
+add_core = MZB
+discovered_by = eastern
+discovered_by = muslim
+discovered_by = ottoman
+discovered_by = western

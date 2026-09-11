@@ -1,0 +1,105 @@
+ck2_converter_generated = yes
+graphical_culture = indiangfx
+color = { 89 141 140 }
+revolutionary_colors = { 6 9 6 }
+historical_idea_groups = {
+	defensive_ideas
+	diplomatic_ideas
+	quantity_ideas
+	economic_ideas
+	humanist_ideas
+	offensive_ideas
+	aristocracy_ideas
+	trade_ideas
+}
+historical_units = {
+	bhonsle_infantry
+	indian_arquebusier
+	indian_elephant
+	indian_footsoldier
+	indian_rifle
+	indian_shock_cavalry
+	maharathan_guerilla_warfare
+	mughal_musketeer
+	rajput_hill_fighters
+	reformed_mughal_musketeer
+	sikh_rifle
+	tipu_sultan_rocket
+}
+monarch_names = {
+	"Adelheid #0" = -1
+	"Anekonda #0" = 0
+	"Anitalli #0" = -1
+	"Betana #0" = 0
+	"Chandrabbalabbe #0" = -1
+	"Dhanaji #0" = 0
+	"Gangambika #0" = -1
+	"Jagattunga #0" = 0
+	"Jayakeshi #0" = 0
+	"Kesarbai #0" = -1
+	"Khottiga #0" = 0
+	"Kubjavishnuvardhana #0" = 0
+	"Madhura #1" = 10
+	"Manappâkkîlan #0" = 0
+	"Manj #0" = 0
+	"Obayamma #0" = -1
+	"Omadevi #0" = -1
+	"Permanadi #0" = 0
+	"Samur #0" = -1
+	"Songul #0" = -1
+	"Thirumalambike #0" = -1
+	"Uchita #0" = 0
+	"Vijamba #0" = -1
+	"Viravijaya #0" = 0
+}
+leader_names = {
+	"Agrawal"
+	"Ambar"
+	"Bhaskar"
+	"Chirag"
+	"Dawar"
+	"Hussaini"
+	"Jitesh"
+	"Kabir"
+	"Kadak"
+	"Khan"
+	"Khot"
+	"Krishna"
+	"Kumur"
+	"Latif"
+	"Mahaldar"
+	"Naidu"
+	"Nayudu"
+	"Poosapati"
+	"Qadir"
+	"Qummi"
+	"Rao"
+	"Raya"
+	"Safsikhan"
+	"Vasireddy"
+	"Velama"
+	"Zamindari"
+	"ul Umra"
+}
+ship_names = {
+	"Alia"
+	"Aurangabad"
+	"Devki"
+	"Fatimah"
+	"Godvari"
+	"Gulbargah"
+	"Jalsena"
+	"Kala Jahazi"
+	"Khan"
+	"Lal Jahazi"
+	"Nausena"
+	"Nav ka Yudh"
+	"Niknaz"
+	"Nila Jahazi"
+	"Niloufa"
+	"Sagar"
+	"Salima"
+	"Shameena"
+	"Suhalia"
+	"Yasmine"
+}

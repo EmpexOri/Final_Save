@@ -1,0 +1,21 @@
+﻿l_english:
+ #Ranks
+ SUFFET:0 "Suffet"
+ SUFFET_fem:0 "Suffet"
+ PHARAOH:0 "Pharaoh"
+ PHARAOH_fem:0 "Pharaohess"
+ NOMARCH:0 "Nomarch"
+ DAUPHIN:0 "Dauphin"
+ DAUPHIN_fem:0 "Dauphine"
+ ECUMENICAL_PATRIARCH:0 "Ecumenical Patriarch"
+ ECUMENICAL_MATRIARCH:0 "Ecumenical Matriarch"
+
+ #Governments
+ NOME:0 "Nome"
+ FARA:0 "Fara"
+
+ samurai_army_subject:0 "Semi independed samurai army"
+ samurai_army:0 "Kwantung army"
+ samurai_army_desc:0 "A samurai army that has conquered a large portion of manchuria, setting up an independed military government."
+ samurai_army_ruler:0 "Shogun of the North"
+ samurai_army_ruler_female:0 "Lady"

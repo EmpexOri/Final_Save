@@ -1,0 +1,58 @@
+government = monarchy
+add_government_reform = feudalism_reform
+government_rank = 1
+technology_group = eastern
+religion = catholic
+primary_culture = dynamic-hungarian-slovak-culture-num1
+capital = 251
+fixed_capital = 251
+add_accepted_culture = scottish
+set_country_flag = ZZZ_generated_converter_nation
+1444.11.11= {
+	monarch = {
+		name = "Vyšebor"
+		dynasty = "Beckovský"
+		adm = 4
+		dip = 3
+		mil = 5
+		birth_date = 1394.5.25
+		religion = catholic
+		culture = dynamic-hungarian-slovak-culture-num1
+	}
+	add_ruler_personality = industrious_personality
+	add_ruler_personality = just_personality
+	queen = {
+		name = "Effie"
+		dynasty = "Lochore"
+		adm = 3
+		dip = 3
+		mil = 4
+		country_of_origin = Z4G
+		birth_date = 1393.7.10
+		death_date = 1453.7.10
+		female = yes
+		religion = catholic
+		culture = scottish
+	}
+	add_queen_personality = martial_educator_personality
+	add_queen_personality = strict_personality
+	heir = {
+		name = "Vyšebor"
+		monarch_name = "Vyšebor"
+		dynasty = "Beckovský"
+		adm = 6
+		dip = 1
+		mil = 5
+		birth_date = 1415.2.7
+		death_date = 1480.2.7
+		claim = 89
+		religion = catholic
+		culture = dynamic-hungarian-slovak-culture-num1
+	}
+	add_heir_personality = pious_personality
+	add_heir_personality = righteous_personality
+}
+1444.11.11= {
+	add_prestige = 86
+	add_treasury = 49
+}

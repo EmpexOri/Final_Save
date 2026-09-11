@@ -1,0 +1,17 @@
+owner = Z4J
+controller = Z4J
+capital = "Tamanthi"
+is_city = yes
+culture = kachin
+religion = buddhism
+trade_goods = tea
+base_tax = 1
+base_production = 1
+base_manpower = 1
+add_core = WPG
+add_core = Z4J
+add_core = Z5O
+add_permanent_claim = AVA
+add_permanent_claim = MYA
+discovered_by = chinese
+discovered_by = indian

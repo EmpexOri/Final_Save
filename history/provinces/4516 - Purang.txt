@@ -1,0 +1,14 @@
+owner = MUG
+controller = MUG
+capital = "Purang"
+is_city = yes
+culture = nepali
+religion = sunni
+trade_goods = wool
+base_tax = 4
+base_production = 3
+base_manpower = 3
+add_core = MUG
+discovered_by = chinese
+discovered_by = indian
+discovered_by = nomad_group

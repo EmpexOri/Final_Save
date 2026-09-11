@@ -1,0 +1,17 @@
+owner = Z32
+controller = Z32
+capital = "Irgalem"
+is_city = yes
+culture = sidamo
+religion = coptic
+trade_goods = coffee
+base_tax = 3
+base_production = 1
+base_manpower = 1
+add_core = KAF
+add_core = Z32
+add_permanent_claim = DAM
+discovered_by = east_african
+discovered_by = indian
+discovered_by = muslim
+discovered_by = ottoman

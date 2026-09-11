@@ -1,0 +1,14 @@
+owner = Z46
+controller = Z46
+capital = "Palawan"
+is_city = yes
+culture = filipino
+religion = hinduism
+trade_goods = sugar
+base_tax = 1
+base_production = 1
+base_manpower = 1
+add_core = SUL
+add_core = Z46
+add_permanent_claim = TDO
+discovered_by = chinese

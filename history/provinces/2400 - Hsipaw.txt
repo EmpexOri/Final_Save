@@ -1,0 +1,15 @@
+owner = HSI
+controller = HSI
+capital = "Hsipaw"
+is_city = yes
+culture = burmese
+religion = buddhism
+trade_goods = grain
+base_tax = 1
+base_production = 4
+base_manpower = 1
+add_core = HSI
+add_core = TAU
+add_permanent_claim = AVA
+discovered_by = chinese
+discovered_by = indian

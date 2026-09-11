@@ -1,0 +1,19 @@
+government = monarchy
+add_government_reform = autocracy_reform
+government_rank = 1
+technology_group = chinese
+religion = shinto
+primary_culture = nivkh
+capital = 1050
+1444.11.11= {
+	monarch = {
+		name = "Atvuk"
+		dynasty = "Ykyldak"
+		adm = 3
+		dip = 2
+		mil = 5
+		birth_date = 1419.12.29
+		religion = shinto
+		culture = nivkh
+	}
+}

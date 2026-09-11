@@ -1,0 +1,19 @@
+owner = CHN
+controller = CHN
+capital = "Hai Phong"
+is_city = yes
+culture = vietnamese
+religion = converted_dynamic_faith_140
+trade_goods = naval_supplies
+base_tax = 3
+base_production = 3
+base_manpower = 2
+extra_cost = 10
+add_core = CHN
+add_core = DAI
+discovered_by = chinese
+discovered_by = indian
+add_permanent_province_modifier = {
+	name = red_river_estuary_modifier
+	duration = -1
+}

@@ -1,0 +1,14 @@
+owner = CHK
+controller = CHK
+capital = "Sip Et"
+is_city = yes
+culture = central_thai
+religion = converted_dynamic_faith_140
+trade_goods = ivory
+base_tax = 2
+base_production = 1
+base_manpower = 1
+add_core = AYU
+add_core = CHK
+discovered_by = chinese
+discovered_by = indian

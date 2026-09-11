@@ -1,0 +1,13 @@
+owner = MOR
+controller = MOR
+capital = "Tadmekka al-Suq"
+is_city = yes
+culture = berber
+religion = ibadi
+trade_goods = wool
+fort_15th = yes
+base_tax = 1
+base_production = 1
+base_manpower = 2
+add_core = MOR
+discovered_by = sub_saharan

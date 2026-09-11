@@ -1,0 +1,16 @@
+government = monarchy
+add_government_reform = daimyo
+government_rank = 1
+technology_group = chinese
+religion = mahayana
+primary_culture = hokkoku
+capital = 1852
+1444.11.11= {
+	monarch = {
+		name = "Native Council"
+		adm = 3
+		dip = 3
+		mil = 3
+		regent = yes
+	}
+}

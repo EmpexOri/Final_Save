@@ -1,0 +1,19 @@
+ck2_converter_generated = yes
+graphical_culture = indiangfx
+color = { 117 76 123 }
+monarch_names = {
+	"Abhiyaza #2" = 10
+	"Anawrahta #1" = 10
+	"Kunhsaw Kyaunghpyu #1" = 10
+	"Kyiso #1" = 10
+	"Nyaung-u Sawrahan #1" = 10
+	"Pyinbya #1" = 10
+	"Sale Ngahkwe #1" = 10
+	"Salin Minthami #0" = -1
+	"Siha #2" = 10
+	"Sokkate #2" = 10
+	"Tannet #1" = 10
+	"Theinhko #1" = 10
+	"Uzana #2" = 10
+	"Yathekyaung #0" = 0
+}

@@ -1,0 +1,141 @@
+ck2_converter_generated = yes
+graphical_culture = westerngfx
+color = { 80 10 165 }
+revolutionary_colors = { 0 5 1 }
+historical_idea_groups = {
+	trade_ideas
+	maritime_ideas
+	defensive_ideas
+	offensive_ideas
+	economic_ideas
+	diplomatic_ideas
+	spy_ideas
+	religious_ideas
+}
+historical_units = {
+	asian_arquebusier
+	asian_charge_cavalry
+	asian_mass_infantry
+	asian_musketeer
+	east_asian_spearmen
+	eastern_bow
+	reformed_asian_cavalry
+	reformed_asian_musketeer
+}
+monarch_names = {
+	"Balaputradewa #1" = 10
+	"Beejpala #0" = 0
+	"Bügü #0" = 0
+	"Cudamani #1" = 10
+	"Dani #0" = 0
+	"Dharanindra #1" = 10
+	"Duhe #0" = 0
+	"Einkura #0" = 0
+	"Frederik #0" = 0
+	"Haduwijn #0" = -1
+	"Haji #1" = 10
+	"Hendrik #0" = 0
+	"Herman #0" = 0
+	"Hugo #0" = 0
+	"Kathrijne #0" = -1
+	"Lisebet #1" = -1
+	"Marakata Pangkaja #0" = 0
+	"Maravijayottungavarman #1" = 10
+	"Puteri #0" = -1
+	"Saladu #1" = 10
+	"Samaratungga #1" = 10
+	"Sangrama Vijayatunggavarman #1" = 10
+	"Simon #0" = 0
+	"Sri Indravarman #2" = 10
+	"Sri Jayanasa #1" = 10
+	"Sudata #0" = 0
+	"Suhina #0" = -1
+	"Sumatrabhumi #1" = 10
+	"Tara #1" = -1
+	"Tombiruo #1" = -1
+	"Udayaditya #1" = 10
+}
+leader_names = {
+	"Abdulfatah"
+	"Ahmad"
+	"Amir"
+	"Anwar"
+	"Azmi"
+	"Batuta"
+	"Chairul"
+	"Hamzah"
+	"Hasanuddin"
+	"Ibnu"
+	"Kyai"
+	"Mahat"
+	"Mukhtar"
+	"Najamuddin"
+	"Natzar"
+	"Nazmizan"
+	"Roem"
+	"Syarifuddin"
+	"Zulkifli"
+}
+ship_names = {
+	"Alas"
+	"Bangar"
+	"Batang"
+	"Batang Baram"
+	"Batu Danau"
+	"Bendahara"
+	"Gunung Peuetsagoe"
+	"Hukum Kanun"
+	"Jamboaye"
+	"Kepulauan"
+	"Kepulauan Riau"
+	"Kuala Baram"
+	"Kuala Belait"
+	"Kuala Medamit"
+	"Labi"
+	"Laksamana"
+	"Lumut"
+	"Lungai Limbang"
+	"Malik Al-Salih"
+	"Malik ul Salih"
+	"Parameswara"
+	"Peg Pusat"
+	"Peg Serbeulangit"
+	"Penanjong"
+	"Penghulu bendahari"
+	"Peusangen"
+	"Pulau Aur"
+	"Pulau Bakung"
+	"Pulau Bengkaus"
+	"Pulau Breueh"
+	"Pulau Kundur"
+	"Pulau Lingga"
+	"Pulau Padang"
+	"Pulau Rangsang"
+	"Pulau Rempang"
+	"Pulau Rupat"
+	"Pulau Sibu"
+	"Pulau Singkep"
+	"Pulau Tebing Tinggi"
+	"Pulau Tinggi"
+	"Pulau Tioman"
+	"Pulau we"
+	"Samandara"
+	"Shahbandar"
+	"Siak"
+	"Simpang-kiri"
+	"Sukang"
+	"Sultan Iskandar"
+	"Sungai Bakong"
+	"Sungai Belait"
+	"Sungai Pandaruan"
+	"Sungai Tembureng"
+	"Sungai Tinjar"
+	"Sungai Tutoh"
+	"Sungai Tutong"
+	"Telingan"
+	"Temenggung"
+	"Teunom"
+	"Tripa"
+	"Trusan"
+	"Undang-Undang"
+}

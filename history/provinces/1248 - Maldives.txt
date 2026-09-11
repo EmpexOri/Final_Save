@@ -1,0 +1,15 @@
+owner = DEC
+controller = DEC
+capital = "Malé"
+is_city = yes
+culture = sinhala
+religion = jain
+trade_goods = gems
+base_tax = 3
+base_production = 1
+base_manpower = 2
+add_core = CEY
+add_core = DEC
+discovered_by = east_african
+discovered_by = indian
+discovered_by = muslim

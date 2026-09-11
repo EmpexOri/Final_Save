@@ -1,0 +1,16 @@
+owner = LUW
+controller = LUW
+capital = "Ayutthaya"
+is_city = yes
+culture = dynamic-mon-central_thai-culture-num2
+religion = mahayana
+trade_goods = ivory
+base_tax = 2
+base_production = 3
+base_manpower = 1
+extra_cost = 16
+center_of_trade = 2
+add_core = LUW
+add_permanent_claim = Z28
+discovered_by = chinese
+discovered_by = indian

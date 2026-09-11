@@ -1,0 +1,16 @@
+ck2_converter_generated = yes
+graphical_culture = indiangfx
+color = { 200 105 18 }
+monarch_names = {
+	"Dadu Phattu #1" = 10
+	"Damurah #1" = 10
+	"Erfa #1" = 10
+	"Esfendiyar #1" = 10
+	"Hassam #1" = 10
+	"Hezarhesp #1" = 10
+	"Hisên #0" = 0
+	"Khafif #1" = 10
+	"Nadhir #0" = 0
+	"Pasoon #0" = 0
+	"Zaheeruddin #1" = 10
+}

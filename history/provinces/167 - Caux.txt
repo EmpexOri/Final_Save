@@ -1,0 +1,24 @@
+owner = BOH
+controller = BOH
+capital = "Rouen"
+is_city = yes
+culture = normand
+religion = catholic
+trade_goods = glass
+hre = yes
+base_tax = 4
+base_production = 3
+base_manpower = 3
+extra_cost = 10
+add_core = BOH
+add_core = NRM
+add_permanent_claim = FRA
+add_permanent_claim = Z01
+discovered_by = eastern
+discovered_by = muslim
+discovered_by = ottoman
+discovered_by = western
+add_permanent_province_modifier = {
+	name = seine_estuary_modifier
+	duration = -1
+}

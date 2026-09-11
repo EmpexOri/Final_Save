@@ -1,0 +1,14 @@
+owner = CHN
+controller = CHN
+capital = "Yichang"
+is_city = yes
+culture = chihan
+religion = converted_dynamic_faith_140
+trade_goods = tea
+base_tax = 6
+base_production = 4
+base_manpower = 5
+add_core = CHN
+add_core = YAN
+discovered_by = chinese
+discovered_by = nomad_group

@@ -1,0 +1,14 @@
+owner = NOR
+controller = NOR
+capital = "Gävle"
+is_city = yes
+culture = swedish
+religion = catholic
+trade_goods = fish
+base_tax = 3
+base_production = 1
+base_manpower = 2
+add_core = NOR
+add_permanent_claim = SWE
+discovered_by = eastern
+discovered_by = western

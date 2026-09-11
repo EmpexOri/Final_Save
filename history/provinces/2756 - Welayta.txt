@@ -1,0 +1,13 @@
+owner = DAM
+controller = DAM
+capital = "Bonga"
+is_city = yes
+culture = dynamic-somali-sidamo-culture-num1
+religion = coptic
+trade_goods = coffee
+base_tax = 2
+base_production = 1
+base_manpower = 1
+add_core = DAM
+discovered_by = east_african
+discovered_by = muslim

@@ -1,0 +1,16 @@
+owner = PEG
+controller = PEG
+capital = "Chiang Rai"
+is_city = yes
+culture = burmese
+religion = buddhism
+trade_goods = grain
+base_tax = 1
+base_production = 6
+base_manpower = 1
+add_core = PEG
+add_core = TAU
+add_core = Z1K
+add_permanent_claim = LXA
+discovered_by = chinese
+discovered_by = indian

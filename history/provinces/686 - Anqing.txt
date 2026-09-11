@@ -1,0 +1,14 @@
+owner = CHN
+controller = CHN
+capital = "Anqing"
+is_city = yes
+culture = jianghuai
+religion = converted_dynamic_faith_140
+trade_goods = cloth
+base_tax = 5
+base_production = 3
+base_manpower = 5
+add_core = CHN
+add_core = MNG
+discovered_by = chinese
+discovered_by = nomad_group

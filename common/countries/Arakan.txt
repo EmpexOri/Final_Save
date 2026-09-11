@@ -1,0 +1,127 @@
+ck2_converter_generated = yes
+graphical_culture = indiangfx
+color = { 212 211 151 }
+revolutionary_colors = { 0 13 5 }
+historical_idea_groups = {
+	defensive_ideas
+	offensive_ideas
+	trade_ideas
+	diplomatic_ideas
+	spy_ideas
+	quantity_ideas
+	administrative_ideas
+	religious_ideas
+}
+historical_units = {
+	asian_arquebusier
+	asian_charge_cavalry
+	asian_mass_infantry
+	asian_musketeer
+	east_asian_spearmen
+	eastern_bow
+	reformed_asian_cavalry
+	reformed_asian_musketeer
+}
+monarch_names = {
+	" Minyinpyu #1" = 10
+	"Amyahtu #1" = 10
+	"Bibibai #0" = -1
+	"Chandrathin #1" = 10
+	"Chulataingchandra #1" = 10
+	"Kalataingchandra #1" = 10
+	"Khame Mi #0" = -1
+	"Khittathin #1" = 10
+	"Kyaswa #1" = 10
+	"Kyaw #0" = 0
+	"Kyiso #1" = 10
+	"Mahataingchandra #1" = 10
+	"Manyju #1" = -1
+	"Marlar #0" = -1
+	"Mawlataingchandra #1" = 10
+	"Minlade #1" = 10
+	"Minnangyi #2" = 10
+	"Minpyugyi #1" = 10
+	"Nagathuriya #1" = 10
+	"Ngapinngaton #1" = 10
+	"Pawlataingchandra #1" = 10
+	"Phway #0" = -1
+	"Ponnaka #1" = 10
+	"Sithabin #1" = 10
+	"Soe Min #0" = -1
+	"Sritaingchandra #1" = 10
+	"Suriyataingchandra #1" = 10
+	"Suriyayaza #1" = 10
+	"Sìzong #0" = 0
+	"Tannet #1" = 10
+	"Tarabya #0" = 0
+	"Thinhkataingchandra #1" = 10
+	"Tulataingchandra #1" = 10
+	"Uttara #1" = 10
+	"Uzana #0" = 0
+	"Wanna #0" = 0
+	"Yamin #0" = -1
+	"Yarzar #0" = 0
+	"Yazathingyan #1" = 10
+	"Yehpyu #1" = 10
+}
+leader_names = {
+	"Ashin"
+	"Banya"
+	"Binnya"
+	"Bo"
+	"Bogyoke"
+	"Daw"
+	"Duwa"
+	"Khun"
+	"Ko"
+	"Ma"
+	"Mahn"
+	"Mai"
+	"Maung"
+	"Me"
+	"Mi"
+	"Min"
+	"Minh"
+	"Nai"
+	"Nang"
+	"Naw"
+	"Sai"
+	"Salai"
+	"Sao"
+	"Saw"
+	"Sawbwa"
+	"Saya"
+	"Sayadaw"
+	"Sayama"
+	"Shin"
+	"Tekkatho"
+	"Thakin"
+	"Theippan"
+	"U"
+}
+ship_names = {
+	"Alaumaphru"
+	"Athinkhara Raza"
+	"Candasuriya"
+	"Datharaza"
+	"Foonthan"
+	"Gandakudi"
+	"Koliya"
+	"Lakkyamunnan"
+	"Mahamuni"
+	"Mahataing Candra"
+	"Mong Ba"
+	"Mong Khaki"
+	"Mong Razagree"
+	"Mong Saw Mon"
+	"Mrauk U"
+	"Ngahnaloon"
+	"Suriya"
+	"Suriya Candra"
+	"Thakyawangree"
+	"Thakyawannge"
+	"Thiharaza"
+	"Ukkabala"
+	"Waradhamma"
+}
+special_unit_culture = south_east_asian_special

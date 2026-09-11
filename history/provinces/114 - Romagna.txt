@@ -1,0 +1,17 @@
+owner = TTS
+controller = TTS
+capital = "Ravenna"
+is_city = yes
+culture = romagnan
+religion = catholic
+trade_goods = salt
+fort_15th = yes
+base_tax = 5
+base_production = 9
+base_manpower = 3
+add_core = FER
+add_core = TTS
+discovered_by = eastern
+discovered_by = muslim
+discovered_by = ottoman
+discovered_by = western

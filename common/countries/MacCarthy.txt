@@ -1,0 +1,105 @@
+ck2_converter_generated = yes
+graphical_culture = muslimgfx
+color = { 150 231 150 }
+historical_idea_groups = {
+	maritime_ideas
+	aristocracy_ideas
+	trade_ideas
+	diplomatic_ideas
+	economic_ideas
+	spy_ideas
+	innovativeness_ideas
+	offensive_ideas
+}
+historical_units = {
+	anglofrench_line
+	british_hussar
+	british_redcoat
+	british_square
+	gaelic_free_shooter
+	gaelic_galloglaigh
+	gaelic_mercenary
+	irish_charge
+	mixed_order_infantry
+	napoleonic_lancers
+	napoleonic_square
+	open_order_cavalry
+	western_medieval_infantry
+	western_medieval_knights
+}
+monarch_names = {
+	"Bagay #0" = 0
+	"Brian #1" = 10
+	"Bé-Fáil #0" = -1
+	"Cú-Caech #1" = 10
+	"Donnchad #1" = 10
+	"Ghani #0" = 0
+	"Ighlaf #1" = 10
+	"Kenan #0" = 0
+	"Lerthan #0" = -1
+	"Masgaba #1" = 10
+	"Murchad #1" = 10
+	"Murchaid #2" = 10
+	"Máiread #1" = -1
+	"Sifaks #1" = 10
+	"Taithlech #0" = 0
+	"Taninna #0" = -1
+	"Yeh'lem #1" = 10
+	"Íte #0" = -1
+}
+leader_names = {
+	"Caomhanach"
+	"Conchobhair"
+	"Mac Amhalghaidh"
+	"Mac Cochláin"
+	"Mac Coibheanaigh"
+	"Mac Conshnámha"
+	"Mac Fhlannchaidh"
+	"Mac Fionbhair"
+	"Mac Giolla Phadraig"
+	"Mac Raghnaill"
+	"Mac Tighearnáin"
+	"Mac an tSionnaigh"
+	"Mag Eochagáin"
+	"Ó Braoin"
+	"Ó Cairbre"
+	"Ó Caoindealbháin"
+	"Ó Catharnaigh"
+	"Ó Ceallaigh"
+	"Ó Cearbhaill"
+	"Ó Ciardha"
+	"Ó Comhraidhe"
+	"Ó Congalaig"
+	"Ó Cosraigh"
+	"Ó Diubhgeannáin"
+	"Ó Doinn"
+	"Ó Donnchadha"
+	"Ó Dubhghaill"
+	"Ó Dubhuidhe"
+	"Ó Faolain"
+	"Ó Fhearghaill"
+	"Ó Finntighearn"
+	"Ó Fionnaláin"
+	"Ó Lorcáin"
+	"Ó Maolmhuaidh"
+	"Ó Ruairc"
+	"Ó Seaghdha"
+	"Ó Seanáin"
+	"Ó Tuathail"
+	"Ó hAimheirgin"
+	"Ó hAonghusa"
+}
+ship_names = {
+	"Carlow"
+	"Dublin"
+	"Kildare"
+	"Kilkenny"
+	"Laios"
+	"Longford"
+	"Louth"
+	"Meath"
+	"Offaly"
+	"Westmeath"
+	"Wexford"
+	"Wicklow"
+}

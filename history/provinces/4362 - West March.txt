@@ -1,0 +1,15 @@
+owner = Z1F
+controller = Z1F
+capital = "Dumfries"
+is_city = yes
+culture = highland_scottish
+religion = catholic
+trade_goods = wool
+base_tax = 1
+base_production = 1
+base_manpower = 2
+add_core = Z1F
+discovered_by = eastern
+discovered_by = muslim
+discovered_by = ottoman
+discovered_by = western

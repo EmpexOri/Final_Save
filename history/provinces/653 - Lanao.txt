@@ -1,0 +1,13 @@
+owner = MAS
+controller = MAS
+capital = "Marawi"
+is_city = yes
+culture = filipino
+religion = vajrayana
+trade_goods = spices
+base_tax = 1
+base_production = 1
+base_manpower = 1
+add_core = MAS
+add_core = SUL
+discovered_by = chinese

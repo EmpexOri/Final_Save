@@ -1,0 +1,131 @@
+ck2_converter_generated = yes
+graphical_culture = westerngfx
+color = { 225 98 87 }
+revolutionary_colors = { 8 8 1 }
+historical_idea_groups = {
+	trade_ideas
+	defensive_ideas
+	religious_ideas
+	economic_ideas
+	diplomatic_ideas
+	spy_ideas
+	offensive_ideas
+	quality_ideas
+}
+historical_units = {
+	austrian_grenzer
+	austrian_hussar
+	austrian_jaeger
+	austrian_tercio
+	austrian_white_coat
+	dutch_maurician
+	halberd_infantry
+	mixed_order_infantry
+	napoleonic_lancers
+	napoleonic_square
+	open_order_cavalry
+	swiss_landsknechten
+	western_medieval_knights
+	western_men_at_arms
+}
+monarch_names = {
+	"Agnes #0" = -1
+	"Albrecht #0" = 0
+	"Alvise #0" = 0
+	"Amelie #0" = -1
+	"Berthold #1" = 10
+	"Burchard #3" = 10
+	"Erbio #1" = 10
+	"Ernst #2" = 10
+	"Gebhard #2" = 10
+	"Guiraud #0" = 0
+	"Hermann #5" = 10
+	"Hnabi #1" = 10
+	"Ilsa #0" = -1
+	"Karl #1" = 10
+	"Konrad #1" = 10
+	"Landolf #1" = 10
+	"Lantfrid #2" = 10
+	"Liudolf #1" = 10
+	"Norbert #0" = 0
+	"Otto #3" = 10
+	"Reinhold #0" = 0
+	"Rudolf #1" = 10
+	"Theobald #1" = 10
+	"Ubert #0" = 0
+	"Udo #1" = 10
+	"Welf #0" = 0
+}
+leader_names = {
+	"Beich"
+	"Breitmayer"
+	"Buchner"
+	"Börner"
+	"Börrner"
+	"Danhauser"
+	"Gohl"
+	"Gute"
+	"Helber"
+	"Henke"
+	"Hummelberger"
+	"Humpis"
+	"Kircher"
+	"Klein"
+	"Knapp"
+	"Kopp"
+	"Meck"
+	"Merkel"
+	"Ortlieb"
+	"Pfeilsticker"
+	"Roether"
+	"Schupp"
+	"Stütz"
+	"Susenbrot"
+	"Sülzle"
+	"Veit"
+	"Vietz"
+	"Vogel"
+	"Weber"
+	"Wieland"
+	"Wurst"
+}
+ship_names = {
+	"Andechs"
+	"Augsburg"
+	"Balingen"
+	"Breisgau"
+	"Burgau"
+	"Diessen"
+	"Friedberg"
+	"Graf von Bogen"
+	"Graf von Diepolding"
+	"Graf von Sulzbach"
+	"Gräfin Mechthild"
+	"Kaiser Friedrich I"
+	"Kaiser Friedrich II"
+	"Kaiser Heinrich VI"
+	"Kempten"
+	"Konstanz"
+	"König Arnulf"
+	"Lindau"
+	"Marbach"
+	"Memmingen"
+	"Mindel"
+	"Mömpelgard"
+	"Neuffen"
+	"Oettingen"
+	"Otto"
+	"Ravensburg"
+	"St. Kilian"
+	"St. Sebaldus"
+	"Stuttgart"
+	"Tassilo III"
+	"Wirtemberg"
+	"Wolfstein"
+}
+army_names = {
+	"Armee von $PROVINCE$"
+	"Dritte Schwäbische Armee"
+	"Erste Schwäbische Armee"
+	"Zweite Schwäbische Armee"
+}

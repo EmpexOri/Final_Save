@@ -1,0 +1,15 @@
+owner = MYA
+controller = MYA
+capital = "Hkamti Long"
+is_city = yes
+culture = kachin
+religion = vajrayana
+trade_goods = grain
+base_tax = 1
+base_production = 1
+base_manpower = 1
+add_core = MYA
+add_core = WPG
+add_permanent_claim = AVA
+discovered_by = chinese
+discovered_by = indian

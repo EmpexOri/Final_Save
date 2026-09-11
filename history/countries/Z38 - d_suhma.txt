@@ -1,0 +1,56 @@
+government = monarchy
+add_government_reform = mandala_reform
+government_rank = 1
+technology_group = indian
+religion = buddhism
+primary_culture = oriya
+capital = 2038
+set_country_flag = ZZZ_generated_converter_nation
+1444.11.11= {
+	monarch = {
+		name = "Gayada"
+		dynasty = "Midnapore Shura"
+		adm = 5
+		dip = 4
+		mil = 3
+		birth_date = 1405.11.7
+		religion = buddhism
+		culture = oriya
+	}
+	add_ruler_personality = free_thinker_personality
+	add_ruler_personality = sinner_personality
+	queen = {
+		name = "Lakshmikaradevi"
+		dynasty = "Midnapore Shura"
+		adm = 4
+		dip = 2
+		mil = 4
+		country_of_origin = Z38
+		birth_date = 1406.12.22
+		death_date = 1466.12.22
+		female = yes
+		religion = buddhism
+		culture = oriya
+	}
+	add_queen_personality = intricate_web_weaver_personality
+	add_queen_personality = silver_tongue_personality
+	heir = {
+		name = "Narayana"
+		monarch_name = "Narayana II"
+		dynasty = "Midnapore Shura"
+		adm = 6
+		dip = 6
+		mil = 6
+		birth_date = 1425.8.18
+		death_date = 1490.8.18
+		claim = 89
+		religion = buddhism
+		culture = oriya
+	}
+	add_heir_personality = drunkard_personality
+	add_heir_personality = just_personality
+}
+1444.11.11= {
+	add_prestige = 71
+	add_treasury = 43
+}

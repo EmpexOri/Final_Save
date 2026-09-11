@@ -1,0 +1,16 @@
+owner = MSA
+controller = MSA
+capital = "Sumbawa"
+is_city = yes
+culture = javanese
+religion = vajrayana
+trade_goods = unknown
+base_tax = 1
+base_production = 1
+base_manpower = 1
+add_core = MAJ
+add_core = MSA
+discovered_by = chinese
+native_size = 5
+native_ferocity = 1
+native_hostileness = 5

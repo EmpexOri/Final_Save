@@ -1,0 +1,16 @@
+owner = MOS
+controller = MOS
+capital = "Vologda"
+is_city = yes
+culture = vepsian
+religion = orthodox
+trade_goods = iron
+base_tax = 2
+base_production = 2
+base_manpower = 1
+add_core = MOS
+add_core = VPS
+add_permanent_claim = BJA
+discovered_by = eastern
+discovered_by = nomad_group
+discovered_by = western

@@ -1,0 +1,14 @@
+owner = Z3E
+controller = Z3E
+capital = "Chugachak"
+is_city = yes
+culture = mongol
+religion = tengri_pagan
+trade_goods = fur
+base_tax = 1
+base_production = 1
+base_manpower = 1
+add_core = Z3E
+add_permanent_claim = GLH
+discovered_by = chinese
+discovered_by = nomad_group

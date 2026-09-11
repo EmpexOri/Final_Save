@@ -1,0 +1,58 @@
+government = monarchy
+add_government_reform = mandala_reform
+government_rank = 1
+technology_group = chinese
+religion = vajrayana
+primary_culture = central_thai
+capital = 2389
+fixed_capital = 2389
+set_country_flag = ZZZ_generated_converter_nation
+1444.11.11= {
+	monarch = {
+		name = "Darmawan"
+		dynasty = "Chakangrao"
+		adm = 6
+		dip = 4
+		mil = 6
+		birth_date = 1394.8.31
+		religion = vajrayana
+		culture = central_thai
+	}
+	add_ruler_personality = tactical_genius_personality
+	add_ruler_personality = zealot_personality
+	queen = {
+		name = "Silmini"
+		dynasty = "Mandasa Dissanayake"
+		adm = 3
+		dip = 5
+		mil = 3
+		country_of_origin = Z4X
+		birth_date = 1386.7.26
+		death_date = 1446.7.26
+		female = yes
+		religion = buddhism
+		culture = sinhala
+	}
+	add_queen_personality = careful_personality
+	add_queen_personality = infertile_personality
+	heir = {
+		name = "Nicha"
+		monarch_name = "Nicha"
+		dynasty = "Chakangrao"
+		adm = 6
+		dip = 6
+		mil = 6
+		birth_date = 1417.6.25
+		death_date = 1482.6.25
+		female = yes
+		claim = 89
+		religion = vajrayana
+		culture = central_thai
+	}
+	add_heir_personality = free_thinker_personality
+	add_heir_personality = secretive_personality
+}
+1444.11.11= {
+	add_prestige = 79
+	add_treasury = 52
+}

@@ -1,0 +1,15 @@
+owner = AVA
+controller = AVA
+capital = "Mergui"
+is_city = yes
+culture = mon
+religion = mahayana
+trade_goods = chinaware
+base_tax = 3
+base_production = 3
+base_manpower = 1
+add_core = AVA
+discovered_by = chinese
+discovered_by = indian
+discovered_by = muslim
+discovered_by = ottoman

@@ -1,0 +1,17 @@
+owner = Z59
+controller = Z59
+capital = "Jokkmokk"
+is_city = yes
+culture = dynamic-sapmi-swedish-culture-num1
+religion = catholic
+trade_goods = unknown
+base_tax = 1
+base_production = 2
+base_manpower = 1
+add_core = Z59
+add_permanent_claim = SMI
+discovered_by = eastern
+discovered_by = western
+native_size = 3
+native_ferocity = 2
+native_hostileness = 1

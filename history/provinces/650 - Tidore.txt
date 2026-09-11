@@ -1,0 +1,13 @@
+owner = LUW
+controller = LUW
+capital = "Tidore"
+is_city = yes
+culture = moluccan
+religion = hinduism
+trade_goods = cloves
+base_tax = 1
+base_production = 1
+base_manpower = 2
+add_core = LUW
+add_core = TER
+discovered_by = chinese

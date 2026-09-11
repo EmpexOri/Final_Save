@@ -1,0 +1,14 @@
+owner = Z2V
+controller = Z2V
+capital = "Korsholm"
+is_city = yes
+culture = finnish
+religion = catholic
+trade_goods = fur
+base_tax = 1
+base_production = 2
+base_manpower = 1
+add_core = FIN
+add_core = Z2V
+discovered_by = eastern
+discovered_by = western

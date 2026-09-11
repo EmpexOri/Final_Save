@@ -1,0 +1,17 @@
+owner = BOH
+controller = BOH
+capital = "Zhorelec"
+is_city = yes
+culture = dynamic-bavarian-czech-culture-num1
+religion = catholic
+trade_goods = livestock
+hre = yes
+base_tax = 2
+base_production = 4
+base_manpower = 3
+add_core = BOH
+add_permanent_claim = MEI
+discovered_by = eastern
+discovered_by = muslim
+discovered_by = ottoman
+discovered_by = western

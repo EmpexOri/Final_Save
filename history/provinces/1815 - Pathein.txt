@@ -1,0 +1,22 @@
+owner = Z5M
+controller = Z5M
+capital = "Pathein"
+is_city = yes
+culture = mon
+religion = buddhism
+trade_goods = grain
+base_tax = 1
+base_production = 1
+base_manpower = 1
+extra_cost = 5
+add_core = Z5M
+add_permanent_claim = AVA
+add_permanent_claim = PEG
+discovered_by = chinese
+discovered_by = indian
+discovered_by = muslim
+discovered_by = ottoman
+add_permanent_province_modifier = {
+	name = irrawaddy_estuary_modifier
+	duration = -1
+}

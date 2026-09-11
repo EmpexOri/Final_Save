@@ -1,0 +1,16 @@
+owner = Z1C
+controller = Z1C
+capital = "Miyoo Gasan"
+is_city = yes
+culture = dynamic-nivkh-culture-num1
+religion = shinto
+trade_goods = fur
+base_tax = 2
+base_production = 1
+base_manpower = 1
+add_core = Z1C
+add_core = Z1E
+discovered_by = ANU
+discovered_by = SOL
+discovered_by = TSU
+discovered_by = nomad_group
