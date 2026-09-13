@@ -69,7 +69,7 @@ pharaoh = {
 		3 = PHARAOH_fem
 	}
 	trigger = {
-		religion = converted_dynamic_faith_141
+		religion = kushite
 		OR = { government = monarchy government = theocracy }
 	}
 }

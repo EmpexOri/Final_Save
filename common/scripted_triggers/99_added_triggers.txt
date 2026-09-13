@@ -56,6 +56,7 @@ was_never_end_game_tag_trigger = {	#Country Scope
 				NOT = { was_tag = SCA }
 				NOT = { was_tag = MAL }
 				NOT = { was_tag = GJN }
+				NOT = { was_tag = Z01 }
 				NOT = { tag = FRA }
 				NOT = { tag = MUG }
 				NOT = { tag = PER }
@@ -107,6 +108,7 @@ was_never_end_game_tag_trigger = {	#Country Scope
 				NOT = { tag = SCA }
 				NOT = { tag = MAL }
 				NOT = { tag = GJN }
+				NOT = { tag = Z01 }
 			}
 		}
 	}

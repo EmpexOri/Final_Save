@@ -1,0 +1,20 @@
+namespace = flavor_egy_kus
+
+# The Holy Cities
+country_event = {
+	id = flavor_egy_kus.1
+	title = flavor_egy_kus.1.t
+	picture = DIPLOMACY_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		ai_chance = { factor = 5 }
+		name = flavor_egy_kus.1.a
+		360 = {
+			add_base_tax = 2
+			add_base_production = 2
+			add_base_manpower = 2
+		}
+	}
+}

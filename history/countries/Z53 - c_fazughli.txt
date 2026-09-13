@@ -2,7 +2,7 @@ government = tribal
 add_government_reform = siberian_tribe
 government_rank = 1
 technology_group = east_african
-religion = converted_dynamic_faith_141
+religion = kushite
 primary_culture = beja
 capital = 1217
 fixed_capital = 1217
@@ -15,7 +15,7 @@ set_country_flag = ZZZ_generated_converter_nation
 		dip = 3
 		mil = 5
 		birth_date = 1424.2.2
-		religion = converted_dynamic_faith_141
+		religion = kushite
 		culture = beja
 	}
 	add_ruler_personality = strict_personality
