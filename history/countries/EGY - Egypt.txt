@@ -2,7 +2,7 @@ government = monarchy
 add_government_reform = plutocratic_reform
 government_rank = 2
 technology_group = muslim
-religion = converted_dynamic_faith_141
+religion = kushite
 primary_culture = al_misr_arabic
 capital = 1231
 mercantilism = 15
@@ -15,7 +15,7 @@ mercantilism = 15
 		mil = 3
 		birth_date = 1386.11.20
 		female = yes
-		religion = converted_dynamic_faith_141
+		religion = kushite
 		culture = al_misr_arabic
 	}
 	add_ruler_personality = cruel_personality
@@ -29,7 +29,7 @@ mercantilism = 15
 		country_of_origin = EGY
 		birth_date = 1401.11.28
 		death_date = 1461.11.28
-		religion = converted_dynamic_faith_141
+		religion = kushite
 		culture = beja
 	}
 	add_queen_personality = fierce_negotiator_personality
@@ -45,7 +45,7 @@ mercantilism = 15
 		death_date = 1493.1.7
 		female = yes
 		claim = 89
-		religion = converted_dynamic_faith_141
+		religion = kushite
 		culture = al_misr_arabic
 	}
 	add_heir_personality = midas_touched_personality

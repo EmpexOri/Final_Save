@@ -1,0 +1,29 @@
+kushite = {
+	kushite = {
+		color = { 75 45 31 }
+		icon =  179
+		heretic = { KUSHITISM_PAGAN }
+		personal_deity = yes
+
+		country = {
+			heir_chance = 0.5
+			female_advisor_chance = 0.5
+
+			tolerance_heathen = 1
+			tolerance_heretic = 1
+
+			land_morale = 0.15
+			manpower_in_true_faith_provinces = 0.15
+		}
+		country_as_secondary = {
+ 
+			discipline = 0.025
+			diplomatic_reputation = 1
+		}
+		province = {
+			local_missionary_strength = -0.02
+			local_hostile_attrition = 5
+		}
+	}
+}
+
