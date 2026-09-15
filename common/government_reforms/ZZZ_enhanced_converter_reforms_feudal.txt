@@ -990,3 +990,21 @@ samurai_army = {
 		locked_government_type = yes
 	}
 }
+
+# Adding Mamluk Diwan al Khass reform for Egypt
+diwan_al_khass_reform = {
+	icon = "diwan_al_khass_reform"
+	allow_normal_conversion = yes
+	potential = {
+		has_dlc = "King of Kings"
+		is_or_was_tag = { tag = EGY }
+	}
+	modifiers = {
+		development_cost = -0.05
+		build_cost = -0.1
+	}
+	
+	ai = {
+		factor = 10
+	}
+}
