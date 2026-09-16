@@ -14,6 +14,7 @@ add_core = Z2S
 discovered_by = MKS
 discovered_by = TER
 discovered_by = TID
+discovered_by = MSA
 native_size = 50
 native_ferocity = 4
 native_hostileness = 9

@@ -1,22 +1,139 @@
 ﻿l_english:
- kushite_revival: "Kushite revival"
- 
+ mnd_maj_subjects_title:0 "Demand Loyalty"
+ mnd_maj_subjects_desc:0 "Zuid-Balinees once ruled a vast network of vassal and tributary states. We must ensure the loyalty of those kingdoms that remain under our grip and attempt to restore some part of our old empire."
+
+ mnd_maj_negara_agung_title:0 "Negara Agung"
+ mnd_maj_negara_agung_desc:0 "To expand the borders of our empire and bring new peoples under our rule is a great endeavor. But we must also look to the good of our core territories, the negara agung. Our capital must be a great city, a hub of commerce and culture from all over Nusantara."
+
+ mnd_maj_chakravarti_title:0 "Chakravarti"
+ mnd_maj_chakravarti_desc:0 "An ideal monarch rules an ideal realm, the material and spiritual center of the world. Zud-Balinee shall become this realm."
+
+ mnd_maj_rein_in_malacca_title:0 "Rein in Malacca"
+ mnd_maj_rein_in_malacca_desc:0 "Our rivals of old, Malacca, are in a weakened state. We need to ensure they are not allowed to recover."
+
+ mnd_maj_stability_title:0 "Restore Order"
+ mnd_maj_stability_desc:0 "Faith in the monarchy is waning as the succession is constantly challenged. We must restore order to the realm and assure the people that the danger is over."
+
+ mnd_maj_end_disaster_title:0 "Prevent Collapse"
+ mnd_maj_end_disaster_desc:0 "Our dramatic decline must be dramatically reversed. Once we have secured the throne, our faith, and the loyalty of our subjects we can emerge from the darkness."
+
+ mnd_maj_enforce_loyalty_title:0 "Enforce Loyalty"
+ mnd_maj_enforce_loyalty_desc:0 "It is no longer enough that our subjects are just barely kept from defying us. It is time to enforce true loyalty."
+
+ mnd_maj_rein_in_brunei_title:0 "Rein in Brunei"
+ mnd_maj_rein_in_brunei_desc:0 "Brunei once loyally submitted to Zud-Balinee before they defied us and forged their own empire. We must bring them to their knees once more."
+
+ mnd_maj_gaja_madas_oath_title:0 "Gajah Mada's Oath"
+ mnd_maj_gaja_madas_oath_desc:0 "The great statesman Gajah Mada made an oath that all of Nusantara shall be conquered by Zud-Balinee. We remember this oath, and we will fulfill it."
+
+ mnd_maj_subjugate_the_mainland_title:0 "Subjugate the Mainland"
+ mnd_maj_subjugate_the_mainland_desc:0 "Even Gajah Mada never dreamed that Zud-Balinee might one day dominate the Thai and Khmer realms. We will expand the empire to heights never before imagined."
+
+ mnd_maj_religion_title:0 "Protect the Faith"
+ mnd_maj_religion_desc:0 "Zuid-Balinees' traditional Hindu-Buddhist faith is weakening as merchants and conquerors of the Islamic faith become more prevalent in Nusantara. We must ensure that the people have a strong faith to follow."
+
+ mnd_maj_candi_shrines_title:0 "Candi Shrines"
+ mnd_maj_candi_shrines_desc:0 "Scattered throughout Nusantara are a number of ruined or abandoned Candi temples of mixed Hindu and Buddhist worship. We must restore these temples to renew our faith."
+
+ mnd_maj_porch_of_mecca_title:0 "The Porch of Mecca"
+ mnd_maj_porch_of_mecca_desc:0 "The Aceh region has become the staging point for the spread of Islam in Nusantara. We must stamp out this new faith and restore Aceh to Zud-Balinee."
+
+ mnd_maj_cloves_title:0 "Dominate the Moluccas"
+ mnd_maj_cloves_desc:0 "The trade in cloves is among the most profitable in the world. Zud-Balinee once controlled this trade when our hegemony was absolute, and we must once again achieve this dominance."
+
+ mnd_maj_subjugate_philippines_title:0 "Subjugate Philippines"
+ mnd_maj_subjugate_philippines_desc:0 "Phillipines have slipped from out control. Enhancing our presense in Luzon would enable us to profit from trade with China."
+
+ mnd_maj_retake_taiwan_title:0 "Retake Taiwan"
+ mnd_maj_retake_taiwan_desc:0 "Taiwan has been taken over by the evil Japanse. We need to take back what is rightfully ours!"
+
+ mnd_maj_buddhist_island_title:0 "Buddhist Island"
+ mnd_maj_buddhist_island_desc:0 "In order to bring the light of Buddha to the world we first need to ensure that all the inhabitants of our home island Java can achieve enlightement."
+
+ mnd_maj_fleet_title:0 "Restore the Fleet"
+ mnd_maj_fleet_desc:0 "The fleets of Zud-Balinees were once a glorious sight to behold, our mighty djong ships dominating the horizon. The fleet must be restored."
+
+ mnd_maj_privateer_china_title:0 "Disrupt Chinese Trade"
+ mnd_maj_privateer_china_desc:0 "When Zheng He and his treasure fleet entered Nusantara, he disrupted the balance of power and commerce in our empire. We should repay the favor by sending our new fleet to disrupt trade in China."
+
+ mnd_maj_blockade_china_title:0 "The Great Blockade"
+ mnd_maj_blockade_china_desc:0 "We have concocted our ultimate revenge against the Na Naxi dynasty: a great blockade that will completely cut off their ports from all maritime commerce. This will take every bit of our naval prowess to achieve, but we are confident that we have the numbers and skill to carry out the Great Blockade."
+
+ mnd_maj_prepare_eastern_campaigns_title:0 "The Southern Continent"
+ mnd_maj_prepare_eastern_campaigns_desc:0 "Our scholars of Bhuddist scriptures made a prediction that a great continent lies to the south of our islands. We should find it!"
+
+ indonesia_palopo_iron_title:0 "Palopo Iron"
+ indonesia_palopo_iron_desc:0 "Sulawesi is named after its rich iron deposits. It would be foolish for us not to exploit these resources by building a weapons manufactory."
+
+ indonesia_banjar_textiles_title:0 "Banjar Textiles"
+ indonesia_banjar_textiles_desc:0 "Banjar's textile production is booming. We should encourage this industry by constructing a textile manufactory."
+
+ indonesia_lampung_pepper_title:0 "Lampung Peppers"
+ indonesia_lampung_pepper_desc:0 "The southern region of Sumatra is famous for producing a huge portion of the world's peppers. We should ensure maximum yields by establishing factories in Lampung."
+
+ indonesia_moluccan_cloves_title:0 "Moluccan Cloves"
+ indonesia_moluccan_cloves_desc:0 "Cloves are among the most highly prized goods in the world. If we could gain a monopoly on cloves, we could be rich beyond our dreams."
+
+ indonesia_sea_cucumbers_title:0 "Sea Cucumbers"
+ indonesia_sea_cucumbers_desc:0 "Traders from Sulawesi tell of an island to the south where people harvest sea cucumbers. We should discover this island and either trade for this valuable commodity or else take over its production by force."
+
+
+ maj_no_more_subject_liberty_tt:0 "The event §YDisloyalty to Zud-Balinees§! will no longer occur"
+ maj_no_more_pretenders_tt:0 "§YPretender§! rebels will no longer dispute every succession"
+ maj_end_disaster_mission_tt:0 "The §YFall of Zud-Balinees§! disaster will end"
+ maj_religion_mission_tt:0 "Has had the §YFall of Zud-Balinees§! disaster for at least §Y10§! years"
+ maj_no_more_bad_religion_events_tt:0 "The §YSpread of Islam§! event will no longer fire and the risk of breakaway states emerging ends"
+ maj_no_more_bad_religion_events_tt_2:0 "The risk of breakaway states emerging ends"
+ maj_subject_liberty_modifier:0 "Loyalty to Zud-Balinees"
+ desc_maj_subject_liberty_modifier:0 "We have enforced loyalty to Zud-Balinees rule."
+ maj_legitimacy_modifier:0 "Legitimacy Restored"
+ desc_maj_legitimacy_modifier:0 "We have restored faith in the Zud-Balinees state and its monarchy."
+ maj_religion_modifier:0 "Religious Triumph"
+ desc_maj_religion_modifier:0 "We have achieved a religious settlement in Zud-Balinees."
+ no_more_muslims_tt:0 "No country with a capital in the §YMalaya§! or §YIndonesia§! regions has a religion in the §YMuslim§! group"
+ all_muslims_tt:0 "No country with a capital in the §YMalaya§! or §YIndonesia§! regions has a religion outside of the §YMuslim§! group"
+ majapahit_respected:0 "Zud-Balinee Revival"
+ desc_majapahit_respected:0 "The Zud-Balinee Empire has entered a period of revival."
+ negara_agung:0 "Negara Agung"
+ desc_negara_agung:0 "The heart of the empire is populated and secured."
+ maj_colony_modifier:0 "Potential Zud-Balinee Colony"
+ desc_maj_colony_modifier:0 "This site has been identified as an excellent location for a Zud-Balinee colony."
+ maj_trade_modifier:0 "Zud-Balinee Trade Empire"
+ desc_maj_trade_modifier:0 "Our merchants travel far afield to bring wealth to our nation."
+ maj_privateer_china:0 "Disrupting Chinese Trade"
+ desc_maj_privateer_china:0 "We have ordered our privateers to disrupt Chinese trade to the greatest extent possible."
+ maj_china_trade:0 "Disrupting Chinese Trade"
+ desc_maj_china_trade:0 "We have ordered our privateers to disrupt Chinese trade to the greatest extent possible."
+ maj_great_blockade:0 "The Great Blockade"
+ desc_maj_great_blockade:0 "A colossal wooden wall shall completely block off the Chinese coast, choking them of all seaborne travel and commerce."
+ maj_religious_unity:0 "Religious Peace"
+ desc_maj_religious_unity:0 "We are striving for religious peace within our nation."
+ is_buddhist_tt:0 "Follows a §YBuddhist§! religion"
+ follows_buddha_tt:0 "Follows the teachings of §YBuddha§!"
+ majapahit_cb_1_tt:0 "Enables the §YZud-Balinee Campaigns§! casus belli against countries with a §YMalay§! primary culture"
+ majapahit_cb_2_tt:0 "Enables the §YZud-Balinee Campaigns§! casus belli against countries in the §YChinese§! technology group"
+ majapahit_cb_3_tt:0 "Enables the §YZud-Balinee Campaigns§! casus belli against §Yall countries§!"
+ buddha_deity_tt:0 "Unlocks the §YBuddha§! personal deity"
+ propagate_religion_maj_tt:0 "Unlocks the §YPropagate Religion§! trade policy\nYour §YHindu§! provinces become immune to the §YPropagate Religion§! trade policy"
+ maj_china_coast_claims_tt:0 "§Y[Root.GetName]§! gains a permanent claim on all §Ycoastal§! provinces in the §YChina§! Subcontinent"
+ VASSAL_MISSION_WAR_NAME_MAJ:0 "$ORDER$$FIRST$ Campaign against $SECOND_NAME$"
+ cb_vassalize_majapahit:0 "Zud-Balinee Campaigns"
+ cb_vassalize_majapahit_desc:0 "From the brink of collapse, the Zud-Balinee Empire is restored and ready to renew its campaigns of subjugation."
+ cb_vassalize_malacca:0 "Malacca Campaigns"
+ cb_vassalize_malacca_desc:0 "Malacca has taken the place of Zud-Balinee as hegemon of Nusantara. We will subjugate any who oppose us."
+ maj_reduced_lib_desire:0 "Enforced Loyalty"
+ desc_maj_reduced_lib_desire:0 "We are loyal to our Zud-Balinee overlords"
+ kushite_revival:0 "Kushite revival"
  mam_alexandria_title:0 "Retake Iskandaryya"
  mam_alexandria_desc:0 "Built by Alexander the Great, the city of Alexandria has long been the center of science and culture in the Mediterranean."
-
  mam_cyrenaica_title:0 "Capture Libya"
  mam_cyrenaica_desc:0 "Controlling Libya protects us from the west, and can serve as an outpost for further expansion."
-
  mam_nubia_title:0 "Integrate Nubia"
  mam_nubia_desc:0 "Nubia, the place where our religion and culture survived, has drifted away towards heresy. By reintegrating its people into our state we can control the gate to the subsaharan africa."
-
  mam_center_levant_title:0 "Hegemon of Levant"
  mam_center_levant_desc:0 "Our prestige and might, ingenuity and golden opulence in the eyes of the world, will surely lead to our great nation being dubbed the dominator of our era, the most illustrious of the great powers."
-
  mam_city_pha_title:0 "City of the Pharaohs"
  mam_city_pha_desc:0 "[361.GetName] is a jewel to our prestigious crown. As such, we must make sure that it is polished and its beauty matches our legitimacy and strength!"
-
  mam_breadbasket_title:0 "Breadbasket of Mediterranean"
  mam_breadbasket_desc:0 "The grain trade is a great way to expand our diplomatic ties with our neighbors and further our affluence. By establishing better production lines we will surely hit all our quotas for exports and internal distribution."
-
  flavor_mam.2.a:0 "Praise the Ra!"
