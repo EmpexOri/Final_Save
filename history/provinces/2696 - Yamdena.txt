@@ -29,6 +29,7 @@ discovered_by = PLB
 discovered_by = SUN
 discovered_by = TER
 discovered_by = TID
+discovered_by = MSA
 native_size = 10
 native_ferocity = 1
 native_hostileness = 2
