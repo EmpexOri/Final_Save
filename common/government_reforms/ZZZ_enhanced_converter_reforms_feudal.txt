@@ -1008,3 +1008,72 @@ diwan_al_khass_reform = {
 		factor = 10
 	}
 }
+
+prussian_monarchy = {
+	icon = "prussian_monarchy"
+	allow_normal_conversion = yes
+	potential = {
+		has_dlc = "Domination"
+		NOT = { has_reform = prussian_monarchy_base }
+		OR = {
+			AND = {
+				tag = PRU
+				OR = {
+					has_mission = emp_brapru_army_reforms_2
+					has_mission = emp_brapru_army_reforms_3
+				}
+				NOT = { map_setup = map_setup_random }
+			}
+			AND = {
+				tag = GBH
+				OR = {
+					has_mission = emp_brapru_army_reforms_2
+					has_mission = emp_brapru_army_reforms_3
+				}
+				NOT = { map_setup = map_setup_random }
+			}
+			has_unlocked_government_reform = { government_reform = prussian_monarchy }
+			has_reform = prussian_monarchy
+			have_had_reform = prussian_monarchy
+		}
+	}
+	trigger = {
+		OR = {
+			religion = protestant
+			religion = reformed
+			religion = hussite
+			religion = anglican
+			religion = catholic
+			has_unlocked_government_reform = { government_reform = prussian_monarchy }
+		}
+	}
+	legacy_equivalent = prussian_monarchy_legacy
+
+	modifiers = {
+		war_exhaustion = -0.02
+		global_unrest = -2
+		global_autonomy = -0.075
+		max_absolutism = 10
+		monarch_military_power = 3
+		nobles_loyalty_modifier = 0.1
+	}
+
+	conditional = {
+		allow = { has_dlc = "Domination" }
+		government_abilities = {
+			prussian_militarization_mechanic_1
+		}
+	}
+	conditional = {
+		allow = { has_dlc = "Domination" }
+		government_abilities = {
+			prussian_militarization_mechanic_2
+		}
+	}
+	conditional = {
+		allow = { has_dlc = "Domination" }
+		government_abilities = {
+			prussian_militarization_mechanic_3
+		}
+	}
+}

@@ -1,5 +1,5 @@
-owner = BOH
-controller = BOH
+owner = GBH
+controller = GBH
 capital = "Kraków"
 is_city = yes
 culture = polish
@@ -11,7 +11,7 @@ base_production = 3
 base_manpower = 4
 extra_cost = 16
 center_of_trade = 2
-add_core = BOH
+add_core = GBH
 add_permanent_claim = KRA
 discovered_by = AST
 discovered_by = CRI

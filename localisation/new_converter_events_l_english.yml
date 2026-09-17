@@ -403,7 +403,3 @@
  religious_events.998.d:0  "Yazidi communities in our country rejoice as they learn of our intention to make their religion our own. All those missionaries sent to the court in [Root.Capital.GetName] have finally paid off."
  religious_events.998.z1:3 "The black book contains the truth."
  religious_events.998.z2:3 "Xwedê is great."
-
- patch_china_events.0.t:0  "Gold found in Kurokawa!"
- patch_china_events.0.d:0  "Prospectors trying their luck found a large gold vein in Kai province."
- patch_china_events.0.a:3  "Start mining!"

@@ -1,5 +1,5 @@
-owner = BOH
-controller = BOH
+owner = GBH
+controller = GBH
 capital = "Checiny"
 is_city = yes
 culture = polish
@@ -9,7 +9,7 @@ hre = yes
 base_tax = 5
 base_production = 3
 base_manpower = 4
-add_core = BOH
+add_core = GBH
 add_permanent_claim = KRA
 discovered_by = AST
 discovered_by = CRI

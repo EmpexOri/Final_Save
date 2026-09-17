@@ -1,5 +1,5 @@
-owner = BOH
-controller = BOH
+owner = GBH
+controller = GBH
 capital = "Lille"
 is_city = yes
 culture = wallonian
@@ -9,7 +9,7 @@ hre = yes
 base_tax = 2
 base_production = 4
 base_manpower = 4
-add_core = BOH
+add_core = GBH
 add_core = HAI
 add_permanent_claim = FRA
 add_permanent_claim = Z01

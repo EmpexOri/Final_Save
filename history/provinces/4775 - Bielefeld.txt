@@ -1,5 +1,5 @@
-owner = WES
-controller = WES
+owner = RVA
+controller = RVA
 capital = "Bielefeld"
 is_city = yes
 culture = dynamic-saxon-culture-num1
@@ -9,7 +9,7 @@ hre = yes
 base_tax = 6
 base_production = 1
 base_manpower = 3
-add_core = WES
+add_core = RVA
 discovered_by = eastern
 discovered_by = muslim
 discovered_by = ottoman
