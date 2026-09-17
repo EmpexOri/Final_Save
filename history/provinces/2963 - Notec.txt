@@ -1,5 +1,5 @@
-owner = DNZ
-controller = DNZ
+owner = TEU
+controller = TEU
 capital = "Naklo"
 is_city = yes
 culture = polish
@@ -9,7 +9,7 @@ hre = yes
 base_tax = 1
 base_production = 2
 base_manpower = 2
-add_core = DNZ
+add_core = TEU
 add_permanent_claim = POL
 discovered_by = AST
 discovered_by = CRI

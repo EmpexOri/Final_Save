@@ -6,7 +6,6 @@ religion = catholic
 primary_culture = polish
 capital = 4240
 add_accepted_culture = hungarian
-elector = yes
 set_country_flag = ZZZ_generated_converter_nation
 1444.11.11= {
 	monarch = {

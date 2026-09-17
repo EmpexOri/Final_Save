@@ -232,44 +232,6 @@ dynamic-mongol-culture-num1_ideas = {
 }
 
 
-dynamic-bavarian-czech-culture-num1_ideas = {
-	start = {
-		 missionaries = 1
-		 religious_unity = 0.10
-	}
-	trigger = {
-		culture = dynamic-bavarian-czech-culture-num1
-	}
-	free = yes
-
-	tradition_stand_and_fight = {
-		land_morale = 0.10
-	}
-	tradition_hereditary_hierarchy = {
-		free_adm_policy = 1
-	}
-	tradition_castle_keepers = {
-		garrison_size = 0.10
-	}
-	tradition_mountaineer_ruralism = {
-		development_cost = -0.1
-		shock_damage_received = -0.05
-	}
-	tradition_hard_working = {
-		build_cost = -0.1
-	}
-	tradition_zealous_people = {
-		cb_on_religious_enemies = yes
-	}
-	tradition_forest_folk = {
-		development_cost = -0.1
-	}
-	bonus = {
-		discipline = 0.025
-	}
-}
-
-
 dynamic-chihan-culture-num1_ideas = {
 	start = {
 		 missionaries = 1

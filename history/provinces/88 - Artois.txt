@@ -1,5 +1,5 @@
-owner = BOH
-controller = BOH
+owner = GBH
+controller = GBH
 capital = "Arras"
 is_city = yes
 culture = cosmopolitan_french
@@ -9,7 +9,7 @@ hre = yes
 base_tax = 4
 base_production = 4
 base_manpower = 2
-add_core = BOH
+add_core = GBH
 add_permanent_claim = FRA
 add_permanent_claim = Z01
 discovered_by = eastern

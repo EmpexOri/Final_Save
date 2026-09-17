@@ -1,0 +1,41 @@
+dynamic-bavarian-czech-culture-num1_ideas = {
+	start = {
+		army_tradition = 0.5
+		ae_impact = -0.10
+	}
+	
+	bonus = {
+		discipline = 0.05
+	}
+	
+	trigger = {
+		tag = GBH
+	}
+	free = yes		#will be added at load.
+	
+	german_kingdom = {
+		culture_conversion_cost = -0.25
+		development_cost_in_primary_culture = -0.05
+		global_unrest = -2
+	}
+	army_professionalism = {
+		land_morale = 0.20
+	}	
+	soldier_king = {
+		army_tradition_decay = -0.02
+	}
+	noble_cadets = {
+		nobles_loyalty_modifier = 0.10
+	}
+	goose_step = {
+		infantry_power = 0.20
+	}
+	regimental_cantons = {
+		global_manpower_modifier = 0.25
+		global_regiment_recruit_speed = -0.10
+	}
+	religious_toleration = {
+		development_cost = -0.05
+		tolerance_heretic = 1
+	}
+}

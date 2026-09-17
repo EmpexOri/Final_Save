@@ -1,0 +1,27 @@
+on_startup = {
+	emperor = {
+		save_global_event_target_as = Emperor
+	}
+	if = {
+		limit = {
+			has_dlc = "Mandate of Heaven"
+		}
+		if = {
+			limit = { is_emperor_of_china = yes }
+			save_global_event_target_as = EmperorOfChina
+		}
+	}
+	else = {
+		if = {
+			limit = { has_reform = celestial_empire }
+			save_global_event_target_as = EmperorOfChina
+		}
+	}
+	events = {
+		muslim_school_events.20 #Pick School
+		patch_china_events.1 #Na Naxi state of affairs
+	}
+	on_startup_effect = yes
+	on_startup_dlc_cleanup_effect = yes
+	initialize_schools_effect = yes #This is only used here but is used for readability of on_action file.
+}

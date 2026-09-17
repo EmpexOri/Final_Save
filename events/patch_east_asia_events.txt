@@ -32,3 +32,83 @@ province_event = {
 }
 
 
+country_event = { #The Decadent State of the Ming Dynasty
+	id = patch_china_events.1
+	title = patch_china_events.1.t
+	desc = patch_china_events.1.d
+	picture = COUNTRY_COLLAPSE_eventPicture
+	fire_only_once = yes 
+	trigger = {
+		has_dlc = "Domination"
+		tag = CHN
+		is_emperor_of_china = yes 
+		NOT = { has_country_flag = mng_received_starting_event } 
+	}
+	is_triggered_only = yes 
+	
+	mean_time_to_happen = { days = 1 } 
+	
+	immediate = {
+		hidden_effect = {
+			add_country_modifier = { 
+				name = mng_starting_malus_5_modifier
+				duration = -1 
+			}
+			set_country_flag = mng_received_starting_event
+		}
+	}
+	option = {
+		name = patch_china_events.1.a 
+		
+		custom_tooltip = mng_great_autonomy_tt
+	}
+}
+
+namespace = flavor_mng
+
+country_event = { #The Gang of Eight
+	id = flavor_mng.50
+	title = flavor_mng.50.t
+	desc = flavor_mng.50.d
+	picture = ASSASSINATION_eventPicture
+	fire_only_once = yes 
+	trigger = {
+		is_emperor_of_china = yes 
+		estate_influence = {
+			estate = estate_eunuchs 
+			influence = 70 
+		}
+		is_year = 1500 
+		NOT = { is_year = 1550 } 
+	}
+	
+	mean_time_to_happen = { months = 240 }
+
+	option = { 
+		name = flavor_mng.50.a 
+		
+		add_estate_loyalty = {
+			estate = estate_eunuchs 
+			loyalty = -20 
+		}
+		change_estate_land_share = {
+			estate = estate_eunuchs
+			share = -10 
+		}
+		add_stability = -3 
+		add_corruption = -1 
+	}
+	
+	option = {
+		name = flavor_mng.50.b 
+		
+		add_estate_influence_modifier = {
+			estate = estate_eunuchs 
+			influence = 15
+			duration = 9125
+			desc = estate_eunuchs_15_influence_desc
+		}
+		
+		add_corruption = 2 
+	}
+}

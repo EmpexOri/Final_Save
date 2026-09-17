@@ -1,5 +1,5 @@
-owner = DNZ
-controller = DNZ
+owner = TEU
+controller = TEU
 capital = "Rawa"
 is_city = yes
 culture = polish
@@ -9,7 +9,7 @@ hre = yes
 base_tax = 4
 base_production = 1
 base_manpower = 2
-add_core = DNZ
+add_core = TEU
 add_permanent_claim = MAZ
 discovered_by = AST
 discovered_by = CRI

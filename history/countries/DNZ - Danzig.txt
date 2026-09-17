@@ -1,11 +1,12 @@
-government = monarchy
-add_government_reform = feudalism_reform
+government = republic
+add_government_reform = free_city
 government_rank = 1
 technology_group = western
 religion = catholic
 primary_culture = polish
 capital = 43
 add_accepted_culture = old_pommeranian
+mercantilism = 25
 1444.11.11= {
 	monarch = {
 		name = "Szczesny"
