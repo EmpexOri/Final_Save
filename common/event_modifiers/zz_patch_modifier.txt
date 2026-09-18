@@ -3,3 +3,9 @@ kushite_revival = {
 	missionaries = 1
 	missionary_maintenance_cost = -0.5
 }
+
+nov_karelia_capital_boom = {
+	local_development_cost = -0.10        # -10% Dev cost
+	local_manpower_modifier = 0.15        # +15% Manpower
+	local_local_autonomy = -0.05          # Monthly autonomy reduction
+}

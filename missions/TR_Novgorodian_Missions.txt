@@ -211,86 +211,7 @@ tr_novgorod_1 = {
 			}
 		}
 	}
-}
-
-tr_novgorod_2 = {
-	slot = 2
-	generic = no
-	ai = yes
-	potential_on_load = {
-		has_dlc = "Third Rome"
-	}
-	potential = {
-		tag = NOV
-		has_dlc = "Third Rome"
-		NOT = { map_setup = map_setup_random }
-	}
-	has_country_shield = yes
-
-	nov_conquer_tver = {
-		icon = mission_conquer_tver
-		required_missions = { nov_recover_cores }
-		position = 2
-		provinces_to_highlight = {
-			OR = {
-				province_id = 30
-				province_id = 32
-				province_id = 309
-				province_id = 313
-			}
-			NOT = {
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-		}
-		trigger = {
-			30 = {
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-			32 = {
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-			309 = {
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-			313 = {
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-		}
-		effect = {
-			tver_area = {
-				limit = {
-					country_or_non_sovereign_subject_holds = ROOT
-				}
-				add_province_modifier = {
-					name = "nov_tver_conquest"
-					duration = 7300
-				}
-			}
-			274 = {
-				if = {
-					limit = {
-						NOT = {
-							is_permanent_claim = ROOT
-							is_core = ROOT
-						}
-					}
-					add_permanent_claim = ROOT
-				}
-			}
-			1960 = {
-				if = {
-					limit = {
-						NOT = {
-							is_permanent_claim = ROOT
-							is_core = ROOT
-						}
-					}
-					add_permanent_claim = ROOT
-				}
-			}
-		}
-	}
-	nov_conquer_princes = {
+		nov_conquer_princes = {
 		icon = mission_dethrone_the_rurikovichs
 		required_missions = { nov_conquer_tver nov_defeat_mos  }
 		provinces_to_highlight = {
@@ -351,6 +272,166 @@ tr_novgorod_2 = {
 			add_country_modifier = {
 				name = "nov_ruriks_eliminated"
 				duration = 7300
+			}
+		}
+	}
+}
+
+tr_novgorod_2 = {
+	slot = 2
+	generic = no
+	ai = yes
+	potential_on_load = {
+		has_dlc = "Third Rome"
+	}
+	potential = {
+		tag = NOV
+		has_dlc = "Third Rome"
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+
+	nov_conquer_tver = {
+		icon = mission_conquer_tver
+		required_missions = { nov_recover_cores }
+		position = 2
+		provinces_to_highlight = {
+			OR = {
+				province_id = 30
+				province_id = 32
+				province_id = 309
+				province_id = 4124
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			30 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			32 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			309 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			4124 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			tver_area = {
+				limit = {
+					country_or_non_sovereign_subject_holds = ROOT
+				}
+				add_province_modifier = {
+					name = "nov_tver_conquest"
+					duration = 7300
+				}
+			}
+			# Added South Karelia Area
+			karelia_area = {
+				limit = {
+					country_or_non_sovereign_subject_holds = ROOT
+				}
+				add_province_modifier = {
+					name = "nov_tver_conquest"
+					duration = 7300
+				}
+			}
+			# Added North Karelia Area
+			north_karelia = {
+				limit = {
+					country_or_non_sovereign_subject_holds = ROOT
+				}
+				add_province_modifier = {
+					name = "nov_tver_conquest"
+					duration = 7300
+				}
+			}
+			# Renames Province 33
+			33 = {
+				change_province_name = "St. Baylonburg"
+			}
+			274 = {
+				if = {
+					limit = {
+						NOT = {
+							is_permanent_claim = ROOT
+							is_core = ROOT
+						}
+					}
+					add_permanent_claim = ROOT
+				}
+			}
+			1960 = {
+				if = {
+					limit = {
+						NOT = {
+							is_permanent_claim = ROOT
+							is_core = ROOT
+						}
+					}
+					add_permanent_claim = ROOT
+				}
+			}
+		}
+	}
+	
+	nov_develop_capital = {
+		icon = mission_early_game_buildings 
+		required_missions = { nov_conquer_tver } 
+		
+		provinces_to_highlight = {
+			province_id = 33
+			NOT = {
+				development = 10
+			}
+		}
+		
+		trigger = {
+			# You or your subject must hold it
+			33 = {
+				country_or_non_sovereign_subject_holds = ROOT
+				development = 10 # Mission requires at least 10 dev
+			}
+		}
+		
+		effect = {
+			# Moves your nation's capital to Province 33
+			set_capital = 33
+			
+			# Development bonus to the Karelia area
+			karelia_area = {
+				limit = {
+					country_or_non_sovereign_subject_holds = ROOT
+				}
+				# Adds 1 Base Tax, 1 Base Production, and 1 Base Manpower to your provinces here
+				add_base_tax = 1
+				add_base_production = 1
+				add_base_manpower = 1
+				
+				# Minor bonus modifier
+				add_province_modifier = {
+					name = "nov_karelia_capital_boom"
+					duration = 7300 # 20 years
+				}
+			}
+			
+			# Development bonus to the North Karelia area
+			north_karelia = {
+				limit = {
+					country_or_non_sovereign_subject_holds = ROOT
+				}
+				add_base_tax = 1
+				add_base_production = 1
+				add_base_manpower = 1
+				
+				add_province_modifier = {
+					name = "nov_karelia_capital_boom"
+					duration = 7300
+				}
 			}
 		}
 	}
