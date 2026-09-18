@@ -1,0 +1,24 @@
+music = {
+    name = cupofgold      
+    file = "cupofgold.ogg"  
+}
+
+music = {
+    name = radetzky_march
+    file = "radetzky_march.ogg"
+}
+
+music = {
+    name = voc
+    file = "voc.ogg"
+}
+
+music = {
+    name = lord_verity
+    file = "lord_verity.ogg"
+}
+
+music = {
+    name = hey_its_me
+    file = "hey_its_me.ogg"
+}

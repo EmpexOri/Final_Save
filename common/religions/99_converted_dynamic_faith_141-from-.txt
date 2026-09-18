@@ -1,0 +1,35 @@
+converted_dynamic_faith_141 = {
+	converted_dynamic_faith_141 = {
+		color = { 2 136 99 }
+		icon =  179
+		country = {
+ 
+		tolerance_heathen = -1
+	
+
+		heir_chance = 0.5
+	
+
+		female_advisor_chance = 0.5
+	
+
+		tolerance_heathen = 1
+		tolerance_heretic = 1
+	
+}
+		country_as_secondary = {
+ 
+		discipline = 0.025
+	
+
+		diplomatic_reputation = 1
+	
+}
+		province = {
+ 
+		local_missionary_strength = -0.02
+	
+}
+	}
+}
+
