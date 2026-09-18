@@ -1,0 +1,136 @@
+song = {
+    name = cupofgold
+    chance = {
+        # Base chance: 1 only if the country is China, Japan, or Korea
+        modifier = {
+            factor = 1
+            OR = {
+                tag = CHN
+                tag = JAP   # Japan
+                tag = KOR   # Korea
+            }
+        }
+        # For all other countries, force the chance to 0
+        modifier = {
+            factor = 0
+            NOT = {
+                OR = {
+                    tag = CHN
+                    tag = JAP
+                    tag = KOR
+                }
+            }
+        }
+        # Double the chance when at war (applies on top of the base)
+        modifier = {
+            factor = 2
+            is_at_war = yes
+        }
+    }
+}
+
+song = {
+    name = radetzky_march
+    chance = {
+        # Base chance: 1 only for GBH
+        modifier = {
+            factor = 1
+            tag = GBH
+        }
+        # Zero chance for everyone else
+        modifier = {
+            factor = 0
+            NOT = { tag = GBH }
+        }
+        # 5x chance when at war
+        modifier = {
+            factor = 5
+            is_at_war = yes
+        }
+    }
+}
+
+song = {
+    name = voc
+    chance = {
+        # Base chance: 1 only for MSA
+        modifier = {
+            factor = 1
+            tag = MSA
+        }
+        # Zero chance for everyone else
+        modifier = {
+            factor = 0
+            NOT = { tag = MSA }
+        }
+        # Double the chance after 1600
+        modifier = {
+            factor = 2
+            is_year = 1600
+        }
+    }
+}
+
+song = {
+    name = hey_its_me
+    chance = {
+        # NOV base chance 1
+        modifier = {
+            factor = 1
+            tag = NOV
+        }
+        # EGY base chance 2 (double NOV)
+        modifier = {
+            factor = 2
+            tag = EGY
+        }
+        # RUS base chance 1 (same as NOV)
+        modifier = {
+            factor = 1
+            tag = RUS
+        }
+        # Everyone else gets 0
+        modifier = {
+            factor = 0
+            NOT = {
+                OR = {
+                    tag = NOV
+                    tag = EGY
+                    tag = RUS
+                }
+            }
+        }
+    }
+}
+
+song = {
+    name = lord_verity
+    chance = {
+        # NOV base chance 1
+        modifier = {
+            factor = 1
+            tag = NOV
+        }
+        # EGY base chance 2 (double NOV)
+        modifier = {
+            factor = 2
+            tag = EGY
+        }
+        # RUS base chance 1 (same as NOV)
+        modifier = {
+            factor = 1
+            tag = RUS
+        }
+        # Everyone else gets 0
+        modifier = {
+            factor = 0
+            NOT = {
+                OR = {
+                    tag = NOV
+                    tag = EGY
+                    tag = RUS
+                }
+            }
+        }
+    }
+}
