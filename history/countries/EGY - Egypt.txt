@@ -18,7 +18,7 @@ mercantilism = 15
 		religion = kushite
 		culture = al_misr_arabic
 	}
-	add_ruler_personality = cruel_personality
+	add_ruler_personality = strict_personality
 	add_ruler_personality = tactical_genius_personality
 	queen = {
 		name = "Aderob"
@@ -48,7 +48,6 @@ mercantilism = 15
 		religion = kushite
 		culture = al_misr_arabic
 	}
-	add_heir_personality = midas_touched_personality
 	add_heir_personality = zealot_personality
 }
 1444.11.11= {

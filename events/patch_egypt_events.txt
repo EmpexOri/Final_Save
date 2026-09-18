@@ -12,9 +12,16 @@ country_event = {
 		ai_chance = { factor = 5 }
 		name = flavor_egy_kus.1.a
 		360 = {
-			add_base_tax = 2
-			add_base_production = 2
-			add_base_manpower = 2
+			add_base_tax = 1
+			add_base_production = 1
+			add_base_manpower = 1
+		}
+
+		1234 = {
+			add_base_tax = 1
+			add_base_production = 1
+			add_base_manpower = 1
+			change_religion = kushite
 		}
 	}
 }
