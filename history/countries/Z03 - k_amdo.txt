@@ -2,7 +2,7 @@ government = monarchy
 add_government_reform = plutocratic_reform
 government_rank = 2
 technology_group = chinese
-religion = converted_dynamic_faith_140
+religion = daoshenic
 primary_culture = xibei
 capital = 2184
 set_country_flag = ZZZ_generated_converter_nation
@@ -14,7 +14,7 @@ set_country_flag = ZZZ_generated_converter_nation
 		dip = 4
 		mil = 3
 		birth_date = 1402.11.6
-		religion = converted_dynamic_faith_140
+		religion = daoshenic
 		culture = xibei
 	}
 	add_ruler_personality = drunkard_personality
@@ -45,7 +45,7 @@ set_country_flag = ZZZ_generated_converter_nation
 		death_date = 1492.7.6
 		female = yes
 		claim = 89
-		religion = converted_dynamic_faith_140
+		religion = daoshenic
 		culture = chihan
 	}
 	add_heir_personality = tactical_genius_personality

@@ -2,7 +2,7 @@ government = monarchy
 add_government_reform = plutocratic_reform
 government_rank = 2
 technology_group = chinese
-religion = converted_dynamic_faith_140
+religion = daoshenic
 primary_culture = chihan
 capital = 609
 1444.11.11= {
@@ -14,7 +14,7 @@ capital = 609
 		mil = 3
 		birth_date = 1396.4.4
 		female = yes
-		religion = converted_dynamic_faith_140
+		religion = daoshenic
 		culture = chihan
 	}
 	add_ruler_personality = drunkard_personality
@@ -43,7 +43,7 @@ capital = 609
 		birth_date = 1415.1.5
 		death_date = 1480.1.5
 		claim = 89
-		religion = converted_dynamic_faith_140
+		religion = daoshenic
 		culture = chihan
 	}
 	add_heir_personality = drunkard_personality

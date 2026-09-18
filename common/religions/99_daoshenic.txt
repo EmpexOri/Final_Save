@@ -2,7 +2,7 @@ eastern = {
 
 	flags_with_emblem_percentage = 33
 	flag_emblem_index_range = { 58 80 }
-	converted_dynamic_faith_140 = {
+	daoshenic = {
 		color = { 207 73 102 }
 		icon =  178
 		uses_harmony = yes

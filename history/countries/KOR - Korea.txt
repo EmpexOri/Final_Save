@@ -28,7 +28,7 @@ capital = 735
 		birth_date = 1395.12.10
 		death_date = 1455.12.10
 		female = yes
-		religion = converted_dynamic_faith_140
+		religion = daoshenic
 		culture = chihan
 	}
 	add_queen_personality = bold_fighter_personality
