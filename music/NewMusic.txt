@@ -58,10 +58,24 @@ song = {
             factor = 1
             tag = MSA
         }
+        # In a war with MSA
+        modifier = {
+            factor = 4
+            is_at_war = {
+                participants = MSA
+            }
+        }
         # Zero chance for everyone else
         modifier = {
             factor = 0
-            NOT = { tag = MSA }
+            AND = {
+                NOT = { tag = MSA }
+                NOT = {
+                    is_at_war = {
+                        participants = MSA
+                    }
+                }
+            }
         }
         # Double the chance after 1600
         modifier = {
@@ -129,6 +143,48 @@ song = {
                     tag = NOV
                     tag = EGY
                     tag = RUS
+                }
+            }
+        }
+    }
+}
+
+
+song = {
+    name = portugal
+    chance = {
+        # Z01 base chance 1
+        modifier = {
+            factor = 1
+            tag = Z01
+        }
+        # Everyone else gets 0
+        modifier = {
+            factor = 0
+            NOT = {
+                tag = Z01
+            }
+        }
+    }
+}
+
+song = {
+    name = taiko_shamisen
+    chance = {
+        factor = 1
+
+        modifier = {
+            factor = 3
+            is_at_war = {
+                participants = JAP
+            }
+        }
+        # Everyone else gets 0
+        modifier = {
+            factor = 0
+            NOT = {
+                is_at_war = {
+                    participants = JAP
                 }
             }
         }
