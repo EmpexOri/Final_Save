@@ -1,5 +1,5 @@
-owner = MSA
-controller = MSA
+owner = LUW
+controller = LUW
 capital = "Gorontalo"
 is_city = yes
 culture = sulawesi
@@ -9,8 +9,7 @@ base_tax = 1
 base_production = 1
 base_manpower = 2
 add_core = MKS
-add_core = MSA
-add_permanent_claim = LUW
+add_core = LUW
 discovered_by = chinese
 discovered_by = indian
 discovered_by = muslim

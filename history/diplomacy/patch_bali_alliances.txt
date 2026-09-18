@@ -1,0 +1,80 @@
+dependency = {
+	subject_type = "tributary_state"
+	first = MSA
+	second = SMB
+	start_date = 1444.1.1
+	end_date = 1644.4.22
+}
+
+dependency = {
+	subject_type = "tributary_state"
+	first = MSA
+	second = KUT
+	start_date = 1444.1.1
+	end_date = 1644.4.22
+}
+
+
+dependency = {
+	subject_type = "tributary_state"
+	first = MSA
+	second = BEI
+	start_date = 1444.1.1
+	end_date = 1644.4.22
+}
+
+dependency = {
+	subject_type = "tributary_state"
+	first = MSA
+	second = Z42
+	start_date = 1444.1.1
+	end_date = 1644.4.22
+}
+
+dependency = {
+	subject_type = "tributary_state"
+	first = MSA
+	second = MAS
+	start_date = 1444.1.1
+	end_date = 1644.4.22
+}
+
+dependency = {
+	subject_type = "tributary_state"
+	first = MSA
+	second = LUW
+	start_date = 1444.1.1
+	end_date = 1644.4.22
+}
+
+dependency = {
+	subject_type = "tributary_state"
+	first = MSA
+	second = Z0J
+	start_date = 1444.1.1
+	end_date = 1644.4.22
+}
+
+dependency = {
+	subject_type = "tributary_state"
+	first = MSA
+	second = PGR
+	start_date = 1444.1.1
+	end_date = 1644.4.22
+}
+
+dependency = {
+	subject_type = "tributary_state"
+	first = MSA
+	second = BTN
+	start_date = 1444.1.1
+	end_date = 1644.4.22
+}
+
+dependency = {
+	subject_type = "tributary_state"
+	first = MSA
+	second = Z2S
+	start_date = 1444.1.1
+	end_date = 1644.4.22
+}

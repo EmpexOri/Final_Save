@@ -7544,8 +7544,11 @@ prambanan_temple = {
 
 	#can we build it?
 	build_trigger = {
-		province_is_or_accepts_religion_group = {
-			religion_group = dharmic
+		OR = {
+			province_is_or_accepts_religion_group = {
+				religion_group = dharmic
+			}
+			owned_by = MSA
 		}
 	}
 
@@ -7561,15 +7564,21 @@ prambanan_temple = {
 
 	#can our country use it?
 	can_use_modifiers_trigger = {
-		province_is_or_accepts_religion_group = {
-			religion_group = dharmic
+		OR = {
+			province_is_or_accepts_religion_group = {
+				religion_group = dharmic
+			}
+			owned_by = MSA
 		}
 	}
 
 	#can our country upgrade it?
 	can_upgrade_trigger = {
-		province_is_or_accepts_religion_group = {
-			religion_group = dharmic
+		OR = {
+			province_is_or_accepts_religion_group = {
+				religion_group = dharmic
+			}
+			owned_by = MSA
 		}
 	}
 
@@ -9185,7 +9194,7 @@ heddal_stave_church = {
 
 versailles = {
 	# province it starts in
-	start = 183
+	start = 90
 	
 	# date built in real life (so anything built during game time will be there if you start a game after that date)
 	date = 1444.01.01 #1623 hunting lodge

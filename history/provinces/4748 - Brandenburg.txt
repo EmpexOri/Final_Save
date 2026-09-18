@@ -1,5 +1,5 @@
-owner = BOH
-controller = BOH
+owner = GBH
+controller = GBH
 capital = "Brandenburg an der Havel"
 is_city = yes
 culture = prussian
@@ -9,7 +9,7 @@ hre = yes
 base_tax = 2
 base_production = 4
 base_manpower = 4
-add_core = BOH
+add_core = GBH
 discovered_by = eastern
 discovered_by = muslim
 discovered_by = ottoman

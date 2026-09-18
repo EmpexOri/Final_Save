@@ -1,10 +1,17 @@
 government = monarchy
-add_government_reform = feudalism_reform
+add_government_reform = prussian_monarchy
 government_rank = 2
 technology_group = western
 religion = catholic
 primary_culture = dynamic-bavarian-czech-culture-num1
 capital = 266
+historical_friend = Z01
+elector = yes
+
+1444.10.1 = {
+	set_estate_privilege = estate_nobles_junker_primacy
+}
+
 1444.11.11= {
 	monarch = {
 		name = "Emporer of Mankind"
@@ -24,7 +31,7 @@ capital = 266
 		adm = 4
 		dip = 4
 		mil = 4
-		country_of_origin = BOH
+		country_of_origin = GBH
 		birth_date = 1418.12.27
 		death_date = 1478.12.27
 		female = yes
@@ -34,12 +41,12 @@ capital = 266
 	add_queen_personality = free_thinker_personality
 	add_queen_personality = tactical_genius_personality
 	heir = {
-		name = "Záštita"
-		monarch_name = "Záštita"
+		name = "Wolfgang"
+		monarch_name = "Wolfgang"
 		dynasty = "Trench"
-		adm = 1
-		dip = 3
-		mil = 1
+		adm = 4
+		dip = 6
+		mil = 4
 		birth_date = 1437.11.18
 		death_date = 1502.11.18
 		claim = 89

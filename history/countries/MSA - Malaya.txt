@@ -1,7 +1,7 @@
 government = monarchy
 add_government_reform = mandala_reform
-government_rank = 3
-technology_group = western
+government_rank = 2
+technology_group = chinese
 religion = vajrayana
 primary_culture = dutch
 capital = 2690

@@ -1,5 +1,5 @@
-owner = BOH
-controller = BOH
+owner = GBH
+controller = GBH
 capital = "Chlumec"
 is_city = yes
 culture = dynamic-bavarian-czech-culture-num1
@@ -9,7 +9,7 @@ hre = yes
 base_tax = 4
 base_production = 4
 base_manpower = 3
-add_core = BOH
+add_core = GBH
 discovered_by = AST
 discovered_by = CRI
 discovered_by = GOL

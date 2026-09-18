@@ -656,6 +656,7 @@ country_decisions = {
 			NOT = { tag = GER }
 			NOT = { tag = HLR }
 			NOT = { tag = BRA }
+			NOT = { tag = MSA }
 			NOT = { has_reform = celestial_empire }
 			NOT = { tag = TEU }
 		}

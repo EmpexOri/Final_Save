@@ -1,0 +1,167 @@
+﻿l_english:
+ emp_brapru_conquer_silesia_title:0 "Conquer Silesia"
+ emp_brapru_conquer_silesia_desc:0 "Although some would say that our claim to Silesia is a bit shaky, we do have some grounds for claiming this province as our own. The prestige of our country depends on us pushing those claims."
+
+ emp_brapru_conquer_pomerania_title:0 "Access to the sea"
+ emp_brapru_conquer_pomerania_desc:0 "We need to secure our access to the sea by subjugating Pomerania."
+
+ emp_brapru_prussia_partitions_poland_title:0 "Conquer Greater Poland"
+ emp_brapru_prussia_partitions_poland_desc:0 "Poland is weak and Russia wishes to continue to dominate her, for us to accept this situation we must be compensated with Polish lands."
+
+ emp_brapru_empower_the_junkers_title:0 "Empower the Junkers"
+ emp_brapru_empower_the_junkers_desc:0 "The Junkers, minor nobles, wield great influence in our nation. We must organize them and regulate their power so that they serve the interests of the state."
+
+ emp_brapru_army_reforms_1_title:0 "Professional Army"
+ emp_brapru_army_reforms_1_desc:0 "We must transition away from the practice of hiring mercenaries to fight our battles. Instead we will establish a professional army for our nation."
+
+ emp_brapru_army_reforms_2_title:0 "Army Reforms"
+ emp_brapru_army_reforms_2_desc:0 "Discipline is what separates an army from a mob. We must ensure that our soldiers are well-trained, well-equipped, and above all well-disciplined."
+
+ emp_brapru_army_reforms_3_title:0 "An Army with a State"
+ emp_brapru_army_reforms_3_desc:0 "Lesser states have an army. Our army shall have a state."
+
+ emp_brapru_reintegrate_meissen_title:0 "Reintegrate Meissen"
+ emp_brapru_reintegrate_meissen_desc:0 "Meissen has slipped from our control. Our first order of business must be reestablishing it."
+
+ emp_brapru_slovakian_gold_title:0 "Slovakian gold"
+ emp_brapru_slovakian_gold_desc:0 "Lands of Slovakia are rich, and the culture similar to Czech. We can repeat the successful germanization of these lands, if we were to take control of them."
+
+ emp_brapru_chinese_trade_title:0 "Trade in Canton"
+ emp_brapru_chinese_trade_desc:0 "The riches of the Orient lie untapped by European merchants. We must rush to exploit this new source of wealth. Set sail to Cathay!"
+
+ boh_bohemian_crystal_title:0 "Bohemian Crystal"
+ boh_bohemian_crystal_desc:0 "The production of an especially beautiful style of glasswork has become popular in our realm. We should promote this industry and ensure that our works are prized throughout the courts of Europe."
+
+ boh_vladislav_hall_title:0 "The Vladislav Hall"
+ boh_vladislav_hall_desc:0 "The Vladislav Hall is the largest hall of the Prague Castle, used for various public events, receptions, coronations, and even knight tournaments. Maintaining the grandeur of the Vladislav Hall is a testament to our nation's glory."
+
+ emp_brapru_show_of_strength_title:0 "A Show of Strength"
+ emp_brapru_show_of_strength_desc:0 "Before we can stake a claim to any great swathes of land in Germany, we must first demonstrate to the Princes that we are a force to be reckoned with."
+
+ emp_brapru_lower_saxony_title:0 "Conquer Lower Saxony"
+ emp_brapru_lower_saxony_desc:0 "Lower Saxony would be a natural route for our expansion. While campaigning in this region we must also make sure to defeat our rivals in Luneburg and Magdeburg, as well as securing the port of Emden."
+
+ emp_brapru_emden_company_title:0 "The Emden Company"
+ emp_brapru_emden_company_desc:0 "Now that we have access to the Atlantic via the port of Emden, we must charter a Royal Asiatic Company to traverse the oceans in search of wealth to bring home to our nation."
+
+ emp_brapru_kiel_canal_title:0 "Construct the Kiel Canal"
+ emp_brapru_kiel_canal_desc:0 "It has been suggested that the Atlantic and Pacific Oceans could be connected through the construction of a canal in Panama. This is of course absurd. However, it may be realistic to construct a canal linking the Baltic to the North Sea so that ships might pass from Emden to our Baltic ports."
+
+ emp_brapru_renovate_berlin_title:0 "Renovate Berlin"
+ emp_brapru_renovate_berlin_desc:0 "The city of Berlin is long overdue for architectural renovations and its infrastructure is in dire need of modernization. We must invest in large-scale improvements to the city and encourage its growth."
+
+ boh_the_golden_city_title:0 "The Golden City"
+ boh_the_golden_city_desc:0 "Prague, sometimes called the Golden City, is a pride of our kingdom and one of the most important cities in the entire Europe. It should be in our best interest to make the city deserve its nickname, and make it overshadow all capital cities of our rivals."
+
+ boh_reform_the_bergordnung_title:0 "Reform the Bergordnung"
+ boh_reform_the_bergordnung_desc:0 "New uses for coal are being discovered that could revolutionize the face of industry throughout the world. We should reform our mining laws so that we can start producing coal at peak efficiency."
+
+ boh_czech_heavy_industry_title:0 "Böhmisch Heavy Industry"
+ boh_czech_heavy_industry_desc:0 "The lands we control are abundant in resources that fuel the currently ongoing industrial revolution. Let us put them to good use, and revitalize our economy thanks to massive investments into production and manufacturing."
+
+ emp_brapru_the_balance_of_power_title:0 "The Balance of Power"
+ emp_brapru_the_balance_of_power_desc:0 "For much of our history we have played a minor part on the world stage. The great powers must be forced to consider us among their number."
+
+ emp_brapru_westphalian_conquest_title:0 "Westphalian Conquest"
+ emp_brapru_westphalian_conquest_desc:0 "We should expand our influence in Germany westward, into the lands of Westphalia."
+
+ emp_brapru_duchy_of_cleves_title:0 "The Duchy of Cleves"
+ emp_brapru_duchy_of_cleves_desc:0 "Through complex laws of succession, we have a claim to the Duchy of Cleves. While shaky, it provides a cause for expansion into the Rhineland."
+
+ emp_brapru_rhineland_conquest_title:0 "Rhineland Conquest"
+ emp_brapru_rhineland_conquest_desc:0 "The Rhineland is a highly contested region, at the forefront of conflicts between great powers as well as being home to many prosperous cities. We should conquer the region in preparation for our conquest of all Germany."
+
+ emp_brapru_german_empire_title:0 "German Confederation"
+ emp_brapru_german_empire_desc:0 "We have become a mighty nation, feared and respected by all statesmen with good sense. At last it is time to unite Germany into a single nation, whether by force or by diplomacy."
+
+ boh_municipal_works_title:0 "Bohemian Industry"
+ boh_municipal_works_desc:0 "The Kingdom of Bohemia should avoid being behind our neighbors in terms of industrialization. It is worth the investment to raise our profile in the area, and as such, to promote greater industry."
+
+ boh_univerzita_karlova_title:0 "Univerzita Karlova"
+ boh_univerzita_karlova_desc:0 "The Univerzita Karlova is one of the oldest universities in the world. We must ensure it remains a beacon of learning and culture in our nation."
+
+ gbh_pacify_normandy_title:0 "German Normandy"
+ gbh_pacify_normandy_desc:0 "Northern coast is a rich and prosperous region. We should send german and dutch settlers to solidify our control over it."
+
+ gbh_bohmisch_france_title:0 "Böhmisch France"
+ gbh_bohmisch_france_desc:0 "If we can enforce our customs in the historical heart of the french nation we will achieve an ultimate triumpf over the french."
+
+ boh_control_the_electors_title:0 "Control the Electors"
+ boh_control_the_electors_desc:0 "As one of the most powerful nations in the Empire, it is no surprise that we have our eye on the Imperial throne. Mere decades ago, the Empire was ruled by a Bohemian king, and it would be very beneficial for us if we were able to reclaim the crown for ourselves."
+
+ boh_karels_claims_title:0 "Charles IV's Claims"
+ boh_karels_claims_desc:0 "During the reign of Charles IV, Bohemia enjoyed its golden age, holding the Imperial crown and being the uncontested ruler of the entire Empire. Honoring Charles IV's legacy involves enforcing his claims and reclaiming the Imperial crown for ourselves."
+
+ boh_reformatio_sigismundi_title:0 "Reformatio Sigismundi"
+ boh_reformatio_sigismundi_desc:0 "The Emperor Sigismund, former King of Bohemia, planned a great reform of the Holy Roman Emperor. We should continue his legacy, and set the Empire on a new and glorious path."
+
+ boh_peace_in_europe_title:0 "Peace in Europe"
+ boh_peace_in_europe_desc:0 "Europe has been troubled by war between the great powers and minor princes alike for generations. It is time to put an end to the conflict. Under our benevolent rule, we shall expand the Empire drastically so as to usher in a golden age of peace and prosperity."
+
+
+ boh_shield_of_the_true_faith_title:0 "[Root.GetPreviewColorBOH_RELIGION]Shield of the True Faith[Root.GetPreviewColorBOH_RELIGION_end]"
+ boh_shield_of_the_true_faith_desc:0 "We have already proven our capability to fight against the heresies that threaten Christendom. Let us officially assume the title of our faith's protectors, so that we shall stand proudly as the champions of the cross."
+ boh_catholic_empire_title:0 "[Root.GetPreviewColorBOH_RELIGION]Catholic Empire[Root.GetPreviewColorBOH_RELIGION_end]"
+ boh_catholic_empire_desc:0 "As the shield of our faith, it is our sacred duty to protect the true teaching from those who seek to corrupt it. We must take a harsh stance against the heresies spreading throughout the Empire and make the Holy Roman Empire holy again!"
+ boh_hungarian_succession_title:0 "The Hungarian Succession"
+ boh_hungarian_succession_desc:0 "Until very recently, the Holy Crown of Hungary had been under our control. The devastating loss at the Battle of Varna has left the throne in Buda vacant, giving us the perfect opportunity to press our claims and retake it once again."
+ boh_claim_the_holy_crown_title:0 "Claim the Holy Crown"
+ boh_claim_the_holy_crown_desc:0 "Hungary and Bohemia have previously been united under a single King, being separated only in 1439 with the death of Albert the Magnanimous. We should restore this rightful state of affairs."
+ boh_protect_against_the_turk_title:0 "Protect Against the Turk"
+ boh_protect_against_the_turk_desc:0 "The Ottoman Turks are engaged in a dangerous spree of territorial conquest that threatens to engulf Christendom. We must ensure that the borders are fortified against the inevitable Turkish onslaught."
+ boh_revenge_for_nicopolis_title:0 "Revenge for Nicopolis"
+ boh_revenge_for_nicopolis_desc:0 "In 1396 the Bohemian crown embarked on a righteous crusade against the Turks in Bulgaria, only to be defeated by the heathens. We must rally our forces once again, retake Bulgaria, and drive the Turks back across the sea!"
+ boh_liberate_the_balkans_title:0 "Liberate the Balkans"
+ boh_liberate_the_balkans_desc:0 "Foreign oppressors have burdened the Balkans for too long. A strong Bohemian presence will be their liberation. Under our just rule, the people of the Balkans will enjoy freedom and prosperity."
+ boh_hussite_regency_title:0 "End the Regency"
+ boh_hussite_regency_desc:0 "The conflict between the various Hussite factions and those loyal to the Church of Rome has reached an uneasy settlement. Uncertainty in the line of succession is once again creating tensions between the religious factions. We must resolve the matter of succession and take a firm stance on the issue of religious orthodoxy."
+ boh_hussite_resurgence_title:0 "[Root.GetPreviewColorBOH_RELIGION]Hussite Resurgence[Root.GetPreviewColorBOH_RELIGION_end]"
+ boh_hussite_resurgence_desc:0 "Despite, or perhaps due to the death of Jan Hus in 1415, proponents of the Hussite movement have harbored bitter resentment towards us for many years. Conflicts have come to a head once again, and it is only a matter of time before we must make a choice on behalf of our people."
+ boh_defenestrate_the_heretics_title:0 "[Root.GetPreviewColorBOH_RELIGION]Defenestrate the Heretics[Root.GetPreviewColorBOH_RELIGION_end]"
+ boh_defenestrate_the_heretics_desc:0 "A Reformation is sweeping across Europe, and our history of unorthodoxy places us at the forefront of the theological and political conflict. We must take a stand for the true faith and introduce our heretical enemies to a window!"
+ boh_recover_nitrava_title:0 "Recover Nitrava"
+ boh_recover_nitrava_desc:0 "The realm of Great Moravia, the predecessor to Bohemia, once extended far beyond the lands of the Czechs. We should seek to expand our borders once again, beginning with the annexation of the old Principality of Nitra."
+ boh_electorate_of_saxony_title:0 "Electorate of Saxony"
+ boh_electorate_of_saxony_desc:0 "We require the support of additional electors. We should set our sights on the Elector of Saxony next, as we have long sought an opportunity to control Dresden."
+ boh_bozi_bojovnici_title:0 "Boží Bojovníci"
+ boh_bozi_bojovnici_desc:0 "During the Hussite Wars, the Hussites revolutionized the use of armored wagons during battles, which allowed them to claim victories against very unfavorable odds. No matter what our stance towards the Hussites is, it would be unwise to leave this successful tactic a thing of the past."
+ boh_humiliate_austria_title:0 "Humiliate Austria"
+ boh_humiliate_austria_desc:0 "Austria abuses the imperial throne and makes no secret of its plans to subjugate our nation. We must show the Princes of Germany, and the world, that Austria is not the mighty behemoth it pretends to be."
+ boh_otakars_legacy_title:0 "Otakar's Legacy"
+ boh_otakars_legacy_desc:0 "Having humiliated the Habsburgs, we must now seek to expand our influence over their lands to secure our status in the Empire, just as Premysl Otakar did centuries ago."
+ boh_reforge_great_moravia_title:0 "Reforge Great Moravia"
+ boh_reforge_great_moravia_desc:0 "The beacon of Slavic unity, Great Moravia, once shone brightly. It's about time we reignite its flame and unite all Slavs, standing as the only and true successors to the legacy of Rostislav and Svatopluk."
+ boh_lion_of_the_empire_title:0 "Lion of the Empire"
+ boh_lion_of_the_empire_desc:0 "As the only truly centralized realm and a kingdom within the Holy Roman Empire, we have the perfect position to assert our claims and exploit the weak structures of the Empire for our own benefit. We are the lion of the Empire, and we shall claim our destiny!"
+ boh_bohemian_commonwealth_title:0 "Bohemian Commonwealth"
+ boh_bohemian_commonwealth_desc:0 "We must look beyond what has traditionally been considered Bohemia to establish a greater commonwealth. Our empire shall span Central Europe, and we shall take our seat among the great powers of the world."
+ boh_vistula_land_title:0 "Secure the Vistula Land"
+ boh_vistula_land_desc:0 "The strategic location and trade potential of the Vistula land are too significant to overlook. Securing it would boost our nation's influence, and would curb Polish influence and their capability to pose a threat to us."
+ boh_electorate_of_brandenburg_title:0 "Electorate of Brandenburg"
+ boh_electorate_of_brandenburg_desc:0 "If we wish to secure the throne of the Holy Roman Empire, we will need the support of the electors. And what better way to secure a vote than to make the upstart nation of Brandenburg subservient to our political whims?"
+ boh_consolidate_silesia_title:0 "Consolidate Silesia"
+ boh_consolidate_silesia_desc:0 "Now that our own house is in order, we should look to our Crown Lands. Silesia has always been a part of our realm, and it is about time they enjoyed full status within our society."
+ boh_polish_diplomacy_title:0 "Polish Diplomacy"
+ boh_polish_diplomacy_desc:0 "The nature of the elective monarchy in Poland is an opportunity for our diplomats to advocate for a Bohemian heir to the Polish throne. We should ensure that a Bohemian dynasty rules in Poland."
+ boh_premyslid_heritage_title:0 "Premyslid Heritage"
+ boh_premyslid_heritage_desc:0 "Bohemia reigns supreme once again. However, a Margrave in our court has slyly pointed out that we possess a legitimate claim to the lands of our forebears, the Premyslids. Times have moved on and borders shifted, but we believe some of these claims still carry weight."
+ boh_pomerelian_reconquest_title:0 "Pomerelian Reconquest"
+ boh_pomerelian_reconquest_desc:0 "The success of our conquest still rings in our ears. The Pomerelian lands to the North were also under the control of Wenceslaus II, and must therefore be ours."
+ boh_hussite_empire_title:0 "[Root.GetPreviewColorBOH_RELIGION]Hussite Empire[Root.GetPreviewColorBOH_RELIGION_end]"
+ boh_hussite_empire_desc:0 "The Catholic attempts to stop us from revealing the true teachings to the masses have been in vain. As Hussite faith reigns supreme, the time has come for us to officially claim the Imperial mantle and turn the Holy Roman Empire into a true Hussite Empire!"
+ emp_brapru_reclaim_neumark_title:0 "Reclaim Neumark"
+ emp_brapru_reclaim_neumark_desc:0 "The province of Neumark was once an integral part of Brandenburg. It was leased to the Teutonic Knights, but they have neglected the land, causing its local burghers to demand a return to the old administration."
+ emp_brapru_connect_the_prussian_lands_title:0 "Prussian Expansion"
+ emp_brapru_connect_the_prussian_lands_desc:0 "Having united Brandenburg with Prussia we now have the problem of how we defend the two halves of our realm. To make our realm a more defensible unit we must conquer all of Prussia and not just the parts currently under our control."
+ emp_brapru_ansbach_succession_title:0 "Ansbach Succession"
+ emp_brapru_ansbach_succession_desc:0 "The Hohenzollerns of Ansbach are closely related to our own line. We should ensure that the Ansbach succession eventually results in a reunion with our cousins."
+ emp_brapru_franconian_conquest_title:0 "Franconian Conquest"
+ emp_brapru_franconian_conquest_desc:0 "With Ansbach returned to the fold, we should expand our holdings in Franconia."
+ emp_brapru_edict_of_potsdam_title:0 "Edict of Potsdam"
+ emp_brapru_edict_of_potsdam_desc:0 "Governments throughout Europe are passing laws that discriminate against our brothers of the faith. We should proclaim our own Edict that reaffirms our piety and invites the faithful to settle within our borders."
+ emp_brapru_reform_the_state_title:0 "Reform the State"
+ emp_brapru_reform_the_state_desc:0 "Our laws and government must reflect the character of our nation. A series of reforms shall be passed that will transform the state into a well-oiled mechanism of rule."
+ emp_brapru_enlightened_absolutism_title:0 "Enlightened Absolutism"
+ emp_brapru_enlightened_absolutism_desc:0 "Everything for the people, nothing by the people."
+ emp_brapru_konigsberg_development_title:0 "Develop Königsberg"
+ emp_brapru_konigsberg_development_desc:0 "Königsberg is the most important city in Prussia. We must endorse a university in the city and invest in its development."

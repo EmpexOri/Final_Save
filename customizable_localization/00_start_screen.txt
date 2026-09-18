@@ -184,7 +184,7 @@ defined_text = {
 	text = {
         localisation_key = string_start_title_bohemia
         trigger = {
-			tag = BOH
+			tag = GBH
 			NOT = { is_year = 1457 }
 		}
     }

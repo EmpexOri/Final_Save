@@ -1,5 +1,5 @@
-owner = FKN
-controller = FKN
+owner = ULM
+controller = ULM
 capital = "Ulm"
 is_city = yes
 culture = franconian
@@ -11,8 +11,7 @@ base_production = 1
 base_manpower = 3
 extra_cost = 8
 center_of_trade = 1
-add_core = FKN
-add_permanent_claim = SWA
+add_core = ULM
 discovered_by = eastern
 discovered_by = muslim
 discovered_by = ottoman
