@@ -45,7 +45,7 @@ set_country_flag = ZZZ_generated_converter_nation
 		birth_date = 1419.11.23
 		death_date = 1484.11.23
 		claim = 89
-		religion = converted_dynamic_faith_140
+		religion = daoshenic
 		culture = mongol
 	}
 	add_heir_personality = bold_fighter_personality

@@ -29,7 +29,7 @@ set_country_flag = ZZZ_generated_converter_nation
 		birth_date = 1407.4.12
 		death_date = 1467.4.12
 		female = yes
-		religion = converted_dynamic_faith_140
+		religion = daoshenic
 		culture = chihan
 	}
 	add_queen_personality = strict_personality

@@ -418,48 +418,8 @@ pagan = {
 	##New to CK3
 	#Akom -> Fetishism
 	#Donyi-Poloism/Sedism -> Animism
-	kushitism_pagan = {
-		color = { 0.15 1 0.7 } #38.25 255 178.5
-		icon = 145
-		country = {
-			legitimacy = 1
-			devotion = 1
-			horde_unity = 1
-			meritocracy = 1
-			republican_tradition = 0.5
-			max_absolutism = 10
-		}
-		province = {
-			local_missionary_strength = 0.02
-		}
-		country_as_secondary = {
-			max_absolutism = 5
-			yearly_absolutism = 0.5
-		}
-		
-		heretic = { DARKNESS SNAKE_CLAN }
-	}
-	kushitism_pagan_reformed = {
-		color = { 0 255 255 }
-		icon = 146
-		country = {
-			legitimacy = 1
-			devotion = 1
-			horde_unity = 1
-			meritocracy = 1
-			republican_tradition = 0.5
-			max_absolutism = 10
-		}
-		province = {
-			local_missionary_strength = -0.02
-		}
-		country_as_secondary = {
-			max_absolutism = 5
-			yearly_absolutism = 0.5
-		}
-		
-		heretic = { DARKNESS SNAKE_CLAN }
-	}
+	
+
 	nuragic_pagan = {
 		color = { 120 128 95 }
 		icon = 164

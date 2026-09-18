@@ -2,7 +2,7 @@ government = tribal
 add_government_reform = steppe_horde
 government_rank = 1
 technology_group = nomad_group
-religion = converted_dynamic_faith_140
+religion = daoshenic
 primary_culture = dynamic-buryat-culture-num3
 capital = 4684
 set_country_flag = ZZZ_generated_converter_nation
@@ -15,7 +15,7 @@ set_country_flag = ZZZ_generated_converter_nation
 		mil = 2
 		birth_date = 1422.8.20
 		female = yes
-		religion = converted_dynamic_faith_140
+		religion = daoshenic
 		culture = dynamic-buryat-culture-num3
 	}
 	add_ruler_personality = pious_personality
@@ -29,7 +29,7 @@ set_country_flag = ZZZ_generated_converter_nation
 		country_of_origin = Z0K
 		birth_date = 1414.8.19
 		death_date = 1474.8.19
-		religion = converted_dynamic_faith_140
+		religion = daoshenic
 		culture = dynamic-buryat-culture-num3
 	}
 	add_queen_personality = secretive_personality
@@ -44,7 +44,7 @@ set_country_flag = ZZZ_generated_converter_nation
 		birth_date = 1439.8.4
 		death_date = 1504.8.4
 		claim = 89
-		religion = converted_dynamic_faith_140
+		religion = daoshenic
 		culture = dynamic-buryat-culture-num3
 	}
 	add_heir_personality = obsessive_perfectionist_personality

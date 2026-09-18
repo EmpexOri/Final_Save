@@ -1931,8 +1931,8 @@ mam_missions_5 = {
 			361 = { 
 				owned_by = ROOT 
 				OR = {
-					num_of_times_improved = 8
-					num_of_buildings_in_province = 3
+					num_of_times_improved = 5
+					num_of_buildings_in_province = 2
 				}
 			}
 		}
