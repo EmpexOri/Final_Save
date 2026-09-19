@@ -1077,3 +1077,20 @@ prussian_monarchy = {
 		}
 	}
 }
+
+pharaoh_rule = {
+	# government mechanics flags go here
+	icon = "muslim"
+
+	monarchy = yes
+	modifiers = {
+		num_accepted_cultures = 3
+		global_autonomy = -0.025
+		monarch_admin_power = 2
+		same_culture_advisor_cost = -0.25
+	}
+
+	ai = {
+		factor = 5
+	}
+}
