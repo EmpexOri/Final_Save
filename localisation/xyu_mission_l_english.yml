@@ -128,3 +128,8 @@
  gc_lus_jeju_base_title:0 "The Jeju Station"
  gc_lus_jeju_base_desc:0 "Off the southern coast of Korea lies a volcanic island with good anchorages and a sullen population. It is a perfect base, close to Japan, close to Korea, close to the Chinese trade routes. The King of Joseon will not sell it, but he will lose it."
  lus_owns_jeju_tt:0 "We hold Jeju"
+
+ nov_ugric_conversion_title:0 "The Great Eastern Resettlement"
+ nov_ugric_conversion_desc:0 "The Ugric tribes of the northern forests, the Merya, the Muroma, the Meshchera, and their kin, have dwelt in these lands since before the Rus' came. They pay tribute, they trade furs, but they do not speak our tongue and they do not worship our God. The princes of Yaroslavl have begun to settle them, to baptise them, and to make them Russians. It is a long work, but it will be finished."
+ kok_mam_convert_egypt_title:0 "The Egyptian Nile"
+ kok_mam_convert_egypt_desc:0 "The land of the Pharaohs has long been a crossroads of faiths, but now it is our mission to bring the light of our religion to its people. Temples will be built, priests will preach, and the people will be guided towards the true faith."
