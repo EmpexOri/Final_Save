@@ -199,6 +199,104 @@ emp_naples_2 = {
 			factor = 50
 		}
 	}
+	
+	emp_nap_libyan_colonies = {
+		icon = mission_conquer_tunisia
+		required_missions = { emp_nap_egyptian_trade }
+		position = 7
+		provinces_to_highlight = {
+			OR = {
+				province_id = 355
+				province_id = 356
+				province_id = 357
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			355 = { country_or_non_sovereign_subject_holds = ROOT }
+			356 = { country_or_non_sovereign_subject_holds = ROOT }
+			357 = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		effect = {
+			add_country_modifier = {
+				name = "nap_libyan_colonies"
+				duration = 7300
+			}
+			tripolitania_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			cyrenaica_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+		ai_weight = {
+			factor = 50
+		}
+	}
+	
+	emp_nap_exploit_libya = {
+		icon = mission_mal_riches_of_trade
+		required_missions = { emp_nap_libyan_colonies }
+		position = 8
+		provinces_to_highlight = {
+			OR = {
+				area = tripolitania_area
+				area = cyrenaica_area
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			tripolitania_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			cyrenaica_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			# 20-year unrest penalty across both Libyan areas
+			tripolitania_area = {
+				limit = { country_or_non_sovereign_subject_holds = ROOT }
+				add_province_modifier = {
+					name = nap_libyan_exploitation_unrest
+					duration = 7300
+				}
+			}
+			cyrenaica_area = {
+				limit = { country_or_non_sovereign_subject_holds = ROOT }
+				add_province_modifier = {
+					name = nap_libyan_exploitation_unrest
+					duration = 7300
+				}
+			}
+			# 20-year output bonus in Cyrenaica
+			cyrenaica_area = {
+				limit = { country_or_non_sovereign_subject_holds = ROOT }
+				add_province_modifier = {
+					name = nap_cyrenaica_boom
+					duration = 7300
+				}
+			}
+		}
+		ai_weight = {
+			factor = 50
+		}
+	}
+	
 }
 
 emp_naples_3 = {
@@ -574,6 +672,131 @@ emp_naples_4 = {
 				name = "nap_barbary_pirates"
 				duration = -1
 			}
+		}
+	}
+	
+	emp_nap_northern_italy = {
+		icon = the_italian_league
+		required_missions = { emp_nap_egyptian_trade }
+		position = 7
+		provinces_to_highlight = {
+			OR = {
+				province_id = 104
+				province_id = 105
+				province_id = 1862
+				province_id = 4728
+				province_id = 4740
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			104  = { country_or_non_sovereign_subject_holds = ROOT }
+			105  = { country_or_non_sovereign_subject_holds = ROOT }
+			1862 = { country_or_non_sovereign_subject_holds = ROOT }
+			4728 = { country_or_non_sovereign_subject_holds = ROOT }
+			4740 = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		effect = {
+			add_country_modifier = {
+				name = "nap_northern_italy"
+				duration = 7300
+			}
+			lombardy_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			emilia_romagna_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			lombardy_area = {
+				limit = {
+					country_or_non_sovereign_subject_holds = ROOT
+				}
+				add_base_tax = 1
+				add_base_production = 1
+				add_base_manpower = 1
+			}
+			emilia_romagna_area = {
+				limit = {
+					country_or_non_sovereign_subject_holds = ROOT
+				}
+				add_base_tax = 1
+				add_base_production = 1
+				add_base_manpower = 1
+			}
+		}
+		ai_weight = {
+			factor = 50
+		}
+	}
+
+	emp_nap_develop_the_north = {
+		icon = develop_naples
+		required_missions = { emp_nap_northern_italy }
+		position = 8
+		provinces_to_highlight = {
+			province_id = 105
+			OR = {
+				NOT = { num_of_times_improved = 10 }
+				NOT = { num_of_buildings_in_province = 3 }
+			}
+		}
+		trigger = {
+			105 = {
+				country_or_non_sovereign_subject_holds = ROOT
+				num_of_times_improved = 10
+				num_of_buildings_in_province = 3
+			}
+		}
+		effect = {
+			# Change 4728 to Silk
+			4728 = {
+				change_trade_goods = silk
+			}
+			1862 = {
+				change_trade_goods = silk
+			}
+			# 10-year development & construction boom across the four areas
+			liguria_area = {
+				limit = { country_or_non_sovereign_subject_holds = ROOT }
+				add_province_modifier = {
+					name = nap_develop_the_north
+					duration = 3650
+				}
+			}
+			piedmont_area = {
+				limit = { country_or_non_sovereign_subject_holds = ROOT }
+				add_province_modifier = {
+					name = nap_develop_the_north
+					duration = 3650
+				}
+			}
+			lombardy_area = {
+				limit = { country_or_non_sovereign_subject_holds = ROOT }
+				add_province_modifier = {
+					name = nap_develop_the_north
+					duration = 3650
+				}
+			}
+			emilia_romagna_area = {
+				limit = { country_or_non_sovereign_subject_holds = ROOT }
+				add_province_modifier = {
+					name = nap_develop_the_north
+					duration = 3650
+				}
+			}
+		}
+		ai_weight = {
+			factor = 50
 		}
 	}
 }
