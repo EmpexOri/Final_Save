@@ -131,3 +131,45 @@ maj_australian_profits = {
 	global_trade_power = 0.05
 	prestige = 0.1
 }
+
+lus_far_east_exploration = {
+	range = 0.10
+	trade_range_modifier = 0.10
+	naval_morale = 0.05
+}
+
+lus_macau_factory = {
+	local_development_cost = -0.25
+	local_production_efficiency = 0.25
+	local_trade_power = 50
+	local_unrest = -3
+}
+
+lus_china_trade = {
+	global_trade_power = 0.05
+	trade_steering = 0.05
+	merchants = 1
+}
+
+lus_christian_macau = {
+	local_development_cost = -0.15
+	local_unrest = -2
+	local_missionary_strength = 0.02
+}
+
+lus_jeju_mission = {
+	global_missionary_strength = 0.03
+	missionaries = 1
+}
+
+lus_jeju_opposition = {
+	discipline = 0.05
+	land_morale = 0.10
+}
+
+chn_macau_trade = {
+	global_trade_power = 0.10
+	trade_efficiency = 0.05
+	institution_spread_from_true_faith = 0.05
+	technology_cost = -0.02
+}
