@@ -191,4 +191,16 @@
  nap_indian_venture_desc: "Our ships now sail directly to India rather than buying pepper and cloves second-hand in Alexandria. Every port from Surat to Calicut knows the flag of the Anchovian crown."
  nap_gujarat_colony_modifier: "Anchovian Suratella"
  nap_gujarat_colony_modifier_desc: "Ahmedabad was only the beginning. The Saurashtra peninsula, the Tapti valley, and the plains of Patan are the rest of Gujarat, and Gujarat is the richest land in India. The Company will have them all."
- 
+
+ maj_southern_colonies_modifier: "Colonies in the South"
+ maj_southern_colonies_modifier_desc: "Our explorers have charted the southern seas and planted the flag of the Majapahit on distant shores. The route south is ours to command, and the wealth of the Indies will flow through our hands."
+ vec_colonial_autonomy: "Cape Self-Government"
+ vec_colonial_autonomy_desc: "The Council of the Cape governs the settlement's internal affairs: its own courts, its own militia, its own land grants. It looks to Batavia for protection and direction, but its day-to-day business is its own."
+ vec_tariff_income: "Company Tariffs"
+ vec_tariff_income_desc: "Every ship that leaves the Cape pays duty to the Company. The settlement may grow rich on its own account, but the Company takes its share, and its share is generous."
+ vec_australian_exploitation: "The Holland Estate"
+ vec_australian_exploitation_desc: "The Bali-Dutch have established a presence in the southern lands, and it is our duty to secure our own foothold. The Holland Estate will serve as the base for our operations, ensuring that our influence extends across the new continent."
+ vec_australian_resistance: "The Colonial Problem"
+ vec_australian_resistance_desc: "Those who settled here resist our authority, challenging our control and complicating our efforts to establish a stable administration. But while we hold them, we can exploit them for all they have."
+ maj_australian_profits: "Profits from the South"
+ maj_australian_profits_desc: "The colonies in the southern lands have begun to yield significant returns. Trade, resource extraction, and local production all contribute to the wealth flowing back to the Majapahit treasury."

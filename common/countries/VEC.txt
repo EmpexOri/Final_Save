@@ -1,0 +1,218 @@
+graphical_culture = westerngfx
+color = { 165 75 40 }
+
+historical_idea_groups = {
+	trade_ideas
+	maritime_ideas
+	defensive_ideas
+	spy_ideas
+	offensive_ideas
+	administrative_ideas
+	economic_ideas
+	quantity_ideas
+}
+historical_units = {
+	asian_arquebusier
+	asian_charge_cavalry
+	asian_mass_infantry
+	asian_musketeer
+	east_asian_spearmen
+	eastern_bow
+	reformed_asian_musketeer
+}
+
+monarch_names = {
+	"Adriaan #0" = 1
+	"Adrianus #0" = 1
+	"Albert #0" = 1
+	"Antonie #0" = 1
+	"Balthasar #0" = 1
+	"Bartholomeus #0" = 1
+	"Carel #0" = 1
+	"Cornelis #0" = 1
+	"Daniël #0" = 1
+	"Dirck #0" = 1
+	"Evert #0" = 1
+	"Frederik #0" = 1
+	"Gerrit #0" = 1
+	"Gijsbert #0" = 1
+	"Gustaaf #0" = 1
+	"Hendrik #0" = 1
+	"Herbert #0" = 1
+	"Jacob #0" = 1
+	"Jan #0" = 1
+	"Joan #0" = 1
+	"Johan #0" = 1
+	"Johannes #0" = 1
+	"Joost #0" = 1
+	"Karel #0" = 1
+	"Laurens #0" = 1
+	"Lodewijk #0" = 1
+	"Maarten #0" = 1
+	"Mattheus #0" = 1
+	"Maurits #0" = 1
+	"Michiel #0" = 1
+	"Nicolaas #0" = 1
+	"Otto #0" = 1
+	"Pieter #0" = 1
+	"Reinier #0" = 1
+	"Reyer #0" = 1
+	"Roelof #0" = 1
+	"Simon #0" = 1
+	"Steven #0" = 1
+	"Willem #0" = 1
+	"Wouter #0" = 1
+
+	"Ayu #0" = -1
+	"Belo #0" = -1
+	"Biang #0" = -1
+	"Chandra #0" = -1
+	"Dewi #0" = -1
+	"Diah #0" = -1
+	"Gede #0" = -1
+	"Gusti #0" = -1
+	"Ida #0" = -1
+	"Indah #0" = -1
+	"Kadek #0" = -1
+	"Kartika #0" = -1
+	"Luh #0" = -1
+	"Made #0" = -1
+	"Megawati #0" = -1
+	"Ni #0" = -1
+	"Nyoman #0" = -1
+	"Ratna #0" = -1
+	"Sari #0" = -1
+	"Sekar #0" = -1
+	"Sri #0" = -1
+	"Sukma #0" = -1
+	"Tirta #0" = -1
+	"Wayan #0" = -1
+	"Widya #0" = -1
+
+	"Agung #0" = 1
+	"Anak #0" = 1
+	"Bagus #0" = 1
+	"Bima #0" = 1
+	"Cokorda #0" = 1
+	"Dewa #0" = 1
+	"Gusti #0" = 1
+	"Ida #0" = 1
+	"I Made #0" = 1
+	"I Nyoman #0" = 1
+	"I Wayan #0" = 1
+	"Ketut #0" = 1
+	"Kadek #0" = 1
+	"Kompyang #0" = 1
+	"Ngurah #0" = 1
+	"Raka #0" = 1
+	"Ratu #0" = 1
+	"Sang #0" = 1
+	"Si #0" = 1
+	"Sri #0" = 1
+	"Wiranata #0" = 1
+}
+
+leader_names = {
+	"Adriaansz"
+	"Bakker"
+	"Balthasar"
+	"Bicker"
+	"Bontekoe"
+	"Brouwer"
+	"Coen"
+	"Cornelisz"
+	"De Houtman"
+	"De Vlamingh"
+	"De With"
+	"Doedesz"
+	"Evertsz"
+	"Frederiksz"
+	"Gerritsz"
+	"Heemskerck"
+	"Hendricksz"
+	"Jansz"
+	"Joosten"
+	"Karel"
+	"Keizer"
+	"Klaasz"
+	"Maartensz"
+	"Maurits"
+	"Michielsz"
+	"Nicolaasz"
+	"Pietersz"
+	"Reyersz"
+	"Roelofsz"
+	"Simonsz"
+	"Stevensz"
+	"Van Diemen"
+	"Van Neck"
+	"Van Spilbergen"
+	"Van Warwijck"
+	"Willemsz"
+	"Woutersz"
+
+	"Agung"
+	"Anom"
+	"Bima"
+	"Jaya"
+	"Kertanagara"
+	"Kusuma"
+	"Mahendradatta"
+	"Mahesa"
+	"Ngurah"
+	"Rajasa"
+	"Sakti"
+	"Samudra"
+	"Singha"
+	"Wijaya"
+	"Wirawan"
+}
+
+ship_names = {
+	"Amsterdam"
+	"Arnhem"
+	"Batavia"
+	"Delft"
+	"Dordrecht"
+	"Enkhuizen"
+	"Gouda"
+	"Haarlem"
+	"Hoorn"
+	"Leiden"
+	"Middleburg"
+	"Rotterdam"
+	"Utrecht"
+	"Vlissingen"
+	"Zeeland"
+
+	"Bali"
+	"Banten"
+	"Demak"
+	"Gresik"
+	"Jepara"
+	"Makassar"
+	"Mataram"
+	"Palembang"
+	"Samudra"
+	"Tuban"
+
+	"Java"
+	"Sumatra"
+	"Borneo"
+	"Sulawesi"
+	"Maluku"
+	"Lombok"
+	"Bali"
+	"Timor"
+	"Flores"
+	"Sumbawa"
+
+	"Kaapstad"
+	"Tafelbaai"
+	"Kaap de Goede Hoop"
+	"Robben Eiland"
+	"Constantia"
+	"Stellenbosch"
+	"Drakenstein"
+	"Zwartland"
+}
