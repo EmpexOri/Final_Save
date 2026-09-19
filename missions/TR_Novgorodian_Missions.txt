@@ -275,6 +275,62 @@ tr_novgorod_1 = {
 			}
 		}
 	}
+	
+	nov_ugric_conversion = {
+		icon = mission_early_game_buildings
+		required_missions = { nov_conquer_princes }
+		position = 4
+		provinces_to_highlight = {
+			province_id = 308
+			NOT = {
+				num_of_times_improved = 5
+			}
+		}
+		trigger = {
+			308 = {
+				country_or_non_sovereign_subject_holds = ROOT
+				num_of_times_improved = 5
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = "nov_ugric_conversion"
+				duration = -1
+			}
+			add_prestige = 10
+
+			# Apply the province modifier to every owned province in the target areas
+			every_owned_province = {
+				limit = {
+					OR = {
+						area = suzdal_area
+						area = galich_area
+						area = yaroslavl_area
+						area = vologda_area
+						area = vladimir_area
+						area = ryazan_area
+						area = tambov_area
+						area = oka_area
+						area = sloboda_ukraine_area
+						area = north_karelia
+						area = pomorye_area
+						area = arkhangelsk_area
+						area = perm_area
+						area = kama_area
+						area = kazan_area
+					}
+				}
+				add_province_modifier = {
+					name = "nov_ugric_assimilation"
+					duration = -1
+				}
+			}
+		}
+		ai_weight = {
+			factor = 50
+		}
+	}
+	
 }
 
 tr_novgorod_2 = {

@@ -53,3 +53,9 @@ capital = 151
 	add_prestige = 52
 	add_treasury = 54
 }
+1444.11.11 = {
+	add_country_modifier = {
+		name = "byz_eunuchs"
+		duration = 9125
+	}
+}

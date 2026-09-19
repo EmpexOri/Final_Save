@@ -327,11 +327,53 @@ mam_missions_1 = {
 			custom_tooltip = flavor_egy_kus.1
 		}
 	}
+	
+	kok_mam_convert_egypt = {
+		icon = mission_restore_faith_in_the_throne
+		required_missions = { kok_mam_holy_cities }
+		position = 5
+
+		provinces_to_highlight = {
+			OR = {
+				province_id = 4318
+				province_id = 359
+				province_id = 361
+				province_id = 2316
+				province_id = 362
+				province_id = 363
+			}
+			NOT = {
+				religion = ROOT
+			}
+		}
+
+		trigger = {
+			4318 = { religion = ROOT }
+			359  = { religion = ROOT }
+			361  = { religion = ROOT }
+			2316 = { religion = ROOT }
+			362  = { religion = ROOT }
+			363  = { religion = ROOT }
+		}
+
+		effect = {
+			add_prestige = 10
+			add_adm_power = 100
+			set_capital = 361
+			361 = {
+				change_province_name = "Cairo"
+				add_base_tax = 1
+			}
+		}
+		ai_weight = {
+			factor = 50
+		}
+	}
 
 	mam_alexandria = {
 		icon = mission_conquer_alexandria
-		position = 5
-		required_missions = { kok_mam_holy_cities } 
+		required_missions = { kok_mam_convert_egypt }
+		position = 6
 		provinces_to_highlight = {
 			OR = {
 				area = delta_area
@@ -363,8 +405,8 @@ mam_missions_1 = {
 
 	mam_cyrenaica = {
 		icon = mission_onward_to_gaur
-		position = 5
-		required_missions = { mam_alexandria } 
+		required_missions = { mam_alexandria }
+		position = 7
 		provinces_to_highlight = {
 			OR = { area = cyrenaica_area } 
 			NOT = { country_or_non_sovereign_subject_holds = ROOT } 
