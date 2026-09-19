@@ -435,6 +435,31 @@ tr_novgorod_2 = {
 			}
 		}
 	}
+
+	nov_bogatyr = {
+		icon = mission_cossack_cavalry
+		required_missions = { nov_develop_capital }
+
+		provinces_to_highlight = {
+		
+		}
+
+		trigger = {
+			# 80% or more of land force limit
+			army_size_percentage = 0.8
+			# Cavalry must make up at least 25% of your army
+			cavalry_fraction = 0.25
+			mil_tech = 5
+		}
+
+		effect = {
+			add_country_modifier = {
+				name = "nov_bogatyr"
+				duration = -1
+			}
+			add_army_professionalism = 0.05
+		}
+	}
 }
 
 tr_novgorod_3 = {

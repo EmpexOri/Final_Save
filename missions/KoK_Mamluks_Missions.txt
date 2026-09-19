@@ -241,6 +241,57 @@ mam_missions_1 = {
 			create_admiral = { tradition = 70 }
 		}
 	}
+	
+	mam_incense_trade = {
+		icon = mam_harness_spice_trade
+		required_missions = { mam_establish_merchant_escorts }
+		position = 3
+
+		provinces_to_highlight = {
+			OR = {
+				province_id = 358   # Alexandria
+				province_id = 363   # Damietta
+				province_id = 2315  # Suez
+			}
+			OR = {
+				NOT = { owned_by = ROOT }
+				has_trade_building_trigger = no
+			}
+		}
+
+		trigger = {
+			358 = {
+				owned_by = ROOT
+				has_trade_building_trigger = yes
+				trade_share = {
+					country = ROOT
+					share = 40
+				}
+			}
+			363 = {
+				owned_by = ROOT
+				has_trade_building_trigger = yes
+			}
+			2315 = {
+				owned_by = ROOT
+				has_trade_building_trigger = yes
+			}
+			OR = {
+				mercantilism = 25
+				trader = 2
+				full_idea_group = trade_ideas
+			}
+		}
+
+		effect = {
+			add_country_modifier = {
+				name = "mam_incense_trade"
+				duration = -1
+			}
+			add_mercantilism = 3
+			358 = { add_center_of_trade_level = 1 }
+		}
+	}
 
 	kok_mam_holy_cities = {
 		icon = mission_hands_praying
@@ -902,11 +953,31 @@ mam_missions_3 = {
 			}
 		}
 	}
+	
+	mam_constantinople = {
+		icon = mission_constantinople
+		required_missions = { mam_cyprus mam_anatolia mam_pearl_mediterranean }
+		position = 4
+		provinces_to_highlight = {
+			area = thrace_area 
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			thrace_area = {
+				type = all 
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			country_event = { id = flavor_mam.112 }
+			custom_tooltip = flavor_mam.112_tt
+		}
+	}
 
 	mam_great_power = {
 		icon = mam_great_power
-		required_missions = { mam_pearl_mediterranean mam_constantinople }
-		position = 4
+		required_missions = { mam_constantinople }
+		position = 5
 		
 		trigger = {
 			if = {
@@ -1240,10 +1311,38 @@ mam_missions_4 = {
 	}
 	has_country_shield = yes
 
-	mam_reincorporate_northern_territories = {
-		icon = mam_reincorporate_northern_territories
+	egy_sinai = {
+		icon = mam_highway_empire
 		required_missions = {  }
 		position = 1
+
+		provinces_to_highlight = {
+			OR = {
+				province_id = 364
+				province_id = 365
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+
+		trigger = {
+			364 = { country_or_non_sovereign_subject_holds = ROOT }
+			365 = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+
+		effect = {
+			add_country_modifier = {
+				name = "egy_sinai_secured"
+				duration = -1
+			}
+		}
+	}
+
+	mam_reincorporate_northern_territories = {
+		icon = mam_reincorporate_northern_territories
+		required_missions = { egy_sinai } 
+		position = 2
 		provinces_to_highlight = {
 			OR = {
 				area = syria_area
@@ -1383,7 +1482,7 @@ mam_missions_4 = {
 	mam_anatolia = {
 		icon = anatolian_frontier
 		required_missions = { mam_reincorporate_northern_territories }
-		position = 2
+		position = 3
 		provinces_to_highlight = {
 			region = anatolia_region
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
@@ -1406,25 +1505,6 @@ mam_missions_4 = {
 				type = mil
 				amount = 1
 			}
-		}
-	}
-	mam_constantinople = {
-		icon = mission_constantinople
-		required_missions = { mam_cyprus mam_anatolia }
-		position = 3
-		provinces_to_highlight = {
-			area = thrace_area 
-			NOT = { country_or_non_sovereign_subject_holds = ROOT }
-		}
-		trigger = {
-			thrace_area = {
-				type = all 
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-		}
-		effect = {
-			country_event = { id = flavor_mam.112 }
-			custom_tooltip = flavor_mam.112_tt
 		}
 	}
 
@@ -1764,7 +1844,7 @@ mam_missions_5 = {
 	kok_mam_subjugate_beyliks = {
 		icon = mission_non-western_soldiers
 		required_missions = { mam_reincorporate_northern_territories }
-		position = 2
+		position = 3
 		provinces_to_highlight = {
 			OR = {
 				area = aleppo_area
