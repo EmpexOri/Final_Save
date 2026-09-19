@@ -1,0 +1,5 @@
+government = republic
+primary_culture = dutch
+religion = vajrayana
+technology_group = chinese
+capital = 1177

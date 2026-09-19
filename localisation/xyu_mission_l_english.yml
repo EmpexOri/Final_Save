@@ -98,3 +98,33 @@
  emp_nap_develop_the_north_desc:0 "Genoa has become the workshop of Italy, its harbours busy, its banks full, its artisans in demand from Lisbon to Constantinople. The time has come to extend that prosperity to the whole of the north: to Liguria's terraces, Piedmont's fields, Lombardy's mills, and the rich black earth of Emilia. What Milan and Genoa began, Naples will finish."
  emp_nap_exploit_libya_title:0 "The Libyan Estates"
  emp_nap_exploit_libya_desc:0 "The Libyan shore is ours, but it is not yet profitable. The interior tribes pay tribute in grain and oil, and the ports of Cyrenaica could be made to carry more than they do. A new administration, part governor, part factor, will turn the province into an estate of the Neapolitan crown. The locals will not thank us for it."
+
+ emp_nap_indian_venture_title:0 "The Indian Venture"
+ emp_nap_indian_venture_desc:0 "Beyond Egypt, beyond Arabia, beyond the incense road, lies the true source of every spice that has ever enriched a Neapolitan merchant. A single foothold on the Indian coast is worth more than a kingdom in Italy, and we have it. Now the work of expansion begins."
+ emp_nap_gujarat_colony_title:0 "The Anchovian Suratella Company"
+ emp_nap_gujarat_colony_desc:0 "Ahmedabad was only the beginning. The Saurashtra peninsula, the Tapti valley, and the plains of Patan are the rest of Gujarat, and Gujarat is the richest land in India. The Company will have them all."
+ 
+ mnd_maj_southern_colonies_title:0 "Colonies in the South"
+ mnd_maj_southern_colonies_desc:0 "The winds of the southern ocean carry our ships beyond the known world. Sailors speak of a great cape at the bottom of Africa, and of a vast southern continent beyond it, untouched by any European flag. We must find them before our rivals do, for whoever charts the southern route will command the trade of two oceans."
+ mnd_maj_voc_title:0 "The Vereenigde Euro-Balische Compagnie"
+ mnd_maj_voc_desc:0 "A permanent charter is drawn up for a new company, the Vereenigde Euro-Balische Compagnie (VEC), with a monopoly on all trade between the Spice Islands, the Cape, and the markets of Europe. Its headquarters will be at the Cape of Good Hope, where its ships may water and resupply on the long voyage east."
+
+ mnd_maj_australian_company_title:0 "The Holland Estate"
+ mnd_maj_australian_company_desc:0 "The Bali-Dutch have established a presence in the southern lands, and it is our duty to secure our own foothold. The Holland Estate will serve as the base for our operations, ensuring that our influence extends across the new continent."
+ 
+ gc_lus_discover_far_east_title:0 "The Lusitanian Venture"
+ gc_lus_discover_far_east_desc:0 "Beyond Malacca lie islands no Portuguese has yet charted, the Philippines, where the Chinese trade for silver, and the coasts of South China, where the riches of Cathay wait behind the Emperor's gates. Our pilots must bring back charts before our ships can sail."
+ lus_discover_philippines_tt:0 "We have discovered a province in the Philippines"
+ lus_discover_south_china_tt:0 "We have discovered a province in South China"
+
+ gc_lus_philippine_foothold_title:0 "A Foothold in Indo-China"
+ gc_lus_philippine_foothold_desc:0 "The islands we charted are rich, divided, and defended by no one who matters. A single harbour, properly fortified and garrisoned, will be enough to open the silver trade, and to give our ships a base from which to command the eastern seas."
+ gc_lus_macau_factory_title:0 "A Factory in Macau"
+ gc_lus_macau_factory_desc:0 "The coasts of South China are rich and well-defended, but a single factory in Macau will allow us to tap into the lucrative trade with Cathay. Properly fortified and garrisoned, it will serve as our base for operations in the region."
+ lus_owns_macau_tt:0 "We hold Macau"
+ gc_lus_christian_macau_title:0 "A Christian Macau"
+ gc_lus_christian_macau_desc:0 "The Jesuits have laboured in Macau for decades, and their work is complete. The Chinese merchants of the leased territory have accepted baptism, the churches outnumber the pagodas, and the mandarins have ceased to complain, for now. Macau is a Christian city on Chinese soil, and the tea it ships to Lisbon is grown by Christian hands."
+ lus_macau_religion_tt:0 "Macau follows our state religion"
+ gc_lus_jeju_base_title:0 "The Jeju Station"
+ gc_lus_jeju_base_desc:0 "Off the southern coast of Korea lies a volcanic island with good anchorages and a sullen population. It is a perfect base, close to Japan, close to Korea, close to the Chinese trade routes. The King of Joseon will not sell it, but he will lose it."
+ lus_owns_jeju_tt:0 "We hold Jeju"

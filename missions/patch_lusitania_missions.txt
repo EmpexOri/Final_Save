@@ -2013,3 +2013,319 @@ gc_por_5_continued = {
 		}
 	}
 }
+
+gc_lus_1 = {
+	slot = 1
+	generic = no
+	ai = yes
+	potential_on_load = {
+		OR = {
+			has_dlc = "Domination" 
+			has_dlc = "Golden Century"
+		}
+	}
+	potential = {
+		OR = {
+			has_dlc = "Domination" 
+			has_dlc = "Golden Century"
+		}
+		tag = Z01
+		NOT = { map_setup = map_setup_random }
+		is_random_new_world = no
+	}
+	has_country_shield = yes
+
+	gc_lus_discover_far_east = {
+		icon = mission_establish_high_seas_navy
+		required_missions = {  }
+		position = 1
+		provinces_to_highlight = {
+			OR = {
+				area = luzon_area
+				area = southern_luzon_area
+				region = south_china_region
+			}
+			has_discovered = ROOT
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			custom_trigger_tooltip = {
+				tooltip = lus_discover_philippines_tt
+				OR = {
+					luzon_area = {
+						has_discovered = ROOT
+					}
+					southern_luzon_area = {
+						has_discovered = ROOT
+					}
+				}
+			}
+			custom_trigger_tooltip = {
+				tooltip = lus_discover_south_china_tt
+				south_china_region = {
+					has_discovered = ROOT
+				}
+			}
+		}
+		effect = {
+			add_prestige = 15
+			add_dip_power = 50
+			if = {
+				limit = { has_dlc = "Rule Britannia" }
+				change_innovativeness = 2
+			}
+			add_country_modifier = {
+				name = "lus_far_east_exploration"
+				duration = 7300
+			}
+		}
+		ai_weight = {
+			factor = 50
+		}
+	}
+	
+	gc_lus_philippine_foothold = {
+		icon = mission_invade_island
+		required_missions = { gc_lus_discover_far_east }
+		position = 2
+		provinces_to_highlight = {
+			OR = {
+				area = luzon_area
+				area = southern_luzon_area
+				area = visayas_area
+				area = mindanao_area
+				area = palawan_area
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+				value = 1
+				OR = {
+					area = luzon_area
+					area = southern_luzon_area
+					area = visayas_area
+					area = mindanao_area
+					area = palawan_area
+				}
+			}
+		}
+		effect = {
+			add_prestige = 10
+			add_mercantilism = 2
+			# Claims on the rest of the Philippines so expansion continues
+			luzon_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			southern_luzon_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			visayas_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			mindanao_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			palawan_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+		ai_weight = {
+			factor = 50
+		}
+	}
+	gc_lus_jeju_base = {
+		icon = mission_invade_island
+		required_missions = { gc_lus_macau_factory gc_lus_philippine_foothold }
+		position = 13
+		provinces_to_highlight = {
+			province_id = 2741
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			custom_trigger_tooltip = {
+				tooltip = lus_owns_jeju_tt
+				2741 = {
+					country_or_non_sovereign_subject_holds = ROOT
+				}
+			}
+		}
+		effect = {
+			# The island becomes a missionary springboard
+			add_country_modifier = {
+				name = "lus_jeju_mission"
+				duration = -1
+			}
+			add_prestige = 15
+
+			# Japan, Tsushima, and Korea militarise in response
+			if = {
+				limit = { exists = JAP }
+				JAP = {
+					add_country_modifier = {
+						name = "lus_jeju_opposition"
+						duration = 3650
+					}
+				}
+			}
+			if = {
+				limit = { exists = TSU }
+				TSU = {
+					add_country_modifier = {
+						name = "lus_jeju_opposition"
+						duration = 3650
+					}
+				}
+			}
+			if = {
+				limit = { exists = KOR }
+				KOR = {
+					add_country_modifier = {
+						name = "lus_jeju_opposition"
+						duration = 3650
+					}
+				}
+			}
+		}
+		ai_weight = {
+			factor = 50
+		}
+	}
+}
+
+gc_lus_2 = {
+	slot = 2
+	generic = no
+	ai = yes
+	potential_on_load = {
+		OR = {
+			has_dlc = "Domination" 
+			has_dlc = "Golden Century"
+		}
+	}
+	potential = {
+		OR = {
+			has_dlc = "Domination" 
+			has_dlc = "Golden Century"
+		}
+		tag = Z01
+		NOT = { map_setup = map_setup_random }
+		is_random_new_world = no
+	}
+	has_country_shield = yes
+	
+	gc_lus_macau_factory = {
+		icon = mission_trade_with_cathay
+		required_missions = { gc_lus_discover_far_east }
+		position = 13
+		provinces_to_highlight = {
+			province_id = 668
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			custom_trigger_tooltip = {
+				tooltip = lus_owns_macau_tt
+				668 = {
+					country_or_non_sovereign_subject_holds = ROOT
+				}
+			}
+		}
+		effect = {
+			# Massive development boost to Macau
+			668 = {
+				add_base_tax = 5
+				add_base_production = 5
+				add_base_manpower = 5
+				add_province_modifier = {
+					name = "lus_macau_factory"
+					duration = 7300
+				}
+			}
+
+			# Accept key Chinese cultures
+			add_accepted_culture = dynamic-chihan-culture-num4
+
+			# Country-wide commercial and diplomatic payoff
+			add_country_modifier = {
+				name = "lus_china_trade"
+				duration = -1
+			}
+			add_mercantilism = 3
+			add_prestige = 20
+
+			# China benefits from the new trade relationship
+			if = {
+				limit = { exists = CHN }
+				CHN = {
+					add_country_modifier = {
+						name = "chn_macau_trade"
+						duration = 3650
+					}
+				}
+			}
+		}
+		ai_weight = {
+			factor = 50
+		}
+	}
+	
+	gc_lus_christian_macau = {
+		icon = mission_establish_jesuit_missions
+		required_missions = { gc_lus_macau_factory }
+		position = 13
+		provinces_to_highlight = {
+			province_id = 668
+			NOT = { religion = ROOT }
+		}
+		trigger = {
+			custom_trigger_tooltip = {
+				tooltip = lus_macau_religion_tt
+				668 = {
+					country_or_non_sovereign_subject_holds = ROOT
+					religion = ROOT
+				}
+			}
+		}
+		effect = {
+			668 = {
+				change_trade_goods = tea
+				add_province_modifier = {
+					name = "lus_christian_macau"
+					duration = -1
+				}
+			}
+			add_prestige = 15
+			if = {
+				limit = { religion = catholic }
+				add_papal_influence = 25
+			}
+			else = {
+				add_dip_power = 50
+			}
+		}
+		ai_weight = {
+			factor = 50
+		}
+	}
+}
+}

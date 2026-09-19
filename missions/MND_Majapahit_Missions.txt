@@ -1133,3 +1133,200 @@ indonesians_5 = {
 		}
 	}
 }
+
+mnd_are_2 = {
+	slot = 2
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	potential = {
+		tag = MSA
+		has_dlc = "Leviathan"
+	}
+	potential_on_load = { has_dlc = "Leviathan" } 
+	
+	mnd_maj_voc = {
+		icon = mission_rb_monopolize_the_channel
+		position = 9
+		required_missions = { mnd_maj_southern_colonies }
+		provinces_to_highlight = {
+			region = south_africa_region
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			1177 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			# Must own at least 5 other provinces in South Africa
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+				value = 5
+				region = south_africa_region
+				NOT = { province_id = 1177 }
+			}
+		}
+		effect = {
+			# Step 1: Give VEC a core on all our South African provinces
+			every_owned_province = {
+				limit = {
+					region = south_africa_region
+				}
+				add_core = VEC
+			}
+
+			# Step 2: Create VEC as a vassal
+			create_vassal = VEC
+
+			# Step 3: Transfer ownership of the provinces to VEC
+			every_owned_province = {
+				limit = {
+					region = south_africa_region
+					owner = { tag = ROOT }
+				}
+				cede_province = VEC
+			}
+
+			# Step 4: Apply the autonomy modifier to the new subject
+			VEC = {
+				add_country_modifier = {
+					name = "vec_colonial_autonomy"
+					duration = -1
+				}
+			}
+
+			# Step 5: Overlord gets the tariff and trade payoff
+			add_country_modifier = {
+				name = "vec_tariff_income"
+				duration = -1
+			}
+		}
+		ai_weight = {
+			factor = 50
+		}
+	}
+}
+
+mnd_are_3 = {
+	slot = 3
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	potential = {
+		tag = MSA
+		has_dlc = "Leviathan"
+	}
+	potential_on_load = { has_dlc = "Leviathan" } 
+	
+	mnd_maj_southern_colonies = {
+		icon = mission_invade_island
+		position = 8
+		required_missions = {  }
+		provinces_to_highlight = {
+			OR = {
+				AND = {
+					region = south_africa_region
+					has_discovered = ROOT
+					NOT = { owned_by = ROOT }
+				}
+				AND = {
+					region = australia_region
+					has_discovered = ROOT
+					NOT = { owned_by = ROOT }
+				}
+			}
+		}
+		trigger = {
+			exploration_ideas = 1
+			OR = {
+				any_province = {
+					region = south_africa_region
+					has_discovered = ROOT
+				}
+				any_province = {
+					region = australia_region
+					has_discovered = ROOT
+				}
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = "maj_southern_colonies_modifier"
+				duration = -1
+			}
+		}
+		ai_weight = {
+			factor = 50
+		}
+	}
+}
+
+mnd_are_4 = {
+	slot = 4
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	potential = {
+		tag = MSA
+		has_dlc = "Leviathan"
+	}
+	potential_on_load = { has_dlc = "Leviathan" } 
+	
+	mnd_maj_australian_company = {
+		icon = mission_invade_island
+		position = 9
+		required_missions = { mnd_maj_southern_colonies }
+		provinces_to_highlight = {
+			region = australia_region
+			NOT = { owned_by = ROOT }
+		}
+		trigger = {
+			any_subject_country = {
+				any_owned_province = {
+					region = australia_region
+				}
+			}
+		}
+		effect = {
+			# --- Static, one-time benefits for the overlord ---
+			add_mercantilism = 3
+			add_prestige = 20
+			add_dip_power = 100
+			add_treasury = 200
+			add_navy_tradition = 10
+			add_splendor = 100
+			
+			# The vassal that holds Australia gets the production/unrest treatment
+			every_subject_country = {
+				limit = {
+					any_owned_province = {
+						region = australia_region
+					}
+				}
+
+				# Massive production bonus + brutal exploitation
+				every_owned_province = {
+					limit = { region = australia_region }
+					add_province_modifier = {
+						name = "vec_australian_exploitation"
+						duration = 7300
+					}
+				}
+
+				# They don't like being exploited, and they don't like us either
+				add_country_modifier = {
+					name = "vec_australian_resistance"
+					duration = 7300
+				}
+			}
+
+			# The overlord profits from the arrangement
+			add_country_modifier = {
+				name = "maj_australian_profits"
+				duration = 7300
+			}
+		}
+		ai_weight = {
+			factor = 50
+		}
+	}
+
+}

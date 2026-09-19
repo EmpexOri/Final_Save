@@ -268,11 +268,21 @@ emp_naples_2 = {
 			}
 		}
 		effect = {
+			356 = {
+				change_trade_goods = cloves
+			}
 			# 20-year unrest penalty across both Libyan areas
 			tripolitania_area = {
 				limit = { country_or_non_sovereign_subject_holds = ROOT }
 				add_province_modifier = {
 					name = nap_libyan_exploitation_unrest
+					duration = 7300
+				}
+			}
+			tripolitania_area = {
+				limit = { country_or_non_sovereign_subject_holds = ROOT }
+				add_province_modifier = {
+					name = nap_cyrenaica_boom
 					duration = 7300
 				}
 			}
@@ -799,6 +809,126 @@ emp_naples_4 = {
 			factor = 50
 		}
 	}
+	
+	emp_nap_indian_venture = {
+		icon = mission_kowtow
+		required_missions = { emp_nap_egyptian_alliance }
+		position = 9
+		provinces_to_highlight = {
+			province_id = 4512
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			4512 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			ahmedabad_area = {
+				limit = {
+					country_or_non_sovereign_subject_holds = ROOT
+				}
+				add_local_autonomy = -25
+				add_province_modifier = {
+					name = nap_indian_administration
+					duration = -1
+				}
+			}
+		}
+		ai_weight = {
+			factor = 50
+		}
+	}
+	
+	emp_nap_gujarat_colony = {
+		icon = Suratella
+		required_missions = { emp_nap_indian_venture }
+		position = 10
+		provinces_to_highlight = {
+			OR = {
+				area = ahmedabad_area
+				area = saurashtra_area
+				area = tapti_area
+				area = patan_area
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			ahmedabad_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+				value = 5
+				OR = {
+					area = saurashtra_area
+					area = tapti_area
+					area = patan_area
+				}
+			}
+		}
+		effect = {
+			# Claims on the remaining Gujarat provinces so expansion continues
+			saurashtra_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			tapti_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			patan_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			# Apply the colonial administration modifier across all held Gujarat
+			ahmedabad_area = {
+				limit = { country_or_non_sovereign_subject_holds = ROOT }
+				add_province_modifier = {
+					name = nap_gujarat_colony_modifier
+					duration = -1
+				}
+			}
+			saurashtra_area = {
+				limit = { country_or_non_sovereign_subject_holds = ROOT }
+				add_province_modifier = {
+					name = nap_gujarat_colony_modifier
+					duration = -1
+				}
+			}
+			tapti_area = {
+				limit = { country_or_non_sovereign_subject_holds = ROOT }
+				add_province_modifier = {
+					name = nap_gujarat_colony_modifier
+					duration = -1
+				}
+			}
+			patan_area = {
+				limit = { country_or_non_sovereign_subject_holds = ROOT }
+				add_province_modifier = {
+					name = nap_gujarat_colony_modifier
+					duration = -1
+				}
+			}
+		}
+		ai_weight = {
+			factor = 50
+		}
+	}
+
 }
 
 emp_naples_5 = {
@@ -963,7 +1093,7 @@ emp_naples_6 = {
 	emp_nap_egyptian_alliance = {
 		icon = mission_non-western_soldiers
 		required_missions = { emp_nap_egyptian_trade }
-		position = 7
+		position = 8
 		provinces_to_highlight = {
 			province_id = 358
 			NOT = { owned_by = EGY }
@@ -976,15 +1106,27 @@ emp_naples_6 = {
 			}
 		}
 		effect = {
+			set_country_flag = nap_egyptian_alliance_flag
 			add_country_modifier = {
-				name = "nap_egyptian_alliance_trade"
+				name = nap_egyptian_alliance_trade
 				duration = -1
 			}
 			EGY = {
+				set_country_flag = egy_neapolitan_pact_flag
 				add_country_modifier = {
-					name = "egy_neapolitan_alliance_tech"
+					name = egy_neapolitan_alliance_tech
 					duration = -1
 				}
+				create_general = {
+					name = "Martino Anchovis"
+					tradition = 100
+				}
+			}
+			define_advisor = {
+				type = trader
+				skill = 3
+				name = "Harkhuf Nasir"
+				discount = yes
 			}
 		}
 		ai_weight = {
@@ -995,7 +1137,7 @@ emp_naples_6 = {
 	emp_nap_adriatic_gate = {
 		icon = mission_sea_battles
 		required_missions = { emp_nap_egyptian_alliance }
-		position = 8
+		position = 9
 		provinces_to_highlight = {
 			OR = {
 				province_id = 143    # Durrës
@@ -1033,7 +1175,7 @@ emp_naples_6 = {
 				}
 				add_permanent_claim = ROOT
 			}
-			croatia_area = {
+			albania_area = {
 				limit = {
 					NOT = { is_core = ROOT }
 					NOT = { is_permanent_claim = ROOT }
