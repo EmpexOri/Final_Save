@@ -1,0 +1,1181 @@
+alb_con_1 = {
+	slot = 1
+	generic = no
+	ai = yes
+	potential_on_load = {
+	}
+	potential = {
+		OR = {
+			tag = ENG
+			tag = GBR
+			tag = ABA 
+		}
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+
+	# Chapter 4: The Old Heartland
+	alb_conquer_ireland = {
+		icon = mission_unite_home_region
+		required_missions = { alb_thames_secured }
+		position = 3
+		completed_by = 1560.1.1
+		
+		provinces_to_highlight = {
+			OR = {
+				area = munster_area
+				area = connacht_area
+				area = ulster_area
+				area = leinster_area
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		
+		trigger = {
+			munster_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			connacht_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			ulster_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			leinster_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		
+		effect = {
+			add_prestige = 25
+			
+			# The old Alba heartland is restored to us
+			munster_area = {
+				limit = { country_or_non_sovereign_subject_holds = ROOT }
+				add_province_modifier = {
+					name = "alb_irish_production"
+					duration = -1
+				}
+			}
+			connacht_area = {
+				limit = { country_or_non_sovereign_subject_holds = ROOT }
+				add_province_modifier = {
+					name = "alb_irish_production"
+					duration = -1
+				}
+			}
+			ulster_area = {
+				limit = { country_or_non_sovereign_subject_holds = ROOT }
+				add_province_modifier = {
+					name = "alb_irish_production"
+					duration = -1
+				}
+			}
+			leinster_area = {
+				limit = { country_or_non_sovereign_subject_holds = ROOT }
+				add_province_modifier = {
+					name = "alb_irish_production"
+					duration = -1
+				}
+			}
+			
+			# The old Dál Riata connection — the sea road to the Isles
+			highlands_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			
+			# The Hebrides and western isles
+			inner_hebrides_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			
+			outer_hebrides_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			
+			# The Isle of Man — the stepping stone between the two kingdoms
+			isle_of_man_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+		ai_weight = { factor = 500 }
+	}
+	
+}
+
+alb_con_2 = {
+	slot = 2
+	generic = no
+	ai = yes
+	potential_on_load = {
+	}
+	potential = {
+		OR = {
+			tag = ENG
+			tag = GBR
+			tag = ABA 
+		}
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+
+	# ------------------------------------------------------------------
+	# ACT I — THE RUIN
+	# ------------------------------------------------------------------
+
+	# Chapter 1: The ash and the ember
+	alb_ash_and_ember = {
+		icon = mission_assemble_an_army
+		required_missions = { }
+		position = 1
+		completed_by = 1460.1.1
+		
+		trigger = {
+			army_size_percentage = 0.9
+		}
+		
+		effect = {
+			add_prestige = 10
+			add_country_modifier = {
+				name = "alb_the_old_levy"
+				duration = -1
+			}
+			# The old claims are remembered — Ireland and the south coast
+			leinster_area = {
+				limit = { NOT = { is_core = ROOT } NOT = { is_permanent_claim = ROOT } }
+				add_permanent_claim = ROOT
+			}
+			munster_area = {
+				limit = { NOT = { is_core = ROOT } NOT = { is_permanent_claim = ROOT } }
+				add_permanent_claim = ROOT
+			}
+			connacht_area = {
+				limit = { NOT = { is_core = ROOT } NOT = { is_permanent_claim = ROOT } }
+				add_permanent_claim = ROOT
+			}
+			ulster_area = {
+				limit = { NOT = { is_core = ROOT } NOT = { is_permanent_claim = ROOT } }
+				add_permanent_claim = ROOT
+			}
+		}
+		ai_weight = { factor = 500 }
+	}
+	# Chapter 2: The River and the Crown
+	alb_thames_secured = {
+		icon = mission_conquer_50_development
+		required_missions = { alb_ash_and_ember }
+		position = 2
+		completed_by = 1480.1.1
+		
+		provinces_to_highlight = {
+			province_id = 4371
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		
+		trigger = {
+			4371 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		
+		effect = {
+			add_prestige = 15
+			
+			# London grows as the seat of the restored crown
+			236 = {
+				add_base_tax = 1
+				add_base_production = 1
+				add_base_manpower = 1
+				add_province_modifier = {
+					name = "alb_london_development"
+					duration = 3650
+				}
+				change_province_name = "Lundain"
+			}
+			
+			# The Thames is now an Albion river — claims across the estuary
+			kent_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+		ai_weight = { factor = 500 }
+	}
+	
+	# Chapter 3b: The Oxford Studies
+	alb_oxford_studies = {
+		icon = mission_build_up_to_force_limit
+		required_missions = { alb_thames_secured }
+		position = 3
+		completed_by = 1520.1.1
+		
+		provinces_to_highlight = {
+			province_id = 237
+			OR = {
+				NOT = { development = 15 }
+				NOT = {
+					OR = {
+						has_building = temple
+						has_building = marketplace
+					}
+				}
+			}
+		}
+		
+		trigger = {
+			237 = {
+				country_or_non_sovereign_subject_holds = ROOT
+				development = 15
+				OR = {
+					has_building = temple
+					has_building = marketplace
+				}
+			}
+		}
+		
+		effect = {
+			add_prestige = 20
+			
+			# The scholars of Oxford raise the whole Thames valley
+			237 = {
+				add_base_tax = 1
+				add_base_production = 1
+				add_base_manpower = 1
+				add_province_modifier = {
+					name = "alb_oxford_university"
+					duration = -1
+				}
+			}
+			
+			if = {
+				limit = { has_dlc = "Rule Britannia" }
+				change_innovativeness = 4
+			}
+			else = {
+				add_adm_power = 100
+				add_dip_power = 100
+			}
+		}
+		ai_weight = { factor = 500 }
+	}
+	
+	# Chapter 5: Alba Restored
+	alb_reform_alba = {
+		icon = mission_monarch_in_throne_room
+		required_missions = { alb_conquer_wales alb_conquer_ireland }
+		position = 4
+		completed_by = 1620.1.1
+		
+		provinces_to_highlight = {
+			province_id = 236
+			NOT = { num_of_times_improved = 20 }
+		}
+		
+		trigger = {
+			NOT = { has_country_flag = alb_alba_reformed }
+			236 = {
+				country_or_non_sovereign_subject_holds = ROOT
+				num_of_times_improved = 20
+			}
+		}
+		
+		effect = {
+			set_country_flag = alb_alba_reformed
+			add_prestige = 50
+			add_country_modifier = {
+				name = "alb_alba_reformed"
+				duration = -1
+			}
+			change_tag = ABA 
+		}
+		ai_weight = { factor = 500 }
+	}
+	
+
+}
+
+alb_con_3 = {
+	slot = 3
+	generic = no
+	ai = yes
+	potential_on_load = {
+	}
+	potential = {
+		OR = {
+			tag = ENG
+			tag = GBR
+			tag = ABA 
+		}
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+
+	# Chapter 3: The Princes and the North
+	alb_conquer_wales = {
+		icon = mission_unite_home_region
+		required_missions = { alb_thames_secured }
+		position = 3
+		completed_by = 1520.1.1
+		
+		provinces_to_highlight = {
+			OR = {
+				area = wales_area
+				area = west_midlands_area
+				area = east_midlands_area
+				area = yorkshire_area
+				area = scottish_marches_area
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		
+		trigger = {
+			wales_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			west_midlands_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			east_midlands_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			yorkshire_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			calc_true_if = {
+				amount = 2
+				all_province = {
+					area = scottish_marches_area
+					country_or_non_sovereign_subject_holds = ROOT
+				}
+			}
+		}
+		
+		effect = {
+			add_prestige = 25
+			add_country_modifier = {
+				name = "alb_welsh_trade"
+				duration = -1
+			}
+			
+			# The rest of the north is now within reach
+			scottish_marches_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			
+			# And the border lands beyond
+			lowlands_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			
+			# Direct claims on key northern provinces
+			250 = {
+				if = {
+					limit = {
+						NOT = { is_permanent_claim = ROOT }
+						NOT = { is_core = ROOT }
+					}
+					add_permanent_claim = ROOT
+				}
+			}
+			4363 = {
+				if = {
+					limit = {
+						NOT = { is_permanent_claim = ROOT }
+						NOT = { is_core = ROOT }
+					}
+					add_permanent_claim = ROOT
+				}
+			}
+			4364 = {
+				if = {
+					limit = {
+						NOT = { is_permanent_claim = ROOT }
+						NOT = { is_core = ROOT }
+					}
+					add_permanent_claim = ROOT
+				}
+			}
+			252 = {
+				if = {
+					limit = {
+						NOT = { is_permanent_claim = ROOT }
+						NOT = { is_core = ROOT }
+					}
+					add_permanent_claim = ROOT
+				}
+			}
+			4110 = {
+				if = {
+					limit = {
+						NOT = { is_permanent_claim = ROOT }
+						NOT = { is_core = ROOT }
+					}
+					add_permanent_claim = ROOT
+				}
+			}
+			253 = {
+				if = {
+					limit = {
+						NOT = { is_permanent_claim = ROOT }
+						NOT = { is_core = ROOT }
+					}
+					add_permanent_claim = ROOT
+				}
+			}
+		}
+		ai_weight = { factor = 500 }
+	}
+	
+	# Chapter 3c: Imperial Shores
+	alb_imperial_shores = {
+		icon = mission_settlers_north_america
+		required_missions = { alb_grand_navy }
+		position = 3
+		completed_by = 1600.1.1
+		
+		provinces_to_highlight = {
+			OR = {
+				colonial_region = colonial_eastern_america
+				colonial_region = colonial_the_carribean
+				colonial_region = colonial_canada
+				colonial_region = colonial_louisiana
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+			has_discovered = ROOT
+		}
+		
+		trigger = {
+			exploration_ideas = 1
+			OR = {
+				# Any New World colonial region
+				any_owned_province = {
+					OR = {
+						colonial_region = colonial_eastern_america
+						colonial_region = colonial_the_carribean
+						colonial_region = colonial_canada
+						colonial_region = colonial_louisiana
+						colonial_region = colonial_mexico
+						colonial_region = colonial_colombia
+						colonial_region = colonial_peru
+						colonial_region = colonial_la_plata
+						colonial_region = colonial_brazil
+					}
+				}
+				# Greenland — regular region, not a colonial region
+				any_owned_province = {
+					region = greenland_region
+				}
+			}
+		}
+		
+		effect = {
+			add_prestige = 30
+			add_dip_power = 100
+			add_country_modifier = {
+				name = "alb_imperial_shores"
+				duration = -1
+			}
+		}
+		ai_weight = { factor = 500 }
+	}
+	
+	# Chapter 3e: The Red Coats
+	alb_red_coats = {
+		icon = mission_assemble_an_army
+		required_missions = { alb_imperial_shores }
+		position = 5
+		completed_by = 1620.1.1
+		
+		trigger = {
+			mil_tech = 7
+			num_of_artillery = 1
+			army_size = 35
+			# A foothold in the New World
+			any_owned_province = {
+				OR = {
+					colonial_region = colonial_eastern_america
+					colonial_region = colonial_the_carribean
+					colonial_region = colonial_canada
+					colonial_region = colonial_louisiana
+					colonial_region = colonial_mexico
+					colonial_region = colonial_colombia
+					colonial_region = colonial_peru
+					colonial_region = colonial_la_plata
+					colonial_region = colonial_brazil
+					region = greenland_region
+				}
+			}
+		}
+		
+		effect = {
+			add_prestige = 40
+			add_army_tradition = 15
+			add_country_modifier = {
+				name = "alb_red_coats"
+				duration = -1
+			}
+		}
+		ai_weight = { factor = 500 }
+	}
+	
+}
+
+alb_con_4 = {
+	slot = 4
+	generic = no
+	ai = yes
+	potential_on_load = {
+	}
+	potential = {
+		OR = {
+			tag = ENG
+			tag = GBR
+			tag = ABA 
+		}
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+	
+	# Chapter 6b: The Bohemian Question
+	alb_bohemian_question = {
+		icon = mission_intervene_in_castile
+		required_missions = { }
+		position = 1
+		completed_by = 1600.1.1
+		
+		provinces_to_highlight = {
+			OR = {
+				province_id = 235
+				province_id = 246
+				province_id = 247
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		
+		trigger = {
+			has_country_flag = alb_alba_reformed
+			235 = { country_or_non_sovereign_subject_holds = ROOT }
+			246 = { country_or_non_sovereign_subject_holds = ROOT }
+			247 = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		
+		effect = {
+			add_prestige = 40
+			add_legitimacy = 10
+			
+			# The old claim to Scotland is renewed in full
+			british_isles_region = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			
+			# Peaceful return vs. forceful return
+			if = {
+				limit = {
+					exists = GBH
+					alliance_with = GBH
+				}
+				# Peaceful path — both sides benefit from the arrangement
+				add_country_modifier = {
+					name = "alb_peaceful_return"
+					duration = -1
+				}
+				add_opinion = {
+					who = GBH
+					modifier = alb_peaceful_return_opinion
+				}
+				GBH = {
+					add_country_modifier = {
+						name = "gbh_peaceful_return"
+						duration = -1
+					}
+					add_opinion = {
+						who = ROOT
+						modifier = alb_peaceful_return_opinion
+					}
+				}
+			}
+			else = {
+				# Forceful path smaller, temporary reward
+				add_country_modifier = {
+					name = "alb_forced_return"
+					duration = 7300
+				}
+			}
+		}
+		ai_weight = { factor = 500 }
+	}
+
+	# Chapter 3b: The Grand Navy
+	alb_grand_navy = {
+		icon = mission_launch_a_flagship
+		required_missions = { alb_thames_secured }
+		position = 3
+		completed_by = 1550.1.1
+		
+		trigger = {
+			num_of_heavy_ship = 1
+			navy_size = 24
+		}
+		
+		effect = {
+			add_navy_tradition = 20
+			add_prestige = 25
+			add_country_modifier = {
+				name = "alb_grand_navy"
+				duration = -1
+			}
+		}
+		ai_weight = { factor = 500 }
+	}
+	
+	# Chapter 3g: The Narrow Sea Trade
+	alb_channel_trade = {
+		icon = mission_dominate_home_trade_node
+		required_missions = { alb_grand_navy }
+		position = 4
+		completed_by = 1580.1.1
+		
+		trigger = {
+			# Alba must dominate the Channel node
+			capital_scope = {
+				is_strongest_trade_power = ROOT
+			}
+			# With real commercial infrastructure in the Thames ports
+			num_of_owned_provinces_with = {
+				value = 3
+				has_trade_building_trigger = yes
+			}
+			# And a merchant presence abroad
+			OR = {
+				mercantilism = 20
+				full_idea_group = trade_ideas
+				num_of_light_ship = 25
+			}
+		}
+		
+		effect = {
+			add_prestige = 15
+			add_mercantilism = 5
+			
+			# The wealth of the Channel flows into the kingdom's heartland
+			236 = {
+				add_base_tax = 2
+				add_base_production = 2
+				add_base_manpower = 2
+			}
+			237 = {
+				add_base_tax = 2
+				add_base_production = 2
+				add_base_manpower = 2
+			}
+			1860 = {
+				add_base_tax = 2
+				add_base_production = 2
+				add_base_manpower = 2
+			}
+			233 = {
+				add_base_tax = 2
+				add_base_production = 2
+				add_base_manpower = 2
+			}
+			239 = {
+				add_base_tax = 2
+				add_base_production = 2
+				add_base_manpower = 2
+			}
+			
+			add_country_modifier = {
+				name = "alb_channel_trade"
+				duration = -1
+			}
+		}
+		ai_weight = { factor = 500 }
+	}
+	
+}
+
+alb_con_5 = {
+	slot = 5
+	generic = no
+	ai = yes
+	potential_on_load = {
+	}
+	potential = {
+		OR = {
+			tag = ENG
+			tag = GBR
+			tag = ABA 
+		}
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+
+	# Chapter 6: Follow our Old Faith
+	alb_follow_old_faith = {
+		icon = mission_establish_jesuit_missions
+		required_missions = { }
+		position = 1
+		completed_by = 1680.1.1
+		
+		provinces_to_highlight = {
+			OR = {
+				area = munster_area
+				area = connacht_area
+				area = ulster_area
+				area = leinster_area
+			}
+			NOT = { religion = lollard }
+		}
+		
+		trigger = {
+			# The reform must have happened checked by flag, not mission
+			has_country_flag = alb_alba_reformed
+			tag = ABA
+			religion = catholic
+			stability = 1
+			OR = {
+				is_year = 1517
+				any_country = { religion = protestant }
+			}
+		}
+		
+		effect = {
+			add_prestige = 30
+			add_country_modifier = {
+				name = "alb_old_faith"
+				duration = 14600
+			}
+			
+			country_event = { id = alb_faith.1 days = 1 }
+			
+			every_owned_province = {
+				limit = {
+					OR = {
+						area = munster_area
+						area = connacht_area
+						area = ulster_area
+						area = leinster_area
+					}
+					NOT = { religion = lollard }
+				}
+				change_religion = lollard
+			}
+		}
+		ai_weight = { factor = 500 }
+	}
+	
+	# Chapter 7: The Temples of the Realm
+	alb_church_lands = {
+		icon = mission_cathedral_cities
+		required_missions = { alb_follow_old_faith }
+		position = 2
+		completed_by = 1720.1.1
+		
+		trigger = {
+			calc_true_if = {
+				amount = 10
+				all_owned_province = {
+					OR = {
+						has_building = temple
+						has_building = cathedral
+					}
+				}
+			}
+		}
+		
+		effect = {
+			add_prestige = 25
+			
+			# The nobility yields land to crown and church
+			if = {
+				limit = { has_estate = estate_nobles }
+				change_estate_land_share = {
+					estate = estate_nobles
+					share = -10
+				}
+			}
+			if = {
+				limit = { has_estate = estate_church }
+				change_estate_land_share = {
+					estate = estate_church
+					share = 5
+				}
+			}
+			
+			add_country_modifier = {
+				name = "alb_church_ascendant"
+				duration = -1
+			}
+		}
+		ai_weight = { factor = 500 }
+	}
+	
+	# Chapter 3d: The Jewel of the Channel
+	alb_jewel_of_channel = {
+		icon = mission_launch_a_flagship
+		required_missions = { alb_grand_navy }
+		position = 4
+		completed_by = 1580.1.1
+		
+		trigger = {
+			if = {
+				limit = { has_dlc = "Golden Century" }
+				has_flagship = yes
+			}
+			else = {
+				num_of_heavy_ship = 10
+			}
+			navy_size = 30
+		}
+		
+		effect = {
+			add_navy_tradition = 25
+			add_prestige = 40
+			add_country_modifier = {
+				name = "alb_jewel_of_channel"
+				duration = -1
+			}
+		}
+		ai_weight = { factor = 500 }
+	}
+	
+	# Chapter 3f: The Rock of Europe
+	alb_rock_of_europe = {
+		icon = mission_establish_high_seas_navy
+		required_missions = { alb_jewel_of_channel }
+		position = 5
+		completed_by = 1620.1.1
+		
+		provinces_to_highlight = {
+			area = brittany_area
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		
+		trigger = {
+			mil_tech = 12
+			brittany_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		
+		effect = {
+			add_prestige = 50
+			add_army_tradition = 10
+			add_navy_tradition = 10
+			
+			# Brittany becomes a fortress-province of the crown
+			brittany_area = {
+				limit = { country_or_non_sovereign_subject_holds = ROOT }
+				add_province_modifier = {
+					name = "alb_rock_of_europe"
+					duration = -1
+				}
+			}
+			
+			add_country_modifier = {
+				name = "alb_brittany_ports"
+				duration = -1
+			}
+		}
+		ai_weight = { factor = 500 }
+	}
+	
+}
+
+alb_parl_1 = {
+	slot = 1
+	generic = no
+	ai = yes
+	potential_on_load = {
+	}
+	potential = {
+		OR = {
+			tag = ENG
+			tag = GBR
+			tag = ABA 
+		}
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+	
+	# Chapter 8: The King-in-Parliament
+	alb_parliament = {
+		icon = fra_crown_seat_capital
+		required_missions = {  }
+		position = 5
+		completed_by = 1650.1.1
+		
+		trigger = {
+			stability = 2
+			legitimacy = 75
+			has_parliament = yes
+			num_of_owned_provinces_with = {
+				value = 5
+				has_seat_in_parliament = yes
+			}
+		}
+		
+		effect = {
+			add_prestige = 25
+			add_legitimacy = 20
+			add_country_modifier = {
+				name = "alb_king_in_parliament"
+				duration = -1
+			}
+		}
+		ai_weight = { factor = 500 }
+	}
+
+	# Chapter 8b: The Great Matter
+	alb_great_matter = {
+		icon = mission_the_governing_senate
+		required_missions = { alb_parliament }
+		position = 6
+		completed_by = 1680.1.1
+		
+		trigger = {
+			# Alba is a Lollard kingdom by this point the church is national
+			religion = lollard
+			religious_unity = 0.85
+			stability = 2
+			has_parliament = yes
+		}
+		
+		effect = {
+			add_prestige = 30
+			add_country_modifier = {
+				name = "alb_religious_settlement"
+				duration = -1
+			}
+			# The Church of Alba is formally established by Act of Parliament
+			if = {
+				limit = { has_dlc = "Domination" }
+				set_country_flag = alb_church_established
+			}
+		}
+		ai_weight = { factor = 500 }
+	}
+
+	# Chapter 8c: The Civil War
+	alb_civil_war = {
+		icon = mission_hundred_years_war
+		required_missions = { alb_great_matter }
+		position = 7
+		completed_by = 1700.1.1
+		
+		trigger = {
+			is_at_war = no
+			stability = 1
+			# The crown has seen off the pretenders
+			NOT = { num_of_rebel_armies = 1 }
+			# Parliament stands with the crown
+			has_parliament = yes
+			parliament_backing = yes
+		}
+		
+		effect = {
+			add_prestige = 40
+			add_legitimacy = 25
+			add_absolutism = 10
+			add_country_modifier = {
+				name = "alb_civil_war_survived"
+				duration = -1
+			}
+		}
+		ai_weight = { factor = 500 }
+	}
+
+	# Chapter 8d: A Standing Army
+	alb_standing_army = {
+		icon = mission_early_russian_army
+		required_missions = { alb_civil_war }
+		position = 8
+		completed_by = 1720.1.1
+		
+		trigger = {
+			army_size = 50
+			army_professionalism = 0.40
+			mil_tech = 15
+			has_parliament = yes
+		}
+		
+		effect = {
+			add_army_tradition = 20
+			add_country_modifier = {
+				name = "alb_standing_army"
+				duration = -1
+			}
+		}
+		ai_weight = { factor = 500 }
+	}
+	
+}
+
+alb_parl_2 = {
+	slot = 2
+	generic = no
+	ai = yes
+	potential_on_load = {
+	}
+	potential = {
+		OR = {
+			tag = ENG
+			tag = GBR
+			tag = ABA 
+		}
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+	
+	# Chapter 8b: Expand Parliament
+	alb_expand_parliament = {
+		icon = mission_the_governing_senate
+		required_missions = { alb_parliament }
+		position = 6
+		completed_by = 1680.1.1
+		
+		trigger = {
+			stability = 2
+			has_parliament = yes
+			num_of_owned_provinces_with = {
+				value = 15
+				has_seat_in_parliament = yes
+			}
+		}
+		
+		effect = {
+			add_prestige = 20
+			add_legitimacy = 10
+			add_country_modifier = {
+				name = "alb_expanded_parliament"
+				duration = -1
+			}
+		}
+		ai_weight = { factor = 500 }
+	}
+	
+	# Chapter 8c: The Republic of Virtue
+	alb_republic_of_virtue = {
+		icon = french_revolution
+		required_missions = { alb_expand_parliament }
+		position = 7
+		completed_by = 1720.1.1
+
+		trigger = {
+			# Must be a Republic
+			government = republic
+			# Must have reached the Tier 6 reform (Revolutionary Republic)
+			has_reform = revolutionary_republic_reform
+			# Must have embraced the Revolution
+			is_revolutionary = yes
+			# The people must be behind the new order
+			republican_tradition = 80
+			# The revolution must be secure
+			NOT = { any_owned_province = { unrest = 5 } }
+		}
+
+		effect = {
+			add_prestige = 20
+			add_legitimacy = 10
+			add_country_modifier = {
+				name = "alb_expanded_parliament"
+				duration = -1
+			}
+			
+			# Store the intent to push towards revolution
+			set_country_flag = alb_parliament_expanded
+		}
+		ai_weight = { factor = 500 }
+	}
+	
+}
+
+alb_parl_3 = {
+	slot = 3
+	generic = no
+	ai = yes
+	potential_on_load = {
+	}
+	potential = {
+		OR = {
+			tag = ENG
+			tag = GBR
+			tag = ABA 
+		}
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+	
+	# Chapter 8c (alternate): The Settled Crown
+	alb_settled_crown = {
+		icon = mission_monarch_in_throne_room
+		required_missions = { alb_expand_parliament }
+		position = 7
+		completed_by = 1720.1.1
+		
+		trigger = {
+			# Must be a monarchy, not a republic
+			government = monarchy
+			# Must have reached the Tier 6 constitutional reform
+			has_reform = constitutional_monarchy_reform
+			# Parliament remains the foundation of governance
+			has_parliament = yes
+			# The settlement must be secure
+			stability = 3
+			legitimacy = 90
+			# The revolutionary path has not been taken
+			NOT = { has_country_flag = alb_eternal_revolution }
+		}
+		
+		effect = {
+			add_prestige = 50
+			add_legitimacy = 20
+			add_country_modifier = {
+				name = "alb_settled_crown"
+				duration = -1
+			}
+			set_country_flag = alb_constitutional_settlement
+		}
+		ai_weight = { factor = 500 }
+	}	
+}

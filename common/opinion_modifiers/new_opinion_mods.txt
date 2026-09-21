@@ -1,0 +1,14 @@
+restored_rome = {
+	opinion = 100
+	yearly_decay = 1
+}
+
+tripartite_pact = {
+	opinion = 50
+	yearly_decay = 2
+}
+
+alb_peaceful_return_opinion = {
+	opinion = 50
+	yearly_decay = 1
+}

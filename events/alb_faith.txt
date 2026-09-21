@@ -1,0 +1,12 @@
+namespace = alb_faith
+
+country_event = {
+	id = alb_faith.1
+	hidden = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = "OK"
+		change_religion = lollard
+	}
+}

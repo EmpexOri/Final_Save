@@ -2895,3 +2895,4 @@ country_event = {
 		add_adm_power = 20
 	}
 }
+
