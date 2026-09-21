@@ -1550,7 +1550,7 @@ gc_por_4 = {
 		
 		trigger = {
 			custom_trigger_tooltip = {
-				#tooltip = por_byz_weakened_tt
+				tooltip = por_byz_weakened_tt
 				morea_area = {
 					type = all
 					country_or_non_sovereign_subject_holds = ROOT
@@ -1584,6 +1584,10 @@ gc_por_4 = {
 			add_country_modifier = {
 				name = por_mediterranean_dominance
 				duration = 7300
+			}
+			add_country_modifier = {
+				name = por_mediterranean_projection
+				duration = -1
 			}
 		}
 	}
@@ -2513,6 +2517,72 @@ gc_lus_3 = {
 			}
 		}
 	}
+	
+	# Proclamation of the Third Rome
+	gc_por_third_rome = {
+		icon = mission_lusitanian_empire
+		required_missions = { gc_por_true_rome }
+		position = 14
+		completed_by = 1750.1.1
+		
+		trigger = {
+			# The True Rome path must have been taken
+			has_country_flag = chose_true_rome
+			# A great power in its own right
+			total_development = 1500
+			# Champion of the Catholic faith
+			is_defender_of_faith = yes
+			religion = catholic
+			# Rome remains in Papal hands the Pope sits there at our pleasure
+			118 = {
+				owned_by = PAP
+			}
+		}
+		
+		effect = {
+			add_prestige = 100
+			add_papal_influence = 200
+			add_legitimacy = 25
+			add_country_modifier = {
+				name = "por_third_rome_modifier"
+				duration = -1
+			}
+			set_country_flag = proclaimed_third_rome
+			
+			# The Third Rome claims the protection of all Christendom
+			# — and the holy places that belong to it
+			
+			palestine_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			aleppo_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			delta_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			thrace_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+		ai_weight = { factor = 500 }
+	}
 }
 
 gc_lus_5 = {
@@ -2597,5 +2667,46 @@ gc_lus_5 = {
 				duration = -1
 			}
 		}
+	}
+	
+	# Not Another Charlemagne
+	gc_por_not_charlemagne = {
+		icon = mission_lusitanian_empire
+		required_missions = { gc_por_papal_vassal }
+		position = 14
+		completed_by = 1750.1.1
+		
+		trigger = {
+			# The papal vassal path must have been taken
+			has_country_flag = chose_papal_vassal
+			# The Pope is still our subject — the arrangement holds
+			exists = PAP
+			PAP = { is_subject_of = ROOT }
+			# Champion of the Catholic faith
+			# A European power without peer
+			OR = {
+				is_hegemon = yes
+				total_development = 2000
+			}
+			# Command over the continent — vassals and allies
+			num_of_subjects = 3
+			# Real reach across Europe
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+				value = 60
+				continent = europe
+			}
+		}
+		
+		effect = {
+			add_prestige = 100
+			add_army_tradition = 25
+			add_legitimacy = 25
+			add_country_modifier = {
+				name = "por_not_charlemagne_modifier"
+				duration = -1
+			}
+			set_country_flag = proclaimed_not_charlemagne
+		}
+		ai_weight = { factor = 500 }
 	}
 }

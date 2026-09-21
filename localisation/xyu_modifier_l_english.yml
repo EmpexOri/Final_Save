@@ -241,6 +241,12 @@
  por_papal_vassal_modifier_desc: "The Holy See is a guest in the Pyrenees, entirely dependent on Lusitanian arms and Lusitanian charity. The cardinals know it. The kings of Europe know it. And the Pope, above all, knows it."
  chose_true_rome: "Chose the True Rome"
  chose_papal_vassal: "Chose the Captive Papacy"
+ por_third_rome_modifier: "The Third Rome"
+ por_third_rome_modifier_desc: "Lusitania has proclaimed itself the Third Rome, the protector of the Church and the true heir to the legacy of the ancient city. Our fleets and our treasure defend the Holy See, and the kings of Europe know who holds the balance of faith in the west."
+ por_not_charlemagne_modifier: "Not Another Charlemagne"
+ por_not_charlemagne_modifier_desc: "In the year 800, the Pope crowned a Frankish king Emperor of the Romans, and for a thousand years every European monarch has dreamed of that moment a Pope, a crown, an empire. We have ended the dream. The Holy Father is ours. The cardinals answer to Lisbon. The Curia's authority is our authority, and when we speak in matters of faith, the kings of Europe listen not because we are crowned by Rome, but because Rome is crowned by us.\n\nLet Charlemagne keep his memory. Let the Holy Roman Emperor keep his empty title. Let the kings of France and Spain pretend their crowns are divine. We know who truly rules the Catholic world, and so does the Pope. Proclaim it, and let Europe tremble."
+ por_mediterranean_projection: "Mediterranean Projection"
+ por_mediterranean_projection_desc: "Our influence extends across the Mediterranean, from the western shores to the Levant. Our fleets patrol its waters, our merchants dominate its trade, and our allies recognize our power. This projection of strength ensures our dominance in the region."
 
  alb_the_old_levy: "The Old Levy"
  alb_the_old_levy_desc: "The system of levies that once filled Alba's armies has been revived, in miniature. Every freeholder in Albion knows his duty, and every lord knows how many men his lands must yield. It is not the host of the old kingdom restored not yet but it is a beginning."
