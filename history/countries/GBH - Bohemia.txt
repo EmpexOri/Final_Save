@@ -10,6 +10,7 @@ elector = yes
 
 1444.10.1 = {
 	set_estate_privilege = estate_nobles_junker_primacy
+	set_country_flag = formed_prussia_flag
 }
 
 1444.11.11= {
