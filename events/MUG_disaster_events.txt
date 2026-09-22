@@ -1,0 +1,230 @@
+namespace = mug_disaster
+
+country_event = {
+	id = mug_disaster.1
+	title = "mug_disaster.1.t"
+	desc = "mug_disaster.1.d"
+	picture = DISASTER_eventPicture
+	
+	trigger = {
+		tag = MUG
+		NOT = { has_country_flag = mug_collapse_fired }
+		is_year = 1650
+		total_development = 1250
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	option = {
+		name = "mug_disaster.1.a"
+		
+		set_country_flag = mug_collapse_fired
+		
+		# Tier 1 — over 1500 development: 50 years of collapse
+		if = {
+			limit = { total_development = 1500 }
+			add_country_modifier = {
+				name = mug_internal_collapse
+				duration = 18250
+			}
+		}
+		# Tier 2 — over 1250 development: 25 years of collapse
+		else = {
+			add_country_modifier = {
+				name = mug_internal_collapse
+				duration = 9125
+			}
+		}
+	}
+}
+
+# The event that fires when the disaster ends
+country_event = {
+	id = mug_disaster.2
+	title = "mug_disaster.2.t"
+	desc = "mug_disaster.2.d"
+	picture = DISASTER_eventPicture
+
+	is_triggered_only = yes
+
+	# When the crisis is over, the devastating modifier is removed
+	immediate = {
+		remove_country_modifier = "mug_internal_collapse"
+	}
+
+	option = {
+		name = "mug_disaster.2.a"
+		# A sense of relief, but a long road to recovery
+		add_stability = 1
+		add_country_modifier = {
+			name = "mug_aftermath"
+			duration = 3650 # 10 years
+		}
+	}
+}
+
+namespace = dec_disaster
+
+country_event = {
+	id = dec_disaster.1
+	title = "dec_disaster.1.t"
+	desc = "dec_disaster.1.d"
+	picture = DISASTER_eventPicture
+	
+	trigger = {
+		tag = DEC
+		NOT = { has_country_flag = dec_collapse_fired }
+		OR = {
+			AND = {
+				is_year = 1625
+				NOT = { is_year = 1651 }
+			}
+		}
+		total_development = 1000
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	immediate = {
+		# The Indian princes reject Deccan overlordship
+		every_owned_province = {
+			limit = {
+				NOT = { area = capital_area }
+				NOT = { culture = ROOT }
+			}
+			add_unrest = 5
+			add_province_modifier = {
+				name = dec_princes_revolt
+				duration = 9125
+			}
+		}
+	}
+	
+	option = {
+		name = "dec_disaster.1.a"
+		
+		set_country_flag = dec_collapse_fired
+		
+		add_country_modifier = {
+			name = dec_internal_collapse
+			duration = 9125
+		}
+	}
+}
+
+namespace = byz_disaster
+
+country_event = {
+	id = byz_disaster.1
+	title = "byz_disaster.1.t"
+	desc = "byz_disaster.1.d"
+	picture = DISASTER_eventPicture
+	
+	trigger = {
+		tag = BYZ
+		NOT = { has_country_flag = byz_bulgarian_revolt_fired }
+		# The southern provinces have slipped from our grasp
+		OR = {
+			NOT = {
+				morea_area = {
+					type = all
+					country_or_non_sovereign_subject_holds = ROOT
+				}
+			}
+			NOT = {
+				northern_greece_area = {
+					type = all
+					country_or_non_sovereign_subject_holds = ROOT
+				}
+			}
+		}
+		# And there is Bulgarian land left to lose
+		any_owned_province = {
+			OR = {
+				area = bulgaria_area
+				area = serbia_area
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 6
+	}
+	
+	option = {
+		name = "byz_disaster.1.a"
+		
+		set_country_flag = byz_bulgarian_revolt_fired
+		
+		# The Bulgarian boyars rise
+		every_owned_province = {
+			limit = {
+				OR = {
+					area = bulgaria_area
+					area = serbia_area
+				}
+			}
+			add_unrest = 15
+			add_province_modifier = {
+				name = byz_bulgarian_uprising
+				duration = 7300
+			}
+		}
+		
+		# Spawn nationalist rebels in each province
+		every_owned_province = {
+			limit = {
+				OR = {
+					area = bulgaria_area
+					area = serbia_area
+				}
+			}
+			spawn_rebels = {
+				type = nationalist
+				size = 4
+			}
+		}
+		
+		# If Bulgaria exists, they get a claim on their old lands
+		if = {
+			limit = { exists = BUL }
+			BUL = {
+				bulgaria_area = {
+					limit = {
+						NOT = { is_core = ROOT }
+						NOT = { is_permanent_claim = ROOT }
+					}
+					add_permanent_claim = ROOT
+				}
+				serbia_area = {
+					limit = {
+						NOT = { is_core = ROOT }
+						NOT = { is_permanent_claim = ROOT }
+					}
+					add_permanent_claim = ROOT
+				}
+			}
+		}
+	}
+}
+
+namespace = anchovian_diet
+
+country_event = {
+	id = anchovian_diet.1
+	title = "anchovian_diet.1.t"
+	desc = "anchovian_diet.1.d"
+	picture = PARLIAMENT_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "anchovian_diet.1.a"
+		add_legitimacy = 10
+		add_prestige = 5
+	}
+}

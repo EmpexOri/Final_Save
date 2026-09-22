@@ -1,0 +1,41 @@
+anchovian_empire_name = {
+	rank = {
+		1 = ANCHOVIAN_GRAND_DUCHY
+		2 = ANCHOVIAN_KINGDOM
+		3 = ANCHOVIAN_EMPIRE
+	}
+	ruler_male = {
+		1 = ANCHOVIAN_GRAND_DUKE
+		2 = ANCHOVIAN_KING
+		3 = ANCHOVIAN_KING
+	}
+	ruler_female = {
+		1 = ANCHOVIAN_GRAND_DUCHESS
+		2 = ANCHOVIAN_QUEEN
+		3 = ANCHOVIAN_QUEEN
+	}
+	consort_male = {
+		1 = PRINCE_CONSORT
+		2 = PRINCE_CONSORT
+		3 = PRINCE_CONSORT
+	}
+	consort_female = {
+		1 = ANCHOVIAN_GRAND_DUCHESS
+		2 = ANCHOVIAN_QUEEN
+		3 = ANCHOVIAN_QUEEN
+	}
+	heir_male = {
+		1 = HEIR
+		2 = CROWN_PRINCE
+		3 = CROWN_PRINCE
+	}
+	heir_female = {
+		1 = HEIR_fem
+		2 = CROWN_PRINCESS
+		3 = CROWN_PRINCESS
+	}
+	
+	trigger = {
+		has_reform = anchovian_empire_reform
+	}
+}

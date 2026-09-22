@@ -1,0 +1,35 @@
+﻿l_english:
+ mug_too_close_to_the_sun:0 "Too Close to the Sun"
+ mug_too_close_to_the_sun_desc:0 "The empire has grown too vast for its foundations. The center cannot hold. Ambitious governors, religious strife, and the endless demands of a bloated military have finally broken the back of our administration. The provinces teeter on the brink of open rebellion."
+ mug_disaster.1.t:0 "The Empire in Flames"
+ mug_disaster.1.d:0 "For years, we have ignored the signs. The warnings of our advisors, the protests of the provinces, the endless drain on our treasury. Now, the bill has come due. The empire is in a state of terminal decline. Our authority has evaporated. The army is a shadow of its former self. The tax collectors bring nothing but empty threats. We are witnessing the collapse of the Mughal Empire."
+ mug_disaster.1.a:0 "We are undone."
+ mug_disaster.2.t:0 "A New, But Weaker, Order"
+ mug_disaster.2.d:0 "The fires of rebellion have been doused, but the empire that emerges is not the one that entered. We are weaker, poorer, and more divided. The crisis has passed, but the struggle to rebuild what was lost has only just begun. The memory of the collapse will haunt us for generations."
+ mug_disaster.2.a:0 "The crisis is over. For now."
+
+ mug_internal_collapse:0 "The Collapse of the Mughal Empire"
+ mug_internal_collapse_desc:0 "The empire is fracturing from within. Provincial governors rule as kings, religious zealots preach open revolt, and the imperial army is no longer a force of order, but a collection of mutinous bands. The state is collapsing."
+
+  dec_disaster.1.t:0 "The Princes Revolt"
+ dec_disaster.1.d:0 "The Deccan has always been a land of many princes. The Bahmani inheritance was divided among five sultanates , Bijapur, Ahmadnagar, Berar, Bidar, Golconda — and even after we bound them together under one crown, the old families remembered their independence. The Marathas, the Telugus, the Kannadas, the old Bahmani nobles: all of them have watched our expansion with suspicion, and now their suspicion has curdled into open defiance.\n\nThe princes no longer send tribute. Their forts are closed to our officers. Their horsemen ride the roads at night. The Deccan has grown too quickly, and the south will not be ruled from a single throne. The revolt begins."
+
+ dec_disaster.1.a:0 "Let them come."
+
+ dec_internal_collapse:0 "The Princes' Revolt"
+ dec_internal_collapse_desc:0 "The Deccan Sultanate is fracturing under the weight of its own conquests. The princes of the south have raised their banners against the crown, the army is divided by faction, and the treasury can no longer fund the suppression of a dozen simultaneous rebellions. The empire of the Bahmanis is coming apart at the seams."
+
+ dec_princes_revolt:0 "The Princes' Revolt"
+ dec_princes_revolt_desc:0 "The local princes and chieftains of this province have rejected Deccan authority. Their taxes go unpaid, their roads are unsafe, and their loyalties belong to their old houses — not to the crown in the capital."
+ byz_disaster.1.t:0 "The Bulgarian Uprising"
+ byz_disaster.1.d:0 "The loss of the Morea and the Greek mainland has been a humiliation — but worse, it has been a signal. The Bulgarians have seen that the Emperor cannot protect his own Greek provinces. Why should they believe he can protect Bulgaria?\n\nThe boyars of the old Bulgarian tsardom have raised their banners. The Serbian lords have joined them. The roads south of the Haemus are no longer safe for imperial officials, and the garrisons at Sofia and Niš have been driven out or gone over to the rebels.\n\nThe Bulgarians remember the tsardom of Simeon and Samuel. They remember that it was the Emperor Basil who blinded fifteen thousand of their soldiers and called himself the Bulgar-Slayer. They have not forgotten. And now they have their chance."
+
+ byz_disaster.1.a:0 "The Balkans burn."
+
+ byz_bulgarian_uprising:0 "The Bulgarian Uprising"
+ byz_bulgarian_uprising_desc:0 "The Bulgarian and Serbian lords have risen against Byzantine rule. Taxes go unpaid, roads are unsafe, and imperial authority exists only within the walls of a handful of fortified towns."
+
+ anchovian_diet.1.t:0 "The First Diet of the Empire"
+ anchovian_diet.1.d:0 "The great hall of the Palazzo Reale has been prepared for the first session of the Imperial Diet. The bishops have taken their seats on the right, the great nobles on the left, and the representatives of the cities have filled the benches behind them. At the center of the hall, on a raised dais, sits the King not as a ruler above his subjects, but as a sovereign presiding over his assembled realm.\n\nThe King opens the session with a brief address. He speaks of the old kingdom, the new, and the duties that bind crown and commons together. Then he sits, and the Speaker of the Diet rises to read the first act of the day.\n\nThe Empire of Anchovia is no longer a kingdom of decrees. It is a state of laws, made by the crown-in-parliament. The Mediterranean will take note."
+
+ anchovian_diet.1.a:0 "Let the Diet convene."
