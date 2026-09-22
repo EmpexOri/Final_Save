@@ -1956,7 +1956,6 @@ country_event = {
 				NOT = {
 					trade_goods = spices
 					trade_goods = dyes
-					trade_goods = incense
 					trade_goods = chinaware
 				}
 			}
@@ -1968,10 +1967,9 @@ country_event = {
 			}
 		}
 		random_list = {
-			30 = { capital_scope = { change_trade_goods = spices } }
-			30 = { capital_scope = { change_trade_goods = dyes } }
-			30 = { capital_scope = { change_trade_goods = incense } }
-			10 = { capital_scope = { change_trade_goods = chinaware } }
+			40 = { capital_scope = { change_trade_goods = spices } }
+			40 = { capital_scope = { change_trade_goods = dyes } }
+			20 = { capital_scope = { change_trade_goods = chinaware } }
 		}
 	}
 }
