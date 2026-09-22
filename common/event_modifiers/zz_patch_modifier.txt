@@ -154,7 +154,6 @@ lus_china_trade = {
 lus_christian_macau = {
 	local_development_cost = -0.15
 	local_unrest = -2
-	local_missionary_strength = 0.02
 }
 
 lus_jeju_mission = {
@@ -418,4 +417,45 @@ alb_settled_crown = {
 	global_trade_power = 0.10
 	trade_efficiency = 0.05
 	national_unrest = -2
+}
+
+# The devastating modifier applied during the 'Too Close to the Sun' disaster
+mug_internal_collapse = {
+	# The empire is fracturing
+	global_unrest = +15
+	global_tax_modifier = -0.5 # The tax base is collapsing
+	discipline = -0.25 # The army is losing its cohesion
+	land_morale = -0.25 # The will to fight is gone
+	manpower_recovery_speed = -0.5 # The military is shattered
+}
+
+# A lingering, minor debuff after the disaster has ended
+mug_aftermath = {
+	stability_cost_modifier = 0.25
+	global_tax_modifier = -0.1
+}
+
+dec_internal_collapse = {
+	national_unrest = 12
+	global_tax_modifier = -0.35
+	discipline = -0.20
+	land_morale = -0.20
+	manpower_recovery_speed = -0.35
+	core_creation = 0.20
+	global_autonomy = 0.20
+}
+
+dec_princes_revolt = {
+	local_unrest = 5
+	local_autonomy = 0.20
+}
+
+byz_bulgarian_uprising = {
+	local_unrest = 5
+	local_autonomy = 0.20
+}
+
+nap_new_anchovia = {
+	prestige = 1
+	legitimacy = 1
 }

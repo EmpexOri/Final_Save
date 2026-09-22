@@ -1,0 +1,56 @@
+# The internal decay of the Mughal Empire
+mug_too_close_to_the_sun = {
+	# This icon will show on the stability screen
+	icon = disaster_generic
+	
+	# The disaster can only be available after this year
+	potential = {
+		tag = MUG
+		is_year = 1650
+		NOT = { has_country_flag = mug_collapse_happened }
+	}
+
+	# The conditions that must be met for the disaster to be able to start.
+	# This is what makes it 'tick' towards firing.
+	can_start = {
+		total_development = 1500 # A large empire
+		OR = {
+			# High unrest, low stability, or too many territories
+			any_owned_province = { unrest = 5 }
+			stability = -1
+			num_of_territories = 20
+		}
+	}
+
+	# The disaster will progress once these are met.
+	progress = {
+		modifier = {
+			factor = 5 # A significant monthly progress
+			any_owned_province = { unrest = 10 }
+		}
+		modifier = {
+			factor = 2
+			stability = -2
+		}
+		modifier = {
+			factor = 1
+			num_of_territories = 40
+		}
+	}
+
+	# When the disaster begins, it will fire an event.
+	on_start = {
+		country_event = { id = mug_disaster.1 days = 1 }
+	}
+
+	# The conditions required to end the disaster.
+	can_end = {
+		stability = 2
+		NOT = { any_owned_province = { unrest = 5 } }
+	}
+
+	# When the disaster ends, it will fire an event.
+	on_end = {
+		country_event = { id = mug_disaster.2 days = 1 }
+	}
+}

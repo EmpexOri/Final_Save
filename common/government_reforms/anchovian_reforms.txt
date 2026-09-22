@@ -1,0 +1,28 @@
+anchovian_empire_reform = {
+	icon = "crown"
+	
+# Only valid once the mission has unlocked it
+	potential = {
+		has_country_flag = anchovian_reform_unlocked
+	}
+	
+	trigger = {
+		government = monarchy
+	}
+	
+	has_parliament = yes
+	monarchy = yes
+	maintain_dynasty = yes
+	heirs_can_be_generals = yes
+	
+	custom_attributes = {
+		anchovian_empire = yes
+	}
+	
+	modifiers = {
+		legitimacy = 1
+		diplomatic_reputation = 2
+		administrative_efficiency = 0.05
+		global_tax_modifier = 0.05
+	}
+}
