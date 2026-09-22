@@ -1,0 +1,107 @@
+graphical_culture = westerngfx
+color = { 7 115 7 }
+
+historical_idea_groups = {
+	administrative_ideas
+	economic_ideas
+	offensive_ideas
+	defensive_ideas
+	trade_ideas
+	maritime_ideas
+	humanist_ideas
+	quality_ideas
+}
+
+historical_units = {
+	western_medieval_infantry
+	western_medieval_knights
+	western_men_at_arms
+	western_longbowmen
+	western_arquebusier
+	western_musketeer
+	western_line_infantry
+	western_riflemen
+	western_cavalry
+	western_dragoons
+	western_hussars
+}
+
+monarch_names = {
+	"Brian #0" = 1
+	"Niall #0" = 1
+	"Conn #0" = 1
+	"Donnchad #0" = 1
+	"Muirchertach #0" = 1
+	"Ruaidri #0" = 1
+	"Turlough #0" = 1
+	"Cathal #0" = 1
+	"Domnall #0" = 1
+	"Mael #0" = 1
+	"Eoghan #0" = 1
+	"Fergal #0" = 1
+	"Conchobar #0" = 1
+	"Aedh #0" = 1
+	"Fionn #0" = 1
+	"Cormac #0" = 1
+	"Diarmuid #0" = 1
+	"Oisin #0" = 1
+	"Padraig #0" = 1
+	"Seán #0" = 1
+
+	"Máire #0" = -1
+	"Éibhlin #0" = -1
+	"Deirdre #0" = -1
+	"Órlaith #0" = -1
+	"Gráinne #0" = -1
+	"Sadb #0" = -1
+	"Fionnuala #0" = -1
+	"Emer #0" = -1
+	"Aoife #0" = -1
+	"Niamh #0" = -1
+}
+
+leader_names = {
+	"O'Brien"
+	"O'Neill"
+	"O'Connor"
+	"O'Donnell"
+	"MacCarthy"
+	"MacMurrough"
+	"O'Rourke"
+	"MacMahon"
+	"O'Kelly"
+	"O'Flaherty"
+	"O'Molloy"
+	"O'Carroll"
+	"MacDermot"
+	"O'Brien of Thomond"
+	"O'Kennedy"
+	"O'Duffy"
+	"O'Malley"
+	"O'Reilly"
+	"MacCarthy Reagh"
+	"O'Sullivan"
+}
+
+ship_names = {
+	"Lundain"
+	"Tara"
+	"Dubhlinn"
+	"Cork"
+	"Waterford"
+	"Limerick"
+	"Galway"
+	"Belfast"
+	"Aberdeen"
+	"Inverness"
+	"Caerdydd"
+	"Aberystwyth"
+	"Bangor"
+	"Dover"
+	"Portsmouth"
+	"Plymouth"
+	"Bristol"
+	"Liverpool"
+	"Whitehaven"
+	"Newcastle"
+}

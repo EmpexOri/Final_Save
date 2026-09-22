@@ -1,0 +1,5 @@
+on_age_changed = {
+    events = {
+        alb_parliament.1
+    }
+}
