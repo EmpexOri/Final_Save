@@ -6393,6 +6393,9 @@ temple_of_confucius = {
 			province_is_or_accepts_religion = {
 				religion = confucianism
 			}	
+			province_is_or_accepts_religion = {
+				religion = daoshenic
+			}
 			has_owner_harmonized_religion = yes
 		}
 	}
@@ -6413,6 +6416,9 @@ temple_of_confucius = {
 			province_is_or_accepts_religion = {
 				religion = confucianism
 			}	
+			province_is_or_accepts_religion = {
+				religion = daoshenic
+			}
 			has_owner_harmonized_religion = yes
 		}
 	}
@@ -6423,6 +6429,9 @@ temple_of_confucius = {
 			province_is_or_accepts_religion = {
 				religion = confucianism
 			}	
+			province_is_or_accepts_religion = {
+				religion = daoshenic
+			}
 			has_owner_harmonized_religion = yes
 		}
 	}
@@ -6779,8 +6788,13 @@ pura_besakih = {
 
 	#can we build it?
 	build_trigger = {
-		province_is_or_accepts_religion_group = {
-			religion_group = dharmic
+		OR = {
+			province_is_or_accepts_religion_group = {
+				religion_group = dharmic
+			}
+			province_is_or_accepts_religion_group = {
+				religion_group = buddhist
+			}
 		}
 	}
 
@@ -6796,15 +6810,25 @@ pura_besakih = {
 
 	#can our country use it?
 	can_use_modifiers_trigger = {
-		province_is_or_accepts_religion_group = {
-			religion_group = dharmic
+		OR = {
+			province_is_or_accepts_religion_group = {
+				religion_group = dharmic
+			}
+			province_is_or_accepts_religion_group = {
+				religion_group = buddhist
+			}
 		}
 	}
 
 	#can our country upgrade it?
 	can_upgrade_trigger = {
-		province_is_or_accepts_religion_group = {
-			religion_group = dharmic
+		OR = {
+			province_is_or_accepts_religion_group = {
+				religion_group = dharmic
+			}
+			province_is_or_accepts_religion_group = {
+				religion_group = buddhist
+			}
 		}
 	}
 
@@ -10683,7 +10707,12 @@ imperial_city_hue = {
 
 	#can we build it?
 	build_trigger = {
-		province_is_buddhist_or_accepts_buddhism = yes
+		OR = {
+			province_is_buddhist_or_accepts_buddhism = yes
+			province_is_or_accepts_religion = {
+				religion = daoshenic
+			}
+		}
 	}
 
 	#what to do when it's built
@@ -10698,12 +10727,22 @@ imperial_city_hue = {
 
 	#can our country use it?
 	can_use_modifiers_trigger = {
-		province_is_buddhist_or_accepts_buddhism = yes
+		OR = {
+			province_is_buddhist_or_accepts_buddhism = yes
+			province_is_or_accepts_religion = {
+				religion = daoshenic
+			}
+		}
 	}
 
 	#can our country upgrade it?
 	can_upgrade_trigger = {
-		province_is_buddhist_or_accepts_buddhism = yes
+		OR = {
+			province_is_buddhist_or_accepts_buddhism = yes
+			province_is_or_accepts_religion = {
+				religion = daoshenic
+			}
+		}
 	}
 
 	#can our country keep it or is it destroyed when we get hold of it?
