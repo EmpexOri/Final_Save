@@ -22,20 +22,20 @@ historical_units = {
 	muslim_mass_infantry
 }
 monarch_names = {
-	"Ahmad #1" = 10
+	"Ahmad #1" = 5
 	"Alam #0" = 0
 	"Asenath #0" = -1
 	"Dawlat #0" = 0
 	"Hammud #0" = 0
-	"Jamil #1" = 10
-	"Mahmud #1" = 10
-	"Najib #1" = 10
-	"Yasar #1" = 10
-	"Yazid #1" = 10
+	"Jamil #1" = 5
+	"Mahmud #1" = 5
+	"Najib #1" = 5
+	"Yasar #1" = 5
+	"Yazid #1" = 5
 	"Youssef #0" = 0
-	"al-Hakim #1" = 10
-	"al-Mustansir #1" = 10
-	"az-Zahir #1" = 10
+	"Al-Hakim #1" = 5
+	"Al-Mustansir #1" = 10
+	"Az-Zahir #1" = 10
 	"Cleopatra #1" = -5
 }
 leader_names = {

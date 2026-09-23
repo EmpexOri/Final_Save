@@ -325,7 +325,6 @@ country_decisions = {
 				is_playing_custom_nation = no
 			}
 			NOT = { has_reform = celestial_empire }
-			NOT = { tag = GBH }
 			tag = BRA
 			OR = {
 				NOT = { exists = PRU }
@@ -356,7 +355,6 @@ country_decisions = {
 		}
 		allow = {
 			NOT = { exists = PRU }
-			NOT = { tag = GBH }
 			adm_tech = 10
 			OR = {
 				#For Generated Religions
@@ -496,7 +494,6 @@ country_decisions = {
 				is_playing_custom_nation = no
 			}
 			tag = TEU
-			NOT = { tag = GBH }
 			NOT = { has_reform = celestial_empire }
 			OR = {
 				NOT = { exists = PRU }
@@ -520,7 +517,6 @@ country_decisions = {
 		}
 		allow = {
 			NOT = { exists = PRU }
-			NOT = { tag = GBH }
 			adm_tech = 10
 			is_at_war = no
 			OR = {
@@ -653,7 +649,6 @@ country_decisions = {
 				primary_culture = pruthenian
 			}
 			NOT = { tag = PRU }
-			NOT = { tag = GBH }
 			OR = {
 				NOT = { exists = PRU }
 				ai = no
@@ -693,7 +688,6 @@ country_decisions = {
 		}
 		allow = {
 			NOT = { exists = PRU }
-			NOT = { tag = GBH }
 			adm_tech = 10
 			is_free_or_tributary_trigger = yes
 			is_nomad = no
