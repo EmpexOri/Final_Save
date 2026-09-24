@@ -11,9 +11,9 @@ estate_eunuchs_disaster = {
 	can_start = { 
 		estate_influence = {
 			estate = estate_eunuchs
-			influence = 70
+			influence = 80
 		}
-		corruption = 2
+		corruption = 3
 	}
 	
 	can_stop = {
@@ -23,6 +23,9 @@ estate_eunuchs_disaster = {
 					estate = estate_eunuchs
 					influence = 60
 				}
+			}
+			NOT = {
+				corruption = 1
 			}
 		}
 	}
@@ -34,13 +37,13 @@ estate_eunuchs_disaster = {
 			NOT = {
 				estate_influence = {
 					estate = estate_eunuchs
-					influence = 70
+					influence = 80
 				}
 			}
 		}
 		modifier = {
 			factor = 1
-			NOT = { corruption = 2 } 
+			NOT = { corruption = 1 } 
 		}
 	}
 	
