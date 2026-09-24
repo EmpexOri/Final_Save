@@ -65,12 +65,35 @@ pharaoh = {
 	}
 	ruler_female = {
 		1 = NOMARCH
-		2 = PHARAOH_fem
-		3 = PHARAOH_fem
+		2 = PHARAOH_FEM
+		3 = PHARAOH_FEM
+	}
+	consort_male = {
+		1 = NOMARCH
+		2 = GREAT_ROYAL_HUSBAND
+		3 = GREAT_ROYAL_HUSBAND
+	}
+	consort_female = {
+		1 = NOMARCH
+		2 = GREAT_ROYAL_WIFE
+		3 = GREAT_ROYAL_WIFE
+	}
+	heir_male = {
+		1 = HEIR
+		2 = HEIR
+		3 = HEIR
+	}
+	heir_female = {
+		1 = HEIR_fem
+		2 = HEIR_fem
+		3 = HEIR_fem
 	}
 	trigger = {
 		religion = kushite
-		OR = { government = monarchy government = theocracy }
+		OR = {
+			government = monarchy
+			government = theocracy
+		}
 	}
 }
 ecumenical_patriarch = {

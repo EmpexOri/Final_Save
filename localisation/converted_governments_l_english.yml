@@ -1,10 +1,13 @@
 ﻿l_english:
  #Ranks
+ NOME:0 "Nome"
+ PHARAOH:0 "Pharaoh"
+ PHARAOH_FEM:0 "Pharaohess"
+ NOMARCH:0 "Nomarch"
+ GREAT_ROYAL_WIFE:0 "Great Royal Wife"
+ GREAT_ROYAL_HUSBAND:0 "Great Royal Husband"
  SUFFET:0 "Suffet"
  SUFFET_fem:0 "Suffet"
- PHARAOH:0 "Pharaoh"
- PHARAOH_fem:0 "Pharaohess"
- NOMARCH:0 "Nomarch"
  DAUPHIN:0 "Dauphin"
  DAUPHIN_fem:0 "Dauphine"
  ECUMENICAL_PATRIARCH:0 "Ecumenical Patriarch"

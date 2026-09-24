@@ -5,6 +5,7 @@ is_city = yes
 culture = novgorodian
 religion = orthodox
 trade_goods = naval_supplies
+fort_15th = yes
 base_tax = 4
 base_production = 3
 base_manpower = 2

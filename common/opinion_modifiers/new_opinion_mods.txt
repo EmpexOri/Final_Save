@@ -12,3 +12,8 @@ alb_peaceful_return_opinion = {
 	opinion = 50
 	yearly_decay = 1
 }
+
+papal_vassal_outrage = {
+	opinion = -75
+	yearly_decay = 1.5
+}
