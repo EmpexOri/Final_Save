@@ -4099,7 +4099,7 @@ shwedagon_pagoda = {
 
 the_great_wall_of_china = {
 	# province it starts in
-	start = 698
+	start = 2179
 	
 	# date built in real life (so anything built during game time will be there if you start a game after that date)
 	date = 1368.01.01 #Ming dynasty
