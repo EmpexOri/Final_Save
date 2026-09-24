@@ -1078,6 +1078,92 @@ mam_missions_3 = {
 			}
 		}
 	}
+	
+	mam_tunis = {
+		icon = mission_conquer_tunisia
+		position = 6
+		provinces_to_highlight = {
+			OR = {
+				area = djerba_area
+				area = tripolitania_area
+				area = tunisia_area
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT } 
+		}
+
+		trigger = {
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+				OR = {
+					area = djerba_area
+					area = tripolitania_area
+					area = tunisia_area
+				}
+				value = 6
+			}
+			341 = { country_or_non_sovereign_subject_holds = ROOT } 
+			4566 = { country_or_non_sovereign_subject_holds = ROOT } 
+		}
+
+		effect = {
+			maghreb_region = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT } 
+					NOT = { is_core = ROOT } 
+				}
+				add_permanent_claim = ROOT
+			}
+			if = {
+				limit = { has_dlc = "Leviathan" } 
+				4566 = {
+					add_great_project_tier = {
+						type = holy_city_kairouan
+						tier = 1
+					}
+				}
+			}
+			else = {
+				341 = {
+					add_local_autonomy = -25
+					add_nationalism = -10
+					add_base_production = 2
+					add_base_manpower = 2
+				}
+			}
+		}
+	}
+
+	mam_morocco = {
+		icon = mission_new_world_power
+		position = 7
+		required_missions = { mam_tunis } 
+		provinces_to_highlight = {
+			OR = {
+				area = marrekesh_area
+				area = western_morocco_area
+				area = northern_morocco_area
+				area = southern_morocco_area
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT } 
+		}
+
+		trigger = {
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+				OR = {
+					area = marrekesh_area
+					area = western_morocco_area
+					area = northern_morocco_area
+					area = southern_morocco_area
+				}
+				value = 12
+			}
+			343 = { country_or_non_sovereign_subject_holds = ROOT } 
+		}
+
+		effect = {
+			country_event = { id = flavor_mam.113 } 
+			custom_tooltip = flavor_mam.113_tt
+		}
+	}
 
 	mam_alexandrian_trade = {
 		icon = mission_conquer_alexandria
@@ -1815,91 +1901,154 @@ mam_missions_5 = {
 			}
 		}
 	}
-
-	mam_tunis = {
-		icon = mission_conquer_tunisia
+	
+	# Chapter: Revenge for the Red Sea
+	mam_revenge_red_sea = {
+		icon = mam_reincorporate_northern_territories
+		required_missions = {  }
 		position = 4
+		completed_by = 1600.1.1
+		
 		provinces_to_highlight = {
-			OR = {
-				area = djerba_area
-				area = tripolitania_area
-				area = tunisia_area
-			}
-			NOT = { country_or_non_sovereign_subject_holds = ROOT } 
+			area = palestine_area
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
-
+		
 		trigger = {
-			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
-				OR = {
-					area = djerba_area
-					area = tripolitania_area
-					area = tunisia_area
-				}
-				value = 6
+			palestine_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
 			}
-			341 = { country_or_non_sovereign_subject_holds = ROOT } 
-			4566 = { country_or_non_sovereign_subject_holds = ROOT } 
 		}
-
+		
 		effect = {
-			maghreb_region = {
+			add_prestige = 15
+			add_legitimacy = 10
+			
+			# As requested — permanent claim on Palestine
+			palestine_area = {
 				limit = {
-					NOT = { is_permanent_claim = ROOT } 
-					NOT = { is_core = ROOT } 
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
 				}
 				add_permanent_claim = ROOT
 			}
-			if = {
-				limit = { has_dlc = "Leviathan" } 
-				4566 = {
-					add_great_project_tier = {
-						type = holy_city_kairouan
-						tier = 1
-					}
-				}
-			}
-			else = {
-				341 = {
-					add_local_autonomy = -25
-					add_nationalism = -10
-					add_base_production = 2
-					add_base_manpower = 2
-				}
-			}
+			
+			 trans_jordan_area = {
+			 	limit = {
+			 		NOT = { is_core = ROOT }
+			 		NOT = { is_permanent_claim = ROOT }
+			 	}
+			 	add_permanent_claim = ROOT
+			 }
 		}
+		ai_weight = { factor = 50 }
 	}
-
-	mam_morocco = {
-		icon = mission_new_world_power
-		position = 6
-		required_missions = { mam_tunis } 
+	
+	mam_beit_avadim = {
+		icon = influence_the_church
+		required_missions = { mam_revenge_red_sea }
+		position = 5
+		completed_by = 1620.1.1
+		
 		provinces_to_highlight = {
-			OR = {
-				area = marrekesh_area
-				area = western_morocco_area
-				area = northern_morocco_area
-				area = southern_morocco_area
-			}
-			NOT = { country_or_non_sovereign_subject_holds = ROOT } 
+			trade_goods = slaves
+			country_or_non_sovereign_subject_holds = ROOT
 		}
-
+		
 		trigger = {
 			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
-				OR = {
-					area = marrekesh_area
-					area = western_morocco_area
-					area = northern_morocco_area
-					area = southern_morocco_area
-				}
-				value = 12
+				value = 3
+				trade_goods = slaves
 			}
-			343 = { country_or_non_sovereign_subject_holds = ROOT } 
+			mercantilism = 30
+			OR = {
+				full_idea_group = trade_ideas
+				full_idea_group = economic_ideas
+			}
 		}
-
+		
 		effect = {
-			country_event = { id = flavor_mam.113 } 
-			custom_tooltip = flavor_mam.113_tt
+			add_mercantilism = 5
+			add_country_modifier = {
+				name = "mam_beit_avadim"
+				duration = -1
+			}
 		}
+		ai_weight = { factor = 50 }
+	}
+	
+	mam_royal_slaves = {
+		icon = mission_ottoman_early_army
+		required_missions = { mam_beit_avadim }
+		position = 6
+		completed_by = 1650.1.1
+		
+		provinces_to_highlight = {
+			trade_goods = slaves
+			country_or_non_sovereign_subject_holds = ROOT
+		}
+		
+		trigger = {
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+				value = 12
+				trade_goods = slaves
+			}
+			army_size = 60
+			mil_tech = 15
+		}
+		
+		effect = {
+			add_army_tradition = 15
+			add_country_modifier = {
+				name = "mam_royal_slaves"
+				duration = -1
+			}
+		}
+		ai_weight = { factor = 50 }
+	}
+	
+	mam_khenret = {
+		icon = mission_late_ottoman_reforms
+		required_missions = { mam_royal_slaves }
+		position = 7
+		completed_by = 1680.1.1
+		
+		provinces_to_highlight = {  }
+		
+		trigger = {
+			OR = {
+				has_reform = parliamentary_reform
+				has_reform = general_estates_reform
+				has_reform = royal_decree_reform
+				has_reform = aristocratic_court_reform
+				has_reform = states_general_reform
+				has_reform = imperial_decree_reform
+				has_reform = governing_senate_reform
+				has_reform = enforced_autocracy_reform
+				has_reform = political_absolutism_reform
+				has_reform = legislative_houses_reform
+				has_reform = presidential_monarchy_reform
+				has_reform = enlightened_monarchy_reform
+			}
+			has_country_modifier = mam_royal_slaves
+			total_development = 600
+			OR = {
+				full_idea_group = administrative_ideas
+				full_idea_group = economic_ideas
+				adm_tech = 20
+			}
+		}
+		
+		effect = {
+			add_prestige = 40
+			add_adm_power = 100
+			add_country_modifier = {
+				name = "mam_khenret_admin"
+				duration = -1
+			}
+		}
+		ai_weight = { factor = 50 }
 	}
 
 	mam_city_pha = {
