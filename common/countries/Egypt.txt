@@ -27,20 +27,24 @@ monarch_names = {
 	"Asenath #0" = -1
 	"Dawlat #0" = 0
 	"Hammud #0" = 0
-	"Jamil #1" = 5
-	"Mahmud #1" = 5
-	"Najib #1" = 5
-	"Yasar #1" = 5
-	"Yazid #1" = 5
-	"Youssef #0" = 0
+	"Jamil #1" = 1
+	"Mahmud #1" = 1
+	"Najib #1" = 1
+	"Yasar #1" = 1
+	"Yazid #1" = 1
+	"Tutankhamun #1" = 2
 	"Al-Hakim #1" = 5
-	"Al-Mustansir #1" = 10
-	"Az-Zahir #1" = 10
+	"Al-Mustansir #1" = 2
+	"Az-Zahir #1" = 2
 	"Cleopatra #1" = -5
+	"Rama-Tut #0" = 3
+	"Ramesses #2" = 2
+	"Thutmose #3" = 2
 }
 leader_names = {
 	"Ali"
 	"Aybak"
+	"Kang"
 	"Baibars"
 	"Bay"
 	"Bey"
@@ -49,6 +53,7 @@ leader_names = {
 	"Kansur"
 	"Sayfuddin"
 	"Zangi"
+	"En Sabah Nur"
 }
 ship_names = {
 	"Ad-Däkhilah"
