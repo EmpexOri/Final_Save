@@ -478,3 +478,18 @@ mam_khenret_admin = {
 	manpower_recovery_speed = 0.05
 	global_unrest = -1
 }
+
+lus_burned_sakura = {
+	naval_forcelimit_modifier = 0.05
+	ship_durability = 0.05
+}
+
+lus_chopped_frangipani = {
+	trade_steering = 0.05
+	merchants = 1
+}
+
+por_mediterranean_dominance = {
+	naval_forcelimit_modifier = 0.1
+	galley_power = 0.05
+}
