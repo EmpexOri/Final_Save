@@ -1075,9 +1075,9 @@ ming_missions_2 = {
 		required_missions = { } 
 		provinces_to_highlight = { 
 			OR = {
+				province_id = 2179
+				province_id = 703
 				province_id = 697
-				province_id = 708
-				province_id = 698
 			}
 			OR = {
 				NOT = { num_of_times_expanded_infrastructure = 1 }
@@ -1090,7 +1090,7 @@ ming_missions_2 = {
 			if = {
 				limit = { has_dlc = "Leviathan" }
 				OR = {
-					698 = {
+					2179 = {
 						OR = {
 							has_great_project = {
 								type = the_great_wall_of_china
@@ -1103,14 +1103,14 @@ ming_missions_2 = {
 						}
 					}
 					AND = {
-						698 = { 
+						2179 = { 
 							has_fort_building_trigger = yes 
 							OR = {
 								num_of_times_improved = 3
 								num_of_times_expanded_infrastructure = 1 
 							}
 						}
-						708 = { 
+						703 = { 
 							has_fort_building_trigger = yes 
 							OR = {
 								num_of_times_improved = 3
@@ -1129,14 +1129,14 @@ ming_missions_2 = {
 			}
 			else = {
 				AND = {
-					698 = { 
+					2179 = { 
 						has_fort_building_trigger = yes 
 						OR = {
 							num_of_times_improved = 3
 							num_of_times_expanded_infrastructure = 1 
 						}
 					}
-					708 = { 
+					703 = { 
 						has_fort_building_trigger = yes 
 						OR = {
 							num_of_times_improved = 3
@@ -1157,7 +1157,7 @@ ming_missions_2 = {
 		effect = {
 			custom_tooltip = mng_less_than_3_with_leviathan_tt
 			tooltip = {
-				698 = { 
+				2179 = { 
 					add_great_project_tier = {
 						type = the_great_wall_of_china 
 						tier = 1 
@@ -1178,7 +1178,7 @@ ming_missions_2 = {
 				if = {
 					limit = { 
 						has_dlc = "Leviathan" 
-						698 = { 
+						2179 = { 
 							NOT = { 
 								has_great_project = {
 									type = the_great_wall_of_china 
@@ -1187,7 +1187,7 @@ ming_missions_2 = {
 							}
 						}
 					}
-					698 = {
+					2179 = {
 						add_great_project_tier = {
 							type = the_great_wall_of_china 
 							tier = 1 
@@ -1202,7 +1202,7 @@ ming_missions_2 = {
 					add_army_tradition = 15
 				}
 				else = {
-					698 = {
+					2179 = {
 						if = { 
 							limit = { country_or_non_sovereign_subject_holds = ROOT }
 							add_province_modifier = {
@@ -1212,7 +1212,7 @@ ming_missions_2 = {
 							}
 						}
 					}
-					4223 = {
+					2177 = {
 						if = { 
 							limit = { country_or_non_sovereign_subject_holds = ROOT }
 							add_province_modifier = {
@@ -1222,7 +1222,17 @@ ming_missions_2 = {
 							}
 						}
 					}
-					702 = {
+					2181 = {
+						if = { 
+							limit = { country_or_non_sovereign_subject_holds = ROOT }
+							add_province_modifier = {
+								name = mng_great_wall_china_expanded_modifier
+								duration = -1 
+								desc = until_it_is_conquered_desc
+							}
+						}
+					}
+					703 = {
 						if = { 
 							limit = { country_or_non_sovereign_subject_holds = ROOT }
 							add_province_modifier = {
@@ -1252,7 +1262,7 @@ ming_missions_2 = {
 							}
 						}
 					}
-					1816 = {
+					704 = {
 						if = { 
 							limit = { country_or_non_sovereign_subject_holds = ROOT }
 							add_province_modifier = {
@@ -6457,7 +6467,7 @@ ming_missions_5_b = {
 		} 
 		
 		trigger = { 
-			1816 = { development = 35 }
+			1816 = { development = 25 }
 			1816 = { 
 				has_tax_building_trigger = yes
 				has_production_building_trigger = yes  
