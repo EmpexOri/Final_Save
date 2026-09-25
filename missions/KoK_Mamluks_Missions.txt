@@ -1945,7 +1945,7 @@ mam_missions_5 = {
 		ai_weight = { factor = 50 }
 	}
 	
-	mam_beit_avadim = {
+	mam_beit_avadim_1 = {
 		icon = influence_the_church
 		required_missions = { mam_revenge_red_sea }
 		position = 5
@@ -1980,7 +1980,7 @@ mam_missions_5 = {
 	
 	mam_royal_slaves = {
 		icon = mission_ottoman_early_army
-		required_missions = { mam_beit_avadim }
+		required_missions = { mam_beit_avadim_1 }
 		position = 6
 		completed_by = 1650.1.1
 		
