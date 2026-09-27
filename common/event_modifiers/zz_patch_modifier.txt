@@ -157,7 +157,7 @@ lus_christian_macau = {
 }
 
 lus_jeju_mission = {
-	global_missionary_strength = 0.03
+	naval_morale = 0.05
 	missionaries = 1
 }
 
@@ -525,4 +525,66 @@ nov_officer_modernization = {
 	artillery_cost = -0.15
 	land_maintenance_modifier = 0.05
 	artillery_power = 0.10
+}
+
+mnd_nederlands_bali_modifier = {
+	global_missionary_strength = 0.02
+	missionaries = 1
+	tolerance_own = 2
+}
+
+mnd_letters_amsterdam_modifier = {
+	institution_spread = 0.05
+	global_trade_power = 0.05
+	prestige = 0.5
+}
+
+mnd_envoy_amsterdam_modifier = {
+	institution_spread = 0.15
+	idea_cost = -0.05
+	prestige = 0.5
+}
+
+mnd_wie_zijn_wij_modifier = {
+	development_cost = -0.10
+	global_tax_modifier = 0.10
+	diplomatic_reputation = 2
+	tolerance_heretic = 1
+}
+
+mnd_terugkeer_modifier = {
+	naval_forcelimit_modifier = 0.15
+	ship_durability = 0.10
+	global_ship_cost = -0.10
+	global_trade_power = 0.10
+}
+
+nap_macaronesia = {
+	ship_durability = 0.10
+	ship_power_propagation = 0.10
+	naval_forcelimit_modifier = 0.10
+}
+
+nap_demetria_cooperation = {
+	liberty_desire = -50
+	diplomatic_reputation = -1
+}
+
+nap_united_lusitania = {
+	diplomatic_reputation = 3
+	institution_spread = 0.05
+	prestige = 0.5
+}
+
+por_payment_for_unification = {
+	liberty_desire = -50
+	discipline = -0.10
+	global_tax_modifier = -0.10
+	technology_cost = 0.10
+}
+
+ita_payment_received = {
+	discipline = 0.05
+	global_tax_modifier = 0.05
+	technology_cost = -0.05
 }

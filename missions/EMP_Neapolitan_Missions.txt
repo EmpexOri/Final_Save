@@ -526,47 +526,42 @@ emp_naples_3 = {
 			factor = 50
 		}
 	}
-	emp_nap_crown_of_aragon = {
-		icon = king_of_aragon
-		required_missions = { emp_nap_med_islands }
+	emp_nap_demetria = {
+		icon = mission_monarch_in_throne_room
+		required_missions = { emp_nap_med_control }
+		position = 2
 		provinces_to_highlight = {
 			OR = {
-				area = aragon_area
-				area = catalonia_area
-				area = valencia_area
+				province_id = 102
+				province_id = 4727
 			}
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
-			OR = {
-				ARA = {
-					is_subject_of = ROOT
-				}
-				AND = {
-					aragon_area = {
-						type = all
-						country_or_non_sovereign_subject_holds = ROOT
-					}
-					catalonia_area = {
-						type = all
-						country_or_non_sovereign_subject_holds = ROOT
-					}
-					valencia_area = {
-						type = all
-						country_or_non_sovereign_subject_holds = ROOT
-					}
-				}
+			# Demetria is our vassal
+			BUR = {
+				is_subject_of = ROOT
+			}
+			
+			# We hold the two Alpine passes into Demetria
+			102 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			4727 = {
+				country_or_non_sovereign_subject_holds = ROOT
 			}
 		}
 		effect = {
-			add_country_modifier = {
-				name = "nap_liberty_desire"
-				duration = -1
+			# Demetria bends the knee for good
+			BUR = {
+				add_country_modifier = {
+					name = "nap_demetria_cooperation"
+					duration = -1
+				}
 			}
+			add_prestige = 25
 		}
-		ai_weight = {
-			factor = 50
-		}
+		ai_weight = { factor = 50 }
 	}
 }
 
@@ -626,26 +621,58 @@ emp_naples_4 = {
 			}
 		}
 	}
-	emp_nap_med_islands = {
+	emp_nap_med_control = {
 		icon = mission_mediterranean_islands
 		required_missions = { emp_nap_neapolitan_navy }
+		position = 4
 		provinces_to_highlight = {
 			OR = {
-				area = corsica_sardinia_area
-				area = baleares_area
+				province_id = 1319   # Lesbos
+				province_id = 341    # Cartagena Demetriensis (Tunisia)
 			}
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
-			any_owned_province = {
-				area = baleares_area
-			}
-			corsica_sardinia_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
+			OR = {
+				1319 = {
+					country_or_non_sovereign_subject_holds = ROOT
+				}
+				341 = {
+					country_or_non_sovereign_subject_holds = ROOT
+				}
 			}
 		}
 		effect = {
+			# Rename Lesbos if we hold it
+			if = {
+				limit = {
+					1319 = {
+						country_or_non_sovereign_subject_holds = ROOT
+					}
+				}
+				1319 = {
+					change_province_name = "Anchovis"
+					rename_capital = "Anchovis"
+				}
+			}
+			
+			# Rename Cartagena Demetriensis if we hold it
+			if = {
+				limit = {
+					341 = {
+						country_or_non_sovereign_subject_holds = ROOT
+					}
+				}
+				341 = {
+					change_province_name = "Cartagena Anchovis"
+					rename_capital = "Cartagena Anchovis"
+				}
+			}
+			
+			add_prestige = 25
+			add_navy_tradition = 15
+			
+			# Claims on the central Mediterranean
 			tunisia_area = {
 				limit = {
 					NOT = { is_core = ROOT }
@@ -696,33 +723,100 @@ emp_naples_4 = {
 				add_permanent_claim = ROOT
 			}
 		}
+		ai_weight = { factor = 50 }
 	}
-	emp_nap_barbary_pirates = {
-		icon = mission_combat_barbary_piracy
-		required_missions = { emp_nap_med_islands }
+	
+	emp_nap_macaronesia = {
+		icon = mission_mediterranean_islands
+		required_missions = { emp_nap_med_control }
 		position = 2
 		provinces_to_highlight = {
-			region = maghreb_region
+			OR = {
+				province_id = 366
+				province_id = 4565
+			}
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
-			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
-				value = 10
-				region = maghreb_region
-			}
-			341 = {
+			366 = {
 				country_or_non_sovereign_subject_holds = ROOT
 			}
-			354 = {
+			4565 = {
 				country_or_non_sovereign_subject_holds = ROOT
 			}
 		}
 		effect = {
 			add_country_modifier = {
-				name = "nap_barbary_pirates"
+				name = "nap_macaronesia"
 				duration = -1
 			}
 		}
+	}
+	
+	emp_nap_unite_northern_lusitania = {
+		icon = mission_unite_home_region
+		required_missions = { emp_nap_demetria }
+		position = 3
+		provinces_to_highlight = {
+			OR = {
+				province_id = 4777
+				province_id = 4391
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			FRA = {
+				is_subject_of = ROOT
+			}
+			BUR = {
+				is_subject_of = ROOT
+			}
+		}
+		effect = {
+			# Portofrankia absorbs Demetria entirely
+			FRA = {
+				inherit = BUR
+			}
+			
+			# The united realm takes a new name
+			FRA = {
+				override_country_name = FRA_UNITED_KINGDOMS
+			}
+			
+			# The vassal pays for unification
+			FRA = {
+				add_country_modifier = {
+					name = "por_payment_for_unification"
+					duration = 18250
+				}
+			}
+			
+			# The overlord collects
+			if = {
+				limit = { exists = ITA }
+				ITA = {
+					add_country_modifier = {
+						name = "ita_payment_received"
+						duration = 18250
+					}
+				}
+			}
+			else = {
+				TTS = {
+					add_country_modifier = {
+						name = "ita_payment_received"
+						duration = 18250
+					}
+				}
+			}
+			
+			add_prestige = 40
+			add_country_modifier = {
+				name = "nap_united_lusitania"
+				duration = -1
+			}
+		}
+		ai_weight = { factor = 50 }
 	}
 	
 	emp_nap_northern_italy = {
