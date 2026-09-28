@@ -365,9 +365,24 @@ alb_king_in_parliament = {
 }
 
 alb_religious_settlement = {
-	tolerance_own = 3
-	global_missionary_strength = 0.03
-	stability_cost_modifier = -0.15
+	religious_unity = 0.10
+	global_missionary_strength = 0.02
+	stability_cost_modifier = -0.10
+	tolerance_own = 2
+}
+
+alb_pretenders_spared = {
+	legitimacy = 1
+	tolerance_own = 2
+	stability_cost_modifier = -0.10
+	national_unrest = 1
+}
+
+alb_pretenders_executed = {
+	discipline = 0.05
+	national_unrest = -2
+	diplomatic_reputation = -2
+	legitimacy = -0.5
 }
 
 alb_civil_war_survived = {
@@ -409,13 +424,47 @@ alb_republic_of_virtue = {
 	diplomatic_reputation = -2
 }
 
+alb_parliament_ascendant = {
+    max_absolutism = -20
+    yearly_absolutism = -0.5
+    stability_cost_modifier = -0.15
+    advisor_cost = -0.10
+}
+
+alb_reform_wooden_works = {
+    heavy_ship_power = 0.15
+    ship_durability = 0.10
+    naval_morale = 0.10
+    sailor_maintenance = -0.10
+}
+
+alb_reform_standing_ordnance = {
+    discipline = 0.05
+    infantry_power = 0.10
+    artillery_power = 0.10
+    land_morale = 0.05
+}
+
+alb_reform_bureau_of_works = {
+    production_efficiency = 0.10
+    trade_efficiency = 0.10
+    build_cost = -0.10
+    development_cost = -0.05
+}
+
+alb_act_of_peace = {
+    stability_cost_modifier = -0.10
+    legitimacy = 1
+    national_unrest = -2
+    prestige = 0.5
+}
+
 alb_settled_crown = {
-	legitimacy = 1
-	stability_cost_modifier = -0.15
-	diplomatic_reputation = 3
-	global_trade_power = 0.10
-	trade_efficiency = 0.05
-	global_unrest = -2
+    max_absolutism = 20
+    national_unrest = -3
+    stability_cost_modifier = -0.10
+    core_creation = -0.10
+    legitimacy = 1
 }
 
 # The devastating modifier applied during the 'Too Close to the Sun' disaster

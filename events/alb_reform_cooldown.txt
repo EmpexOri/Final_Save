@@ -1,0 +1,11 @@
+namespace = alb_reform_cooldown
+
+country_event = {
+    id = alb_reform_cooldown.1
+    hidden = yes
+    is_triggered_only = yes
+    
+    immediate = {
+        clr_country_flag = alb_reform_cooldown
+    }
+}
