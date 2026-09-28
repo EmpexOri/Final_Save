@@ -56,3 +56,10 @@ add_accepted_culture = manchu
 	add_prestige = 68
 	add_treasury = 49
 }
+
+1444.11.11 = {
+	add_country_modifier = {
+		name = "kwantung_samurai_modifier"
+		duration = -1
+	}
+}

@@ -331,6 +331,106 @@ tr_novgorod_1 = {
 		}
 	}
 	
+	nov_bogatyr = {
+		icon = mission_cossack_cavalry
+		position = 5
+		required_missions = {  }
+
+		provinces_to_highlight = {
+		
+		}
+
+		trigger = {
+			# 80% or more of land force limit
+			army_size_percentage = 0.8
+			# Cavalry must make up at least 25% of your army
+			cavalry_fraction = 0.25
+			mil_tech = 5
+		}
+
+		effect = {
+			add_country_modifier = {
+				name = "nov_bogatyr"
+				duration = -1
+			}
+			add_army_professionalism = 0.05
+		}
+	}
+	
+	nov_professional_army = {
+		icon = mission_assemble_an_army
+		required_missions = { nov_bogatyr }
+		position = 6
+		completed_by = 1580.1.1
+		
+		provinces_to_highlight = {
+			has_building = barracks
+			country_or_non_sovereign_subject_holds = ROOT
+		}
+		
+		trigger = {
+			# Lock out if the levy path was taken
+			NOT = { has_country_flag = nov_chose_levies }
+			
+			num_of_owned_provinces_with = {
+				value = 10
+				has_building = barracks
+			}
+			
+			OR = {
+				has_reform = quash_noble_power_reform
+				has_reform = maintain_nobles_status_quo_reform
+				has_reform = grant_military_command_reform
+				has_reform = grant_nobles_electorate_reform
+				has_reform = blackmail_nobility_reform
+				has_reform = separation_of_boyars_from_court_reform
+			}
+		}
+		
+		effect = {
+			set_country_flag = nov_chose_professional_army
+			add_army_tradition = 15
+			add_army_professionalism = 0.03
+			add_country_modifier = {
+				name = "nov_professional_army"
+				duration = -1
+			}
+		}
+		ai_weight = { factor = 50 }
+	}
+	
+	nov_officer_modernization = {
+		icon = mission_assemble_an_army
+		required_missions = { nov_professional_army }
+		position = 7
+		completed_by = 1620.1.1
+		
+		trigger = {
+			# Must have taken the professional path
+			has_country_flag = nov_chose_professional_army
+			
+			# Cannons unlocked at mil tech 7
+			mil_tech = 7
+			
+			# A field army to match at least one of the great powers
+			OR = {
+				army_size = GBH
+				army_size = BYZ
+				army_size = TTS
+			}
+		}
+		
+		effect = {
+			add_army_tradition = 10
+			add_army_professionalism = 0.02
+			add_country_modifier = {
+				name = "nov_officer_modernization"
+				duration = -1
+			}
+		}
+		ai_weight = { factor = 50 }
+	}
+	
 }
 
 tr_novgorod_2 = {
@@ -491,30 +591,80 @@ tr_novgorod_2 = {
 			}
 		}
 	}
-
-	nov_bogatyr = {
-		icon = mission_cossack_cavalry
-		required_missions = { nov_develop_capital }
-
-		provinces_to_highlight = {
+	
+	nov_expand_levies = {
+		icon = mission_build_up_to_force_limit
+		required_missions = { nov_bogatyr }
+		position = 6
+		completed_by = 1580.1.1
 		
+		provinces_to_highlight = {
+			country_or_non_sovereign_subject_holds = ROOT
+			NOT = { development = 8 }
 		}
-
+		
 		trigger = {
-			# 80% or more of land force limit
-			army_size_percentage = 0.8
-			# Cavalry must make up at least 25% of your army
-			cavalry_fraction = 0.25
-			mil_tech = 5
+			# Lock out if the professional path was taken
+			NOT = { has_country_flag = nov_chose_professional_army }
+			
+			# The realm is large enough to draw levies from
+			total_development = 275
+			
+			# Manpower is the point of this path
+			manpower_percentage = 0.6
+			
+			# And the crown is on good terms with the people who supply them
+			stability = 2
+			OR = {
+				has_reform = enforce_privileges_reform
+				has_reform = grant_noble_castle_rights_reform
+				has_reform = maintain_nobles_status_quo_reform
+				has_reform = grant_military_command_reform
+			}
 		}
-
+		
 		effect = {
+			set_country_flag = nov_chose_levies
+			add_army_tradition = 10
 			add_country_modifier = {
-				name = "nov_bogatyr"
+				name = "nov_expanded_levies"
 				duration = -1
 			}
-			add_army_professionalism = 0.05
 		}
+		ai_weight = { factor = 50 }
+	}
+	
+	nov_castle_act = {
+		icon = mission_build_up_to_force_limit
+		required_missions = { nov_expand_levies }
+		position = 7
+		completed_by = 1620.1.1
+		
+		provinces_to_highlight = {
+			has_fort = yes
+			country_or_non_sovereign_subject_holds = ROOT
+		}
+		
+		trigger = {
+			# The levy system is the foundation, and it needs fortresses to shelter behind
+			num_of_owned_provinces_with = {
+				value = 12
+				has_fort_building_trigger = yes
+			}
+			
+			# The realm must be at peace to pass such a law
+			is_at_war = no
+			stability = 2
+		}
+		
+		effect = {
+			add_prestige = 25
+			add_country_modifier = {
+				name = "nov_castle_act_modifier"
+				duration = -1
+			}
+		}
+		ai_weight = { factor = 50 }
 	}
 }
 

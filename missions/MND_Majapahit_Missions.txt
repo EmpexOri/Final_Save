@@ -1203,6 +1203,63 @@ mnd_are_2 = {
 			factor = 50
 		}
 	}
+	
+	mnd_maj_wie_zijn_wij = {
+		icon = mission_mnd_maj_gaja_madas_oath
+		required_missions = { mnd_maj_letters_amsterdam }
+		position = 11
+		
+		provinces_to_highlight = {
+			OR = {
+				region = malaya_region
+				region = indonesia_region
+				region = indo_china_region
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		
+		trigger = {
+			# Lock out if the return path was taken
+			NOT = { has_country_flag = mnd_chose_return }
+			
+			# Domination of South Asia
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+				value = 70
+				OR = {
+					region = malaya_region
+					region = indonesia_region
+					region = indo_china_region
+				}
+			}
+			
+			# A plural realm, not a Dutch colony
+			num_accepted_cultures = 4
+			
+			# The Dutch culture has spread among our subjects
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+				value = 24
+				culture = dutch
+			}
+		}
+		
+		effect = {
+			set_country_flag = mnd_chose_unique
+			add_prestige = 40
+			
+			# The capital grows into a true imperial seat
+			2690 = {
+				add_base_tax = 3
+				add_base_production = 3
+				add_base_manpower = 3
+			}
+			
+			add_country_modifier = {
+				name = "mnd_wie_zijn_wij_modifier"
+				duration = -1
+			}
+		}
+		ai_weight = { factor = 50 }
+	}
 }
 
 mnd_are_3 = {
@@ -1256,6 +1313,74 @@ mnd_are_3 = {
 		ai_weight = {
 			factor = 50
 		}
+	}
+	
+	mnd_maj_nederlands_bali = {
+		icon = mission_mnd_maj_prepare_eastern_campaigns
+		required_missions = { mnd_maj_southern_colonies }
+		position = 9
+		
+		provinces_to_highlight = {
+			NOT = { religion = ROOT }
+			country_or_non_sovereign_subject_holds = ROOT
+		}
+		
+		trigger = {
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+				value = 32
+				religion = ROOT
+			}
+		}
+		
+		effect = {
+			add_prestige = 25
+			add_country_modifier = {
+				name = "mnd_nederlands_bali_modifier"
+				duration = -1
+			}
+		}
+		ai_weight = { factor = 50 }
+	}
+	
+	mnd_maj_letters_amsterdam = {
+		icon = mission_rb_monopolize_the_channel
+		required_missions = { mnd_maj_nederlands_bali }
+		position = 10
+		
+		provinces_to_highlight = {
+			province_id = 97
+		}
+		
+		trigger = {
+			# We have discovered Amsterdam
+			97 = {
+				has_discovered = ROOT
+			}
+			# And the country that holds it likes us
+			97 = {
+				owner = {
+					is_subject = no
+					has_opinion = {
+						who = ROOT
+						value = 100
+					}
+				}
+			}
+		}
+		
+		effect = {
+			add_prestige = 5
+			add_dip_power = 50
+			add_country_modifier = {
+				name = "mnd_letters_amsterdam_modifier"
+				duration = -1
+			}
+			add_country_modifier = {
+				name = "mnd_envoy_amsterdam_modifier"
+				duration = 7300
+			}
+		}
+		ai_weight = { factor = 50 }
 	}
 }
 
@@ -1327,6 +1452,65 @@ mnd_are_4 = {
 		ai_weight = {
 			factor = 50
 		}
+	}
+	
+	mnd_maj_terugkeer = {
+		icon = mission_launch_a_flagship
+		required_missions = { mnd_maj_letters_amsterdam }
+		position = 11
+		
+		provinces_to_highlight = {
+			OR = {
+				area = holland_area
+				area = frisia_area
+			}
+		}
+		
+		trigger = {
+			# Lock out if the unique path was taken
+			NOT = { has_country_flag = mnd_chose_unique }
+			
+			# A navy worthy of the voyage home
+			navy_size = 100
+			num_of_heavy_ship = 15
+			
+			# The Dutch culture is supreme in our own realm
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+				value = 20
+				culture = dutch
+			}
+			
+			# We have the reach to challenge the homeland
+			total_development = 800
+		}
+		
+		effect = {
+			set_country_flag = mnd_chose_return
+			add_prestige = 40
+			add_navy_tradition = 20
+			
+			# The old country is ours by right of blood
+			holland_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			frisia_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			
+			add_country_modifier = {
+				name = "mnd_terugkeer_modifier"
+				duration = -1
+			}
+		}
+		ai_weight = { factor = 50 }
 	}
 
 }
