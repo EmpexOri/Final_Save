@@ -1044,3 +1044,107 @@ country_event = {
 		}
 	}
 }
+
+country_event = { #The Hijin Policy of the Empire of China 
+	id = flavor_mng.55
+	title = flavor_mng.55.t
+	desc = flavor_mng.55.d
+	picture = HARBOUR_eventPicture	
+	trigger = { 
+		is_emperor_of_china = yes 
+		has_dlc = "Domination"
+		tag = CHN
+		not = { has_country_flag = mng_had_branching_mission_event }
+	}
+	immediate = {
+		hidden_effect = { set_country_flag = mng_had_branching_mission_event }
+	}
+	
+	mean_time_to_happen = { months = 1 } 
+	
+	option = { 
+		name = flavor_mng.55.a 
+		set_country_flag = mng_dynamic_1 
+		swap_non_generic_missions = yes 
+		add_country_modifier = { 
+			name = haijin_policy_modifier
+			duration = -1 
+			desc = until_we_complete_the_appropriate_missions_desc
+		}
+		custom_tooltip = mng_closed_trade_tt
+	}
+	
+	option = { 
+		name = flavor_mng.55.b
+		set_country_flag = mng_dynamic_2
+		swap_non_generic_missions = yes 
+		add_country_modifier = { 
+			name = haijin_policy_modifier
+			duration = -1 
+			desc = until_we_complete_the_appropriate_missions_desc
+		}
+		custom_tooltip = mng_open_trade_tt
+	}
+
+	# option = {
+	# 	name = flavor_mng.55.c
+	# 	trigger = {
+	# 		ai = no
+	# 	}
+	# 	enable_branching_mission_review_without_ai = { key = CHN }
+	# }
+}
+	
+	
+country_event = { #Trade Stance between Japan and China
+	id = flavor_mng.56
+	title = flavor_mng.56.t
+	desc = flavor_mng.56.d
+	picture = HARBOUR_eventPicture
+	fire_only_once = yes 
+	major = yes 
+	major_trigger = {
+		ai = no 
+		capital_scope = { continent = asia } 
+	}
+	trigger = { 
+		AND = { 
+			owns = 1020
+			NOT = { tag = CHN }
+		}
+		NOT = { is_year = 1480 } 
+		CHN = { is_emperor_of_china = yes } 
+	}
+	
+	mean_time_to_happen = { months = 24 } 
+	
+	option = { 
+		name = flavor_mng.56.a 
+		
+		CHN = { 
+			set_country_flag = mng_has_had_ashikaga_petitions_for_open_trade_event_flag
+			add_mandate = 5 
+			1376 = {
+				add_trade_modifier = {
+					who = CHN
+					duration = 7300
+					power = 100
+					key = MNG_PRESENCE_IN_JAPAN
+				}
+			}
+			add_prestige_or_monarch_power = { amount = 20 }
+		}
+		
+		add_country_modifier = { 
+			name = shogun_backed_by_mng_modifier
+			duration = 18250
+		}
+	}
+	
+	option = { 
+		name = flavor_mng.56.b 
+		
+		add_stability_or_adm_power = yes 
+		add_prestige_or_monarch_power = { amount = 20 }
+	}
+}
