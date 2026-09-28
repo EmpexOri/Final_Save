@@ -1,0 +1,140 @@
+namespace = alb_red_banner
+
+# Hidden setup event. Sets the flag that starts the countdown.
+country_event = {
+	id = alb_red_banner.1
+	hidden = yes
+	is_triggered_only = yes
+	
+	immediate = {
+		set_country_flag = alb_red_banner_pending
+	}
+	
+	option = {
+		name = "OK"
+	}
+}
+
+# The Red-Banner Rebellion. Fires 12 to 36 months after the setup.
+# The Red-Banner Rebellion. Fires 12 to 36 months after the setup.
+country_event = {
+	id = alb_red_banner.2
+	title = "alb_red_banner.2.t"
+	desc = "alb_red_banner.2.d"
+	picture = DISASTER_eventPicture
+	
+	trigger = {
+		has_country_flag = alb_red_banner_pending
+		is_at_war = no
+		stability = 1
+	}
+	
+	mean_time_to_happen = {
+		months = 24
+		modifier = {
+			factor = 0.5
+			stability = 1
+		}
+		modifier = {
+			factor = 2
+			stability = 3
+		}
+	}
+	
+	immediate = {
+		clr_country_flag = alb_red_banner_pending
+		set_country_flag = alb_red_banner_active
+	}
+	
+	option = {
+		name = "alb_red_banner.2.a"
+		
+		add_stability = -1
+		add_legitimacy = -20
+		
+		# Five stacks of four regiments each. Twenty regiments total.
+		random_owned_province = {
+			limit = { area = wales_area }
+			spawn_rebels = {
+				type = pretender
+				size = 4
+			}
+		}
+		random_owned_province = {
+			limit = { area = west_midlands_area }
+			spawn_rebels = {
+				type = pretender
+				size = 4
+			}
+		}
+		random_owned_province = {
+			limit = { area = east_midlands_area }
+			spawn_rebels = {
+				type = pretender
+				size = 4
+			}
+		}
+		random_owned_province = {
+			limit = { area = yorkshire_area }
+			spawn_rebels = {
+				type = pretender
+				size = 4
+			}
+		}
+		random_owned_province = {
+			limit = { area = scottish_marches_area }
+			spawn_rebels = {
+				type = pretender
+				size = 4
+			}
+		}
+	}
+}
+
+country_event = {
+	id = alb_red_banner.3
+	title = "alb_red_banner.3.t"
+	desc = "alb_red_banner.3.d"
+	picture = ROYAL_COURT_eventPicture
+	
+	trigger = {
+		has_country_flag = alb_red_banner_active
+		NOT = { num_of_rebel_armies = 1 }
+		stability = 2
+	}
+	
+	mean_time_to_happen = {
+		months = 3
+	}
+	
+	immediate = {
+		clr_country_flag = alb_red_banner_active
+	}
+	
+	option = {
+		name = "alb_red_banner.3.a"
+		
+		add_legitimacy = 15
+		add_prestige = 10
+		set_country_flag = alb_red_banner_settled
+		
+		add_country_modifier = {
+			name = "alb_pretenders_spared"
+			duration = 7300
+		}
+	}
+	
+	option = {
+		name = "alb_red_banner.3.b"
+		
+		add_legitimacy = -10
+		add_prestige = 25
+		add_absolutism = 5
+		set_country_flag = alb_red_banner_crushed
+		
+		add_country_modifier = {
+			name = "alb_pretenders_executed"
+			duration = 7300
+		}
+	}
+}

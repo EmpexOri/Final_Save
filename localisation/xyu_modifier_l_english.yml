@@ -359,3 +359,11 @@
  nap_demetria_cooperation_desc: "The Duchy of Demetria has entered into a cooperative arrangement with Naples. Our troops garrison the Alpine passes, our factors manage the Ligurian ports, and the Demetrian court acknowledges our authority."
  mnd_chose_return: "Chose the Return Home"
  mnd_chose_unique: "Chose to become Unique"
+
+ alb_act_of_peace: "Act of Peace"
+ alb_parliament_ascendant: "Parliament Ascendant"
+ alb_reform_wooden_works: "The Longitude Act"
+ alb_reform_standing_ordnance: "Annual Appropriation Acts"
+ alb_reform_bureau_of_works: "The Quota Acts"
+ parliament_expanded: "Parliament Expanded"
+ alb_reform_cooldown: "Parliament Recently Called (20 Years)"

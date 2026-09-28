@@ -966,88 +966,146 @@ alb_parl_1 = {
 		ai_weight = { factor = 500 }
 	}
 
-	# Chapter 8b: The Great Matter
-	alb_great_matter = {
+	# Chapter 8c: The Centralization of the Church
+	alb_centralize_church = {
 		icon = mission_the_governing_senate
 		required_missions = { alb_parliament }
 		position = 6
-		completed_by = 1680.1.1
-		
-		trigger = {
-			# Alba is a Lollard kingdom by this point the church is national
-			religion = lollard
-			religious_unity = 0.85
-			stability = 2
-			has_parliament = yes
-		}
-		
-		effect = {
-			add_prestige = 30
-			add_country_modifier = {
-				name = "alb_religious_settlement"
-				duration = -1
-			}
-			# The Church of Alba is formally established by Act of Parliament
-			if = {
-				limit = { has_dlc = "Domination" }
-				set_country_flag = alb_church_established
-			}
-		}
-		ai_weight = { factor = 500 }
-	}
-
-	# Chapter 8c: The Civil War
-	alb_civil_war = {
-		icon = mission_hundred_years_war
-		required_missions = { alb_great_matter }
-		position = 7
 		completed_by = 1700.1.1
 		
+		provinces_to_highlight = {
+		}
+		
 		trigger = {
-			is_at_war = no
-			stability = 1
-			# The crown has seen off the pretenders
-			NOT = { num_of_rebel_armies = 1 }
-			# Parliament stands with the crown
-			has_parliament = yes
-			parliament_backing = yes
+			religion = lollard
+			tag = ABA
+			# The reform program is well advanced
+			government_reform_progress = 150
+			
+			# And of its independent influence
+			NOT = {
+				estate_influence = {
+					estate = estate_church
+					influence = 40
+				}
+			}
 		}
 		
 		effect = {
+			add_government_reform_progress = -100
+			add_treasury = 300
+			if = {
+				limit = { has_estate = estate_church }
+				change_estate_land_share = {
+					estate = estate_church
+					share = -10
+				}
+			}
+			if = {
+				limit = { has_estate = estate_church }
+				add_estate_influence = {
+					estate = estate_church
+					influence = -15
+				}
+			}
+			define_advisor = {
+					type = theologian
+					skill = 3
+					name = "The Archbishop of Lundain"
+					discount = yes
+			}
+			country_event = { id = alb_red_banner.1 days = 30 }
+		}
+		ai_weight = { factor = 500 }
+	}
+	
+	# Chapter 8d: The Act of Peace
+	alb_act_of_peace = {
+		icon = mission_monarch_in_throne_room
+		required_missions = { alb_centralize_church }
+		position = 7
+		completed_by = 1730.1.1
+		
+		provinces_to_highlight = {
+		}
+		
+		trigger = {
+			
+			# The rebellion must have run its course
+			NOT = { has_country_flag = alb_red_banner_pending }
+			NOT = { has_country_flag = alb_red_banner_active }
+			OR = {
+				has_country_flag = alb_red_banner_settled
+				has_country_flag = alb_red_banner_crushed
+			}
+			
+			# The crown must be secure enough to legislate peace
+			stability = 3
+			legitimacy = 85
+			num_of_rebel_armies = 0
+		}
+		
+		effect = {
+			add_stability = 1
+			add_legitimacy = 40
 			add_prestige = 40
-			add_legitimacy = 25
-			add_absolutism = 10
+			
+			# The war of the roses is formally ended by statute
 			add_country_modifier = {
-				name = "alb_civil_war_survived"
+				name = "alb_act_of_peace"
 				duration = -1
 			}
+			
+			set_country_flag = alb_act_of_peace_passed
+			
+			# Optional follow-up event
+			# country_event = { id = alb_red_banner.4 days = 30 }
 		}
 		ai_weight = { factor = 500 }
 	}
-
-	# Chapter 8d: A Standing Army
-	alb_standing_army = {
-		icon = mission_early_russian_army
-		required_missions = { alb_civil_war }
+	
+	alb_settled_crown = {
+		icon = mission_monarch_in_throne_room
+		required_missions = { alb_centralize_church }
 		position = 8
-		completed_by = 1720.1.1
+		completed_by = 1740.1.1
 		
 		trigger = {
-			army_size = 50
-			army_professionalism = 0.40
-			mil_tech = 15
+			# Must be a monarchy
+			government = monarchy
+			
+			# Any advanced monarchy that retains parliament
 			has_parliament = yes
+			
+			# The crown must be secure enough to impose its will
+			stability = 3
+			legitimacy = 90
+			
+			# Parliament is seated — but the crown dominates it
+			num_of_owned_provinces_with = {
+				value = 25
+				has_seat_in_parliament = yes
+			}
+			
+			# The revolutionary / republican path has not been taken
+			NOT = { has_country_flag = alb_eternal_revolution }
 		}
 		
 		effect = {
-			add_army_tradition = 20
+			add_prestige = 50
+			add_legitimacy = 20
+			add_absolutism = 10
+			
+			# The crown centralizes the realm through a compliant parliament
 			add_country_modifier = {
-				name = "alb_standing_army"
+				name = "alb_settled_crown"
 				duration = -1
 			}
+			
+			set_country_flag = alb_autocratic_settlement
 		}
 		ai_weight = { factor = 500 }
-	}
+	}	
 	
 }
 
@@ -1090,6 +1148,41 @@ alb_parl_2 = {
 				name = "alb_expanded_parliament"
 				duration = -1
 			}
+			set_country_flag = parliament_expanded
+		}
+		ai_weight = { factor = 500 }
+	}
+	
+	# Chapter 8d: Call upon Parliament's Power
+	alb_parliament_power = {
+		icon = mission_the_governing_senate
+		required_missions = { alb_expand_parliament }
+		position = 7
+		completed_by = 1700.1.1
+		
+		trigger = {
+			# Parliament must exist and be broadly seated
+			has_parliament = yes
+			num_of_owned_provinces_with = {
+				value = 30
+				has_seat_in_parliament = yes
+			}
+			
+			# The crown must be stable enough to yield real power
+			stability = 3
+		}
+		
+		effect = {
+			add_prestige = 30
+			add_government_reform_progress = 50
+			
+			# Parliament becomes the dominant institution of the realm
+			add_country_modifier = {
+				name = "alb_parliament_ascendant"
+				duration = -1
+			}
+			
+			set_country_flag = alb_parliament_ascendant
 		}
 		ai_weight = { factor = 500 }
 	}
@@ -1097,21 +1190,19 @@ alb_parl_2 = {
 	# Chapter 8c: The Republic of Virtue
 	alb_republic_of_virtue = {
 		icon = french_revolution
-		required_missions = { alb_expand_parliament }
-		position = 7
+		required_missions = { alb_parliament_power }
+		position = 8
 		completed_by = 1720.1.1
 
 		trigger = {
-			# Must be a Republic
+			# Must be a Republic of any kind
 			government = republic
-			# Must have reached the Tier 6 reform (Revolutionary Republic)
-			has_reform = revolutionary_republic_reform
-			# Must have embraced the Revolution
-			is_revolutionary = yes
 			# The people must be behind the new order
 			republican_tradition = 80
-			# The revolution must be secure
+			# The republic must be secure
 			NOT = { any_owned_province = { unrest = 5 } }
+			# Parliament remains the foundation of governance
+			has_parliament = yes
 		}
 
 		effect = {
@@ -1130,8 +1221,8 @@ alb_parl_2 = {
 	
 }
 
-alb_parl_3 = {
-	slot = 3
+alb_parl_5 = {
+	slot = 5
 	generic = no
 	ai = yes
 	potential_on_load = {
@@ -1146,36 +1237,117 @@ alb_parl_3 = {
 	}
 	has_country_shield = yes
 	
-	# Chapter 8c (alternate): The Settled Crown
-	alb_settled_crown = {
-		icon = mission_monarch_in_throne_room
-		required_missions = { alb_expand_parliament }
-		position = 7
-		completed_by = 1720.1.1
-		
-		trigger = {
-			# Must be a monarchy, not a republic
-			government = monarchy
-			# Must have reached the Tier 6 constitutional reform
-			has_reform = constitutional_monarchy_reform
-			# Parliament remains the foundation of governance
-			has_parliament = yes
-			# The settlement must be secure
-			stability = 3
-			legitimacy = 90
-			# The revolutionary path has not been taken
-			NOT = { has_country_flag = alb_eternal_revolution }
-		}
-		
-		effect = {
-			add_prestige = 50
-			add_legitimacy = 20
-			add_country_modifier = {
-				name = "alb_settled_crown"
-				duration = -1
-			}
-			set_country_flag = alb_constitutional_settlement
-		}
-		ai_weight = { factor = 500 }
-	}	
+# Reform I: The Wooden Works of the Sea
+alb_reform_wooden_works = {
+    icon = mission_launch_a_flagship
+    required_missions = { }
+    position = 6
+    completed_by = 1800.1.1
+    
+    potential = {
+        tag = ABA
+        has_parliament = yes
+    }
+    
+    trigger = {
+        has_parliament = yes
+        stability = 2
+        navy_size = 40
+        num_of_heavy_ship = 15
+        NOT = { has_country_flag = alb_reform_cooldown }
+		has_country_flag = parliament_expanded
+    }
+    
+    effect = {
+        add_prestige = 30
+        add_navy_tradition = 20
+        add_government_reform_progress = 100
+        
+        add_country_modifier = {
+            name = "alb_reform_wooden_works"
+            duration = -1
+        }
+        
+        set_country_flag = alb_reform_cooldown
+        country_event = { id = alb_reform_cooldown.1 days = 3600 }
+    }
+    ai_weight = { factor = 500 }
+}
+
+# Reform II: The Standing Ordnance
+alb_reform_standing_ordnance = {
+    icon = mission_assemble_an_army
+    required_missions = { }
+    position = 7
+    completed_by = 1800.1.1
+    
+    potential = {
+        tag = ABA
+        has_parliament = yes
+    }
+    
+    trigger = {
+        has_parliament = yes
+        stability = 2
+        army_size = 60
+        num_of_artillery = 20
+        NOT = { has_country_flag = alb_reform_cooldown }
+		has_country_flag = parliament_expanded
+    }
+    
+    effect = {
+        add_prestige = 30
+        add_army_tradition = 20
+        add_government_reform_progress = 100
+        
+        add_country_modifier = {
+            name = "alb_reform_standing_ordnance"
+            duration = -1
+        }
+        
+        set_country_flag = alb_reform_cooldown
+        country_event = { id = alb_reform_cooldown.1 days = 3600 }
+    }
+    ai_weight = { factor = 500 }
+}
+
+# Reform III: The Bureau of Works and Measures
+alb_reform_bureau_of_works = {
+    icon = mission_build_up_to_force_limit
+    required_missions = { }
+    position = 8
+    completed_by = 1800.1.1
+    
+    potential = {
+        tag = ABA
+        has_parliament = yes
+    }
+    
+    trigger = {
+        has_parliament = yes
+        stability = 2
+        num_of_owned_provinces_with = {
+            value = 15
+            has_building = workshop
+        }
+        NOT = { has_country_flag = alb_reform_cooldown }
+		has_country_flag = parliament_expanded
+    }
+    
+    effect = {
+        add_prestige = 30
+        add_mercantilism = 5
+        add_government_reform_progress = 100
+        
+        add_country_modifier = {
+            name = "alb_reform_bureau_of_works"
+            duration = -1
+        }
+        
+        set_country_flag = alb_reform_cooldown
+        country_event = { id = alb_reform_cooldown.1 days = 3600 }
+    }
+    ai_weight = { factor = 500 }
+}
+
 }

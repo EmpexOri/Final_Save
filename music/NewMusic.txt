@@ -375,3 +375,39 @@ song = {
         }
     }
 }
+
+song = {
+    name = indonesie
+    chance = {
+        # MSA base chance
+        modifier = {
+            factor = 1
+            tag = MSA
+        }
+        # MSA doubles its chance after 1600
+        modifier = {
+            factor = 2
+            tag = MSA
+            is_year = 1600
+        }
+        # Allies of MSA hear it in peacetime
+        modifier = {
+            factor = 1
+            alliance_with = MSA
+            is_at_war = no
+        }
+        # Everyone else gets 0
+        modifier = {
+            factor = 0
+            NOT = {
+                OR = {
+                    tag = MSA
+                    AND = {
+                        alliance_with = MSA
+                        is_at_war = no
+                    }
+                }
+            }
+        }
+    }
+}
