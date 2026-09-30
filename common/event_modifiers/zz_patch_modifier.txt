@@ -637,3 +637,7 @@ ita_payment_received = {
 	global_tax_modifier = 0.05
 	technology_cost = -0.05
 }
+
+reinvigorated_mandala_system = {
+	diplomatic_upkeep = 5
+}

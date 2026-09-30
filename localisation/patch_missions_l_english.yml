@@ -199,6 +199,8 @@
  cb_vassalize_malacca_desc:0 "Malacca has taken the place of Zud-Balinee as hegemon of Nusantara. We will subjugate any who oppose us."
  maj_reduced_lib_desire:0 "Enforced Loyalty"
  desc_maj_reduced_lib_desire:0 "We are loyal to our Zud-Balinee overlords"
+ reinvigorated_mandala_system:0 "Reinvigorated Mandala System"
+ reinvigorated_mandala_system_desc:0 "We are once again masters of Nusantara. For the time being, we need not concern ourselves with the loyalty of our subjects."
  kushite_revival:0 "Kushite revival"
  flavor_mam.2.a:0 "Praise the Ra!"
  mng_tumu_crisis_title:0 "Tumu Crisis"

@@ -284,6 +284,10 @@ mnd_maj_2 = {
 					}
 				}
 			}
+			add_country_modifier = {
+				name = "reinvigorated_mandala_system"
+				duration = 5475
+			}
 		}
 	}
 

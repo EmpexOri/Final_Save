@@ -1060,7 +1060,7 @@ country_event = { #The Hijin Policy of the Empire of China
 		hidden_effect = { set_country_flag = mng_had_branching_mission_event }
 	}
 	
-	mean_time_to_happen = { months = 1 } 
+	mean_time_to_happen = { months = 24 } 
 	
 	option = { 
 		name = flavor_mng.55.a 
