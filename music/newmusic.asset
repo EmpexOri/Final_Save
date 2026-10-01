@@ -62,3 +62,8 @@ music = {
     name = indonesie
     file = "indonesie.ogg"
 }
+
+music = {
+    name = nasigoreng
+    file = "nasigoreng.ogg"
+}
