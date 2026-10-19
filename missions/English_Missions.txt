@@ -977,7 +977,10 @@ alb_parl_1 = {
 		}
 		
 		trigger = {
-			religion = lollard
+			OR = {
+				religion = lollard
+				religion = protestant
+			}
 			tag = ABA
 			# The reform program is well advanced
 			government_reform_progress = 150
@@ -1066,7 +1069,7 @@ alb_parl_1 = {
 	
 	alb_settled_crown = {
 		icon = mission_monarch_in_throne_room
-		required_missions = { alb_centralize_church }
+		required_missions = { alb_act_of_peace }
 		position = 8
 		completed_by = 1740.1.1
 		

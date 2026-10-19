@@ -1551,13 +1551,19 @@ gc_por_4 = {
 		trigger = {
 			custom_trigger_tooltip = {
 				tooltip = por_byz_weakened_tt
+
 				morea_area = {
 					type = all
-					country_or_non_sovereign_subject_holds = ROOT
+					NOT = {
+						owned_by = BYZ
+					}
 				}
+
 				northern_greece_area = {
 					type = all
-					country_or_non_sovereign_subject_holds = ROOT
+					NOT = {
+						owned_by = BYZ
+					}
 				}
 			}
 		}

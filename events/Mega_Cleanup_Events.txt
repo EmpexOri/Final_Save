@@ -1,0 +1,238 @@
+namespace = songhay_collapse
+
+country_event = {
+    id = songhay_collapse.1
+    title = "songhay_collapse.1.t"
+    desc = "songhay_collapse.1.d"
+    picture = DISASTER_eventPicture
+    fire_only_once = yes
+    major = yes
+    
+    trigger = {
+        tag = SON
+        is_year = 1645
+        NOT = { is_year = 1701 }
+        NOT = { has_country_flag = songhay_collapsed }
+        total_development = 100
+    }
+    
+    mean_time_to_happen = { months = 12 }
+    
+    immediate = {
+        set_country_flag = songhay_collapsed
+        country_event = { id = songhay_collapse.2 days = 1825 }  # 5 years
+    }
+    
+    option = {
+        name = "songhay_collapse.1.a"
+        
+        add_stability = -3
+        
+        add_country_modifier = {
+            name = songhay_internal_collapse
+            duration = 10950  # 30 years
+        }
+        
+        every_owned_province = {
+            limit = { NOT = { is_capital = yes } }
+            add_unrest = 20
+            add_province_modifier = {
+                name = songhay_revolt
+                duration = 10950
+            }
+        }
+        
+        every_owned_province = {
+            limit = { NOT = { is_capital = yes } }
+            spawn_rebels = {
+                type = particularist
+                size = 12
+            }
+        }
+        
+        capital_scope = {
+            spawn_rebels = {
+                type = pretender
+                size = 15
+            }
+        }
+    }
+}
+
+country_event = {
+    id = songhay_collapse.2
+    title = "songhay_collapse.1.t"
+    desc = "songhay_collapse.1.d"
+    picture = DISASTER_eventPicture
+    fire_only_once = yes
+    is_triggered_only = yes
+    
+    immediate = {
+        country_event = { id = songhay_collapse.3 days = 1825 }  # 5 more years
+    }
+    
+    option = {
+        name = "songhay_collapse.1.a"
+        every_owned_province = {
+            limit = { NOT = { is_capital = yes } }
+            spawn_rebels = {
+                type = particularist
+                size = 12
+            }
+        }
+    }
+}
+
+country_event = {
+    id = songhay_collapse.3
+    title = "songhay_collapse.1.t"
+    desc = "songhay_collapse.1.d"
+    picture = DISASTER_eventPicture
+    fire_only_once = yes
+    is_triggered_only = yes
+    
+    immediate = {
+        country_event = { id = songhay_collapse.4 days = 3650 }  # 10 more years
+    }
+    
+    option = {
+        name = "songhay_collapse.1.a"
+        every_owned_province = {
+            limit = { NOT = { is_capital = yes } }
+            spawn_rebels = {
+                type = particularist
+                size = 15
+            }
+        }
+    }
+}
+
+country_event = {
+    id = songhay_collapse.4
+    title = "songhay_collapse.1.t"
+    desc = "songhay_collapse.1.d"
+    picture = DISASTER_eventPicture
+    fire_only_once = yes
+    is_triggered_only = yes
+    
+    option = {
+        name = "songhay_collapse.1.a"
+        # The final shatter — if Songhay is still large, release everything
+        if = {
+            limit = { total_development = 100 }
+            release_all_possible_countries = yes
+        }
+        remove_country_modifier = songhay_internal_collapse
+    }
+}
+
+namespace = borgu_collapse
+
+country_event = {
+    id = borgu_collapse.1
+    title = "borgu_collapse.1.t"
+    desc = "borgu_collapse.1.d"
+    picture = DISASTER_eventPicture
+    fire_only_once = yes
+    major = yes
+    
+    trigger = {
+        tag = Z10
+        is_year = 1645
+        NOT = { is_year = 1701 }
+        NOT = { has_country_flag = borgu_collapsed }
+        total_development = 20
+    }
+    
+    mean_time_to_happen = { months = 18 }
+    
+    immediate = { set_country_flag = borgu_collapsed }
+    
+    option = {
+        name = "borgu_collapse.1.a"
+        
+        add_stability = -3
+        
+        add_country_modifier = {
+            name = borgu_internal_collapse
+            duration = 18250  # 50 years — effectively permanent
+        }
+        
+        every_owned_province = {
+            limit = { NOT = { is_capital = yes } }
+            spawn_rebels = {
+                type = particularist
+                size = 6
+            }
+        }
+        
+        capital_scope = {
+            spawn_rebels = {
+                type = pretender
+                size = 10
+            }
+        }
+    }
+}
+
+namespace = ilkhanate_reform
+
+country_event = {
+    id = ilkhanate_reform.1
+    title = "ilkhanate_reform.1.t"
+    desc = "ilkhanate_reform.1.d"
+    picture = ROYAL_COURT_eventPicture
+    
+    fire_only_once = yes
+    major = yes
+    
+    trigger = {
+        tag = ILK
+        is_year = 1650
+        NOT = { is_year = 1751 }
+        NOT = { has_country_flag = ilkhanate_reformed }
+        total_development = 200
+    }
+    
+    mean_time_to_happen = {
+        months = 24
+    }
+    
+    immediate = {
+        set_country_flag = ilkhanate_reformed
+    }
+    
+	option = {
+		name = "ilkhanate_reform.1.a"
+
+		change_tag = PER
+		release_all_possible_countries = yes
+
+		add_country_modifier = {
+			name = persia_reconsolidation
+			duration = 7300
+		}
+
+		add_prestige = 25
+		add_legitimacy = 15
+
+		# Tell every human player the last horde is gone
+		every_player = {
+			country_event = { id = ilkhanate_reform.2 days = 1 }
+		}
+	}
+}
+
+country_event = {
+    id = ilkhanate_reform.2
+    title = "ilkhanate_reform.2.t"
+    desc = "ilkhanate_reform.2.d"
+    picture = ROYAL_COURT_eventPicture
+
+    is_triggered_only = yes
+    major = yes
+
+    option = {
+        name = "ilkhanate_reform.2.a"
+    }
+}

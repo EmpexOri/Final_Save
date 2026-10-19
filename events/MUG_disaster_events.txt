@@ -1,43 +1,62 @@
 namespace = mug_disaster
 
 country_event = {
-	id = mug_disaster.1
-	title = "mug_disaster.1.t"
-	desc = "mug_disaster.1.d"
-	picture = DISASTER_eventPicture
-	
-	trigger = {
-		tag = MUG
-		NOT = { has_country_flag = mug_collapse_fired }
-		is_year = 1650
-		total_development = 1250
-	}
-	
-	mean_time_to_happen = {
-		months = 1
-	}
-	
-	option = {
-		name = "mug_disaster.1.a"
-		
-		set_country_flag = mug_collapse_fired
-		
-		# Tier 1 — over 1500 development: 50 years of collapse
-		if = {
-			limit = { total_development = 1500 }
-			add_country_modifier = {
-				name = mug_internal_collapse
-				duration = 18250
-			}
-		}
-		# Tier 2 — over 1250 development: 25 years of collapse
-		else = {
-			add_country_modifier = {
-				name = mug_internal_collapse
-				duration = 9125
-			}
-		}
-	}
+    id = mug_disaster.1
+    title = "mug_disaster.1.t"
+    desc = "mug_disaster.1.d"
+    picture = DISASTER_eventPicture
+    
+    trigger = {
+        tag = MUG
+        NOT = { has_country_flag = mug_collapse_fired }
+        is_year = 1650
+        total_development = 1250
+    }
+    
+    mean_time_to_happen = {
+        months = 1
+    }
+    
+    option = {
+        name = "mug_disaster.1.a"
+        
+        set_country_flag = mug_collapse_fired
+        add_stability = -3
+        
+        # Tier 1 — over 1500 development: 50 years of collapse
+        if = {
+            limit = { total_development = 1500 }
+            add_country_modifier = {
+                name = mug_internal_collapse
+                duration = 18250
+            }
+        }
+        # Tier 2 — over 1250 development: 25 years of collapse
+        else = {
+            add_country_modifier = {
+                name = mug_internal_collapse
+                duration = 9125
+            }
+        }
+        
+        # Every non-accepted culture province over 5 dev has a 75% chance to rise
+        every_owned_province = {
+            limit = {
+                NOT = { is_capital = yes }
+                is_accepted_culture = no
+                development = 5
+            }
+            random_list = {
+                75 = {
+                    spawn_rebels = {
+                        type = nationalist
+                        size = 15
+                    }
+                }
+                25 = { }
+            }
+        }
+    }
 }
 
 # The event that fires when the disaster ends
@@ -68,51 +87,80 @@ country_event = {
 namespace = dec_disaster
 
 country_event = {
-	id = dec_disaster.1
-	title = "dec_disaster.1.t"
-	desc = "dec_disaster.1.d"
-	picture = DISASTER_eventPicture
-	
-	trigger = {
-		tag = DEC
-		NOT = { has_country_flag = dec_collapse_fired }
-		OR = {
-			AND = {
-				is_year = 1625
-				NOT = { is_year = 1651 }
-			}
-		}
-		total_development = 1000
-	}
-	
-	mean_time_to_happen = {
-		months = 1
-	}
-	
-	immediate = {
-		# The Indian princes reject Deccan overlordship
-		every_owned_province = {
-			limit = {
-				NOT = { area = capital_area }
-				NOT = { culture = ROOT }
-			}
-			add_unrest = 5
-			add_province_modifier = {
-				name = dec_princes_revolt
-				duration = 9125
-			}
-		}
-	}
-	
+    id = dec_disaster.1
+    title = "dec_disaster.1.t"
+    desc = "dec_disaster.1.d"
+    picture = DISASTER_eventPicture
+    
+    trigger = {
+        tag = DEC
+        NOT = { has_country_flag = dec_collapse_fired }
+        OR = {
+            AND = {
+                is_year = 1625
+                NOT = { is_year = 1651 }
+            }
+        }
+        total_development = 1000
+    }
+    
+    mean_time_to_happen = {
+        months = 1
+    }
+    
+    immediate = {
+        # The Indian princes reject Deccan overlordship
+        every_owned_province = {
+            limit = {
+                NOT = { area = capital_area }
+                NOT = { culture = ROOT }
+            }
+            add_unrest = 5
+            add_province_modifier = {
+                name = dec_princes_revolt
+                duration = 9125
+            }
+        }
+    }
+    
 	option = {
 		name = "dec_disaster.1.a"
 		
 		set_country_flag = dec_collapse_fired
+		add_stability = -3
 		
 		add_country_modifier = {
 			name = dec_internal_collapse
 			duration = 9125
 		}
+		
+		# First kick: release every country that already has cores in our land
+		release_all_possible_countries = yes
+		
+		# Then: every non-kept province rises in full revolt, regardless of culture
+		every_owned_province = {
+			limit = {
+				NOT = { area = Maidan_area }
+				NOT = { area = South_Telingana_area }
+				NOT = { area = Andhra_area }
+			}
+			add_unrest = 25
+			add_province_modifier = {
+				name = dec_princes_revolt
+				duration = 9125
+			}
+			spawn_rebels = {
+				type = nationalist
+				size = 20
+			}
+			spawn_rebels = {
+				type = particularist
+				size = 15
+			}
+		}
+		
+		# Schedule the aftermath event
+		# country_event = { id = dec_disaster.2 days = 9125 }
 	}
 }
 
