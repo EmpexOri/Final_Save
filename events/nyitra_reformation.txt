@@ -1,0 +1,111 @@
+namespace = nyitra_reformation
+
+country_event = {
+    id = nyitra_reformation.1
+    title = "nyitra_reformation.1.t"
+    desc = "nyitra_reformation.1.d"
+    picture = CONVERSION_eventPicture
+
+    fire_only_once = yes
+
+    trigger = {
+        tag = SLO
+        is_year = 1620
+        is_elector = yes
+        is_subject = no
+        religion = catholic
+    }
+
+    mean_time_to_happen = {
+        months = 1
+    }
+
+    option = {
+        name = "nyitra_reformation.1.a"
+
+        change_religion = protestant
+        set_country_flag = slo_reformation_fired
+
+        add_prestige = 25
+        add_country_modifier = {
+            name = "nyitra_defender_of_the_faith"
+            duration = 7300
+        }
+
+        if = {
+            limit = { ai = yes }
+            set_ai_attitude = { who = ROOT attitude = attitude_hostile }
+        }
+    }
+}
+
+country_event = {
+    id = nyitra_reformation.2
+    title = "nyitra_reformation.2.t"
+    desc = "nyitra_reformation.2.d"
+    picture = PARLIAMENT_eventPicture
+
+    fire_only_once = yes
+
+    trigger = {
+        tag = TTS
+        is_year = 1622
+        NOT = { is_year = 1630 }
+        religion = catholic
+        exists = ABA
+        exists = SLO
+        SLO = { has_country_flag = slo_reformation_fired }
+        ABA = {
+            religion = protestant
+        }
+    }
+
+    mean_time_to_happen = {
+        months = 3
+    }
+
+    option = {
+        name = "nyitra_reformation.2.a"
+        ai_chance = {
+            factor = 40
+            modifier = {
+                factor = 1.5
+                NOT = { exists = PAP }
+                # If the Papal State is gone, joining is less scary
+            }
+            modifier = {
+                factor = 2.0
+                ABA = { army_size = 50 }
+                # Alba is strong — safer to join
+            }
+        }
+
+        # The Duke breaks with Rome and joins the Protestant League
+        change_religion = protestant
+        set_country_flag = tts_joined_protestant_league
+
+        add_country_modifier = {
+            name = "tts_protestant_zeal"
+            duration = 3650
+        }
+        add_country_modifier = {
+            name = "tts_break_with_rome"
+            duration = -1
+        }
+
+        add_prestige = 50
+        add_legitimacy = -20
+        add_papal_influence = -50
+    }
+
+    option = {
+        name = "nyitra_reformation.2.b"
+        ai_chance = {
+            factor = 60
+        }
+
+        # Decline — stay Catholic, get a small reward from Rome
+        add_papal_influence = 25
+        add_prestige = 5
+    }
+}

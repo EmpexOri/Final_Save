@@ -43,3 +43,17 @@
  mug_disaster.1.t:0 "The Empire Breaks"
  mug_disaster.1.d:0 "It began with a tax collector turned away at a border fort. It ended with Delhi burning.\n\nEvery province the Mughals have ever conquered, every culture they have ever ruled without accepting, every people who remembered a flag older than the Peacock Throne all of them have risen at once. The Marathas are in the Deccan. The Rajputs are in the hills. The Bengalis are in the delta. The Tamils are in the south. There is no army large enough to be everywhere at once, and no treasury large enough to bribe them all back.\n\nThe empire is not being attacked. It is being forgotten."
  mug_disaster.1.a:0 "Let the provinces burn."
+
+ nyitra_reformation.1.t:0 "The Slovak Reformation"
+ nyitra_reformation.1.d:0 "For decades, the ideas of the Reformation have simmered in the hills and valleys of Nyitra. The crown has remained loyal to Rome, but the nobility and the towns have grown increasingly restless. Now, a powerful faction of Protestant nobles has seized the initiative. They have presented the King with a demand: embrace the new faith, or face a civil war. The King, seeing the strength of the Protestant cause and the weakness of his Catholic allies, has made his choice. Nyitra will stand as a Protestant power in the heart of Europe."
+ nyitra_reformation.1.a:0 "The Kingdom embraces the Reformation."
+
+ nyitra_defender_of_the_faith:0 "Defender of the Protestant Faith"
+
+ nyitra_reformation.2.t:0 "A Letter from the League"
+ nyitra_reformation.2.d:0 "A courier in Alba's colours arrives at the Ducal court bearing a letter sealed with the Protestant League's sigil.\n\nThe leader of the League writes plainly: the Reformation is spreading. The Elector of Nyitra has already broken with Rome. The Empire is divided, and the war that has been brewing for a century will soon be fought. On which side will the Italian states stand?\n\nFor too long the peninsula has been the Pope's garden, his tithes, his bishops, his armies marching through. But the Duke of Tuscany need not be the Pope's gardener. Should the League triumph, there will be new lands, new prerogatives, new markets. The letter closes with a promise: 'Renounce Rome, and the League will treat you as a brother. Refuse, and we will remember.'\n\nThe choice is ours."
+ nyitra_reformation.2.a:0 "Break with Rome. Join the League."
+ nyitra_reformation.2.b:0 "Italy is Catholic. We remain loyal to the Pope."
+
+ tts_protestant_zeal:0 "Protestant Zeal"
+ tts_break_with_rome:0 "Break with Rome"

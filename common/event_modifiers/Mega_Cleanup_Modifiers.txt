@@ -30,3 +30,28 @@ persia_reconsolidation = {
 borgu_revolt = {
     local_unrest = 10
 }
+
+nyitra_defender_of_the_faith = {
+    prestige = 0.5
+    legitimacy = 1
+    tolerance_own = 1
+}
+
+tts_protestant_zeal = {
+    global_missionary_strength = 0.05
+    missionaries = 2
+    tolerance_heretic = 2
+    tolerance_own = 1
+    religious_unity = 0.10
+}
+
+tts_break_with_rome = {
+    prestige = 1
+    legitimacy = 1
+    stability_cost_modifier = -0.10
+    global_tax_modifier = 0.10
+    discipline = 0.05
+    land_morale = 0.05
+    manpower_recovery_speed = 0.10
+    diplomatic_reputation = -1
+}
