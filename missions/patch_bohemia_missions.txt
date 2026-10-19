@@ -1452,19 +1452,33 @@ patch_gbh_4 = {
 		}
 
 		effect = {
+			# --- Rights of Man: Permanent protection from bad ruler traits ---
 			if = {
 				limit = { has_dlc = "Rights of Man" } 
 				custom_tooltip = boh_prevent_negative_traits
-				set_country_flag = boh_prevent_negative_traits
+				set_country_flag = prevent_negative_traits
 			}
-			else = { change_government_reform_progress = 100 } 
+			else = { 
+				add_government_reform_progress = 100 
+			}
+
+			# --- The University Elevates Prague ---
+			266 = {
+				add_base_tax = 2
+				add_base_production = 2
+				add_base_manpower = 2
+				add_province_modifier = {
+					name = "boh_university_glory"
+					duration = -1
+				}
+			}
+
+			# --- GBH Identity Consolidation ---
 			if = {
 				limit = { tag = GBH } 
 				custom_tooltip = boh_empower_ni_yes
 			}
-			else = { custom_tooltip = boh_empower_ni_no } 
-			if = {
-				limit = { NOT = { tag = GBH }  } 
+			else = {
 				custom_tooltip = boh_not_empower_ni_yes
 				tooltip = {
 					add_country_modifier = {
@@ -1473,15 +1487,24 @@ patch_gbh_4 = {
 					}
 				}
 			}
-			else = {
-				custom_tooltip = boh_not_empower_ni_no
-				tooltip = {
-					add_country_modifier = {
-						name = "czech_nationalism"
-						duration = -1
+
+			# --- The Heir of House von Trench (GBH only) ---
+			if = {
+				limit = { tag = GBH }
+				custom_tooltip = boh_yularen_heir
+				hidden_effect = {
+					define_heir = {
+						name = "Yularen"
+						dynasty = "von Trench"
+						monarch_admin_power = 6
+						monarch_diplomatic_power = 6
+						monarch_military_power = 6
+						claim = 100
+						age = 8
 					}
 				}
 			}
+
 			hidden_effect = {
 				if = {
 					limit = { tag = GBH } 

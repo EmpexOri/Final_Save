@@ -641,3 +641,8 @@ ita_payment_received = {
 reinvigorated_mandala_system = {
 	diplomatic_upkeep = 5
 }
+
+boh_university_glory = {
+    local_development_cost = -0.1
+    local_tax_modifier = 0.1
+}

@@ -33,10 +33,10 @@ monarch_names = {
 	"Anna #0" = -1
 	"Bedriška #0" = -1
 	"Ctislava #0" = -1
-	"Emporer of Mankind #1" = 10
+	"Emporer of Mankind #1" = 2
 	"God Save Us #0" = 0
-	"Gundakar #1" = 10
-	"Guntford #1" = 10
+	"Gundakar #1" = 2
+	"Guntford #1" = 2
 	"Hannibal #0" = -1
 	"Hedwig #0" = -1
 	"Jean #0" = 0
@@ -51,8 +51,9 @@ monarch_names = {
 	"Svatobor #0" = 0
 	"Tobiáš #1" = 10
 	"Torolchi #0" = 0
-	"Udalschalk #1" = 10
+	"Udalschalk #1" = 102
 	"Záštita #0" = 0
+	"Yularen #0" = 3
 }
 leader_names = {
 	"Berka"
